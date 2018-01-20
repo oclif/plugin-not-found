@@ -1,0 +1,15 @@
+{
+  "name": "@dxcli/test-not-found",
+  "version": "0.0.0",
+  "dxcli": {
+    "bin": "mycli",
+    "plugins": ["../.."],
+    "commands": "./src/commands"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "files": [
+    "/src"
+  ]
+}
