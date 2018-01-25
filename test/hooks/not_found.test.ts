@@ -8,9 +8,9 @@ const root = path.join(__dirname, '../fixtures/test')
 
 describe('command', () => {
   test()
+  .hook('command_not_found', {id: 'hel'}, {root})
   .catch(`hel is not a mycli command.
     Perhaps you meant hello
 Run mycli help for a list of available commands.`)
-  .hook('command_not_found', {id: 'hel'}, {root})
-  .it('runs hook')
+  .end('runs hook')
 })
