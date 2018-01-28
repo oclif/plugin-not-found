@@ -1,76 +1,53 @@
-const {concurrent, series} = require('nps-utils')
+/* eslint-disable unicorn/filename-case */
+
+const {
+  setColors,
+  concurrent,
+  crossEnv,
+  mkdirp,
+  series,
+} = require('nps-utils')
+
+setColors(['dim'])
+
+const script = (script, description) => description ? {script, description} : {script}
+
+const linters = {
+  eslint: script('eslint .', 'lint js files'),
+  commitlint: script('commitlint --from origin/master', 'ensure that commits are in valid conventional-changelog format'),
+  tsc: script('tsc -p test --noEmit', 'syntax check with tsc'),
+  tslint: script('tslint -p test', 'lint ts files'),
+}
+
+let test = 'mocha --forbid-only "test/**/*.test.ts"'
+if (process.env.CI) {
+  if (process.env.CIRCLECI) {
+    // add mocha junit reporter
+    test = crossEnv(`MOCHA_FILE=reports/mocha.xml ${test} --reporter mocha-junit-reporter`)
+    // add eslint reporter
+    linters.eslint.script = `${linters.eslint.script} --format junit --output-file reports/eslint.xml`
+    // add tslint reporter
+    linters.tslint.script = `${linters.tslint.script} --format junit > reports/tslint.xml`
+  }
+  // add code coverage reporting with nyc
+  const nyc = 'nyc --nycrc-path node_modules/@dxcli/nyc-config/.nycrc'
+  const nycReport = `${nyc} report --reporter text-lcov > coverage.lcov`
+  test = series(`${nyc} ${test}`, nycReport)
+}
+
+test = concurrent({
+  ...linters,
+  test: series('nps build', test),
+})
+
+if (process.env.CI) test = series(mkdirp('reports'), test)
 
 module.exports = {
   scripts: {
-    build: 'rm -rf lib && tsc',
-    lint: {
-      default: concurrent.nps('lint.eslint', 'lint.commitlint', 'lint.tsc', 'lint.tslint'),
-      eslint: {
-        script: 'eslint .',
-        description: 'lint js files',
-      },
-      commitlint: {
-        script: 'commitlint --from origin/master',
-        description: 'ensure that commits are in valid conventional-changelog format',
-      },
-      tsc: {
-        script: 'tsc -p test --noEmit',
-        description: 'syntax check with tsc',
-      },
-      tslint: {
-        script: 'tslint -p test',
-        description: 'lint ts files',
-      },
-    },
-    test: {
-      default: {
-        script: concurrent.nps('lint', 'test.mocha'),
-        description: 'lint and run all tests',
-      },
-      mocha: {
-        script: 'mocha "test/**/*.test.ts"',
-        description: 'run all mocha tests',
-      },
-    },
-    ci: {
-      default: {
-        script: concurrent.nps(
-          'ci.mocha',
-          'ci.eslint',
-          'ci.tslint',
-        ),
-        hiddenFromHelp: true,
-      },
-      mocha: {
-        default: {
-          script: series.nps('ci.mocha.test', 'ci.mocha.report'),
-          hiddenFromHelp: true,
-        },
-        test: {
-          script: 'MOCHA_FILE="reports/mocha.xml" nps "ci.mocha.nyc nps \\"test.mocha --reporter mocha-junit-reporter\\""',
-          hiddenFromHelp: true,
-        },
-        report: {
-          script: series.nps('ci.mocha.nyc report --reporter text-lcov > coverage.lcov'),
-          hiddenFromHelp: true,
-        },
-        nyc: {
-          script: 'nyc --nycrc-path node_modules/@dxcli/dev-nyc-config/.nycrc',
-          hiddenFromHelp: true,
-        },
-      },
-      eslint: {
-        script: series.nps('lint.eslint --format junit --output-file reports/eslint.xml'),
-        hiddenFromHelp: true,
-      },
-      tslint: {
-        script: series.nps('lint.tslint --format junit > reports/tslint.xml'),
-        hiddenFromHelp: true,
-      },
-      release: {
-        script: 'dxcli-dev-semantic-release',
-        hiddenFromHelp: true,
-      },
-    },
+    ...linters,
+    build: series('rm -rf lib', 'tsc'),
+    lint: concurrent(linters),
+    test,
+    release: 'semantic-release -e @dxcli/semantic-release',
   },
 }

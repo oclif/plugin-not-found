@@ -1,10 +1,13 @@
 {
   "extends": "../tsconfig",
   "compilerOptions": {
-    "rootDir": ".."
+    "sourceMap": true,
+    "rootDirs": [
+      "."
+    ]
   },
   "include": [
-    "../src/**/*",
-    "../test/**/*"
+    "./**/*",
+    "../src/**/*"
   ]
 }
