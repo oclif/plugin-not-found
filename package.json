@@ -1,7 +1,7 @@
 {
   "name": "@dxcli/not-found",
   "description": "\"did you mean\" for dxcli",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "author": "Jeff Dickey @jdxcode",
   "bugs": "https://github.com/jdxcode/not-found/issues",
   "dependencies": {

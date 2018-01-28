@@ -1,3 +1,11 @@
+<a name="0.1.2"></a>
+## [0.1.2](https://github.com/dxcli/not-found/compare/b098ed2c51567fa00fe952ca8b652ca1ba47b54c...v0.1.2) (2018-01-28)
+
+
+### Bug Fixes
+
+* ran generator ([46c8668](https://github.com/dxcli/not-found/commit/46c8668))
+
 <a name="0.1.1"></a>
 ## [0.1.1](https://github.com/dxcli/not-found/compare/b406cc0ecfbf0bb9cb0c7384c1a17adc4924236a...v0.1.1) (2018-01-25)
 
