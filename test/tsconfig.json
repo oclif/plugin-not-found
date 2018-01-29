@@ -1,10 +1,7 @@
 {
   "extends": "../tsconfig",
   "compilerOptions": {
-    "sourceMap": true,
-    "rootDirs": [
-      "."
-    ]
+    "sourceMap": true
   },
   "include": [
     "./**/*",
