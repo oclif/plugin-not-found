@@ -1,3 +1,11 @@
+<a name="0.1.4"></a>
+## [0.1.4](https://github.com/anycli/not-found/compare/c17b8028f0cc16188ebff803b5418006f7b2460b...v0.1.4) (2018-01-31)
+
+
+### Bug Fixes
+
+* testing release ([58be5fd](https://github.com/anycli/not-found/commit/58be5fd))
+
 <a name="0.1.3"></a>
 ## [0.1.3](https://github.com/dxcli/not-found/compare/46c8668c04ed0cfd43bf5e1fe6029021ac62f0ca...v0.1.3) (2018-01-29)
 
