@@ -1,3 +1,11 @@
+<a name="0.1.5"></a>
+## [0.1.5](https://github.com/anycli/not-found/compare/58be5fd865b4017f733e5845b7c194c07edac617...v0.1.5) (2018-01-31)
+
+
+### Bug Fixes
+
+* skip plugin if no commands ([11b331c](https://github.com/anycli/not-found/commit/11b331c))
+
 <a name="0.1.4"></a>
 ## [0.1.4](https://github.com/anycli/not-found/compare/c17b8028f0cc16188ebff803b5418006f7b2460b...v0.1.4) (2018-01-31)
 
