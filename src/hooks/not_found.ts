@@ -1,4 +1,4 @@
-import {Hooks, IHook} from '@dxcli/config'
+import {Hooks, IHook} from '@anycli/config'
 import {color} from '@heroku-cli/color'
 import cli from 'cli-ux'
 

@@ -1,4 +1,4 @@
-import {test} from '@dxcli/test'
+import {test} from '@anycli/test'
 import color from '@heroku-cli/color'
 import * as path from 'path'
 
