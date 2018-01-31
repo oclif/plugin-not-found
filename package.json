@@ -11,7 +11,7 @@
     "string-similarity": "^1.2.0"
   },
   "devDependencies": {
-    "@anycli/config": "^0.1.37",
+    "@anycli/config": "^0.2.0",
     "@anycli/engine": "^0.1.23",
     "@anycli/test": "^0.9.20",
     "@anycli/tslint": "^0.1.3",
