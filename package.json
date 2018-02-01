@@ -11,7 +11,7 @@
   },
   "bugs": "https://github.com/jdxcode/not-found/issues",
   "dependencies": {
-    "@anycli/command": "^0.2.22",
+    "@anycli/command": "^0.3.0",
     "@heroku-cli/color": "^1.1.1",
     "cli-ux": "^3.3.10",
     "string-similarity": "^1.2.0"
