@@ -11,17 +11,17 @@
   },
   "bugs": "https://github.com/jdxcode/not-found/issues",
   "dependencies": {
-    "@anycli/command": "^0.2.19",
-    "@anycli/config": "^0.2.3",
+    "@anycli/command": "^0.2.22",
     "@heroku-cli/color": "^1.1.1",
     "cli-ux": "^3.3.10",
     "string-similarity": "^1.2.0"
   },
   "devDependencies": {
-    "@anycli/engine": "^0.1.35",
-    "@anycli/test": "^0.10.0",
-    "@anycli/tslint": "^0.2.0",
-    "@anycli/version": "^0.1.18",
+    "@anycli/config": "^0.2.6",
+    "@anycli/engine": "^0.1.38",
+    "@anycli/test": "^0.10.1",
+    "@anycli/tslint": "^0.2.1",
+    "@anycli/version": "^0.1.19",
     "@commitlint/cli": "^6.0.5",
     "@commitlint/config-conventional": "^6.0.4",
     "@types/chai": "^4.1.2",
