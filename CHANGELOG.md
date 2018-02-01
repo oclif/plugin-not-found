@@ -1,3 +1,11 @@
+<a name="0.1.9"></a>
+## [0.1.9](https://github.com/anycli/not-found/compare/32c9ac807a8ac7ee906a164ba5f1b4f79c98a6c5...v0.1.9) (2018-02-01)
+
+
+### Bug Fixes
+
+* updated deps ([0534c32](https://github.com/anycli/not-found/commit/0534c32))
+
 <a name="0.1.8"></a>
 ## [0.1.8](https://github.com/anycli/not-found/compare/5c0a7b4c93f768d46bc88bdc348352f766ec21a0...v0.1.8) (2018-02-01)
 
