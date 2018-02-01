@@ -2,11 +2,13 @@
 # yarn lockfile v1
 
 
-"@anycli/command@^0.2.17":
-  version "0.2.17"
-  resolved "https://registry.yarnpkg.com/@anycli/command/-/command-0.2.17.tgz#13e605bea70168982c62ba2542260c65237c164a"
+"@anycli/command@^0.2.18", "@anycli/command@^0.2.19":
+  version "0.2.19"
+  resolved "https://registry.yarnpkg.com/@anycli/command/-/command-0.2.19.tgz#2f634869ae271ea17c22819021946697282e3aaa"
   dependencies:
-    "@anycli/parser" "^0.1.4"
+    "@anycli/config" "^0.2.3"
+    "@anycli/parser" "^1.0.0"
+    cli-ux "^3.3.10"
     debug "^3.1.0"
     lodash "^4.17.4"
     tslib "^1.9.0"
@@ -22,10 +24,12 @@
     lodash "^4.17.4"
     read-pkg "^3.0.0"
 
-"@anycli/engine@^0.1.33":
-  version "0.1.33"
-  resolved "https://registry.yarnpkg.com/@anycli/engine/-/engine-0.1.33.tgz#c8c355e272e3ba5217fcff1341baa0e7f10003a2"
+"@anycli/engine@^0.1.35":
+  version "0.1.35"
+  resolved "https://registry.yarnpkg.com/@anycli/engine/-/engine-0.1.35.tgz#40185e6e9ef56e2864a2f381d5786d76ff1f5de0"
   dependencies:
+    "@anycli/command" "^0.2.18"
+    "@anycli/config" "^0.2.3"
     "@anycli/manifest-file" "^0.2.0"
     cli-ux "^3.3.10"
     debug "^3.1.0"
@@ -43,9 +47,9 @@
     lodash "^4.17.4"
     rwlockfile "^2.0.21"
 
-"@anycli/parser@^0.1.4":
-  version "0.1.4"
-  resolved "https://registry.yarnpkg.com/@anycli/parser/-/parser-0.1.4.tgz#f807106d99bf09fdb712214ad19c4af48c1b3ce8"
+"@anycli/parser@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@anycli/parser/-/parser-1.0.0.tgz#0ae14d75c3f66904c962ad75361d8d628509348a"
   dependencies:
     "@anycli/screen" "^0.0.3"
     chalk "^2.3.0"
@@ -69,11 +73,11 @@
     tslint "^5.9.1"
     tslint-xo "^0.6.0"
 
-"@anycli/version@^0.1.17":
-  version "0.1.17"
-  resolved "https://registry.yarnpkg.com/@anycli/version/-/version-0.1.17.tgz#1c9526d44bba6da00253c0257e299803358bc109"
+"@anycli/version@^0.1.18":
+  version "0.1.18"
+  resolved "https://registry.yarnpkg.com/@anycli/version/-/version-0.1.18.tgz#a377ec46e1b625fd8d2b2aa27d3a7577ce595107"
   dependencies:
-    "@anycli/command" "^0.2.17"
+    "@anycli/command" "^0.2.18"
     "@anycli/config" "^0.2.3"
     cli-ux "^3.3.10"
 
