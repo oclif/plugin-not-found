@@ -21,7 +21,7 @@
     "@anycli/engine": "^0.1.45",
     "@anycli/test": "^0.10.2",
     "@anycli/tslint": "^0.2.2",
-    "@anycli/version": "^0.1.19",
+    "@anycli/version-plugin": "^0.1.18",
     "@types/chai": "^4.1.2",
     "@types/lodash": "^4.14.100",
     "@types/mocha": "^2.2.48",
