@@ -1,3 +1,11 @@
+<a name="0.1.13"></a>
+## [0.1.13](https://github.com/anycli/plugin-not-found/compare/e75c5c4ed78d94911d64216e2d98544dc88df7e7...v0.1.13) (2018-02-02)
+
+
+### Bug Fixes
+
+* fix manifest writing ([9a402d8](https://github.com/anycli/plugin-not-found/commit/9a402d8))
+
 <a name="0.1.12"></a>
 ## [0.1.12](https://github.com/anycli/plugin-not-found/compare/f04407596efb636c2a081ef54a4d3403deece519...v0.1.12) (2018-02-02)
 
