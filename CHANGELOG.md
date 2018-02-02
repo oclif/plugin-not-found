@@ -1,3 +1,11 @@
+<a name="0.1.14"></a>
+## [0.1.14](https://github.com/anycli/plugin-not-found/compare/9a402d89715958e43a11944367c40f80328f170b...v0.1.14) (2018-02-02)
+
+
+### Bug Fixes
+
+* bump dev-cli ([621ba61](https://github.com/anycli/plugin-not-found/commit/621ba61))
+
 <a name="0.1.13"></a>
 ## [0.1.13](https://github.com/anycli/plugin-not-found/compare/e75c5c4ed78d94911d64216e2d98544dc88df7e7...v0.1.13) (2018-02-02)
 
