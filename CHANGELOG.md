@@ -1,3 +1,11 @@
+<a name="0.1.12"></a>
+## [0.1.12](https://github.com/anycli/plugin-not-found/compare/f04407596efb636c2a081ef54a4d3403deece519...v0.1.12) (2018-02-02)
+
+
+### Bug Fixes
+
+* bump cache ([e75c5c4](https://github.com/anycli/plugin-not-found/commit/e75c5c4))
+
 <a name="0.1.11"></a>
 ## [0.1.11](https://github.com/anycli/plugin-not-found/compare/5584f1e2da1595e39109c0c90107ef9aa8a94440...v0.1.11) (2018-02-02)
 
