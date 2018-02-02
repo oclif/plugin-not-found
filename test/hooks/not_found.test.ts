@@ -1,5 +1,5 @@
 import {test} from '@anycli/test'
-import chalk from 'chalk'
+import chalk from '@heroku-cli/color'
 
 chalk.enabled = false
 
