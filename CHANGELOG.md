@@ -1,3 +1,11 @@
+<a name="0.1.11"></a>
+## [0.1.11](https://github.com/anycli/plugin-not-found/compare/5584f1e2da1595e39109c0c90107ef9aa8a94440...v0.1.11) (2018-02-02)
+
+
+### Bug Fixes
+
+* add plugin manifest ([f044075](https://github.com/anycli/plugin-not-found/commit/f044075))
+
 <a name="0.1.10"></a>
 ## [0.1.10](https://github.com/anycli/plugin-not-found/compare/6c92b0b946510fd16cecf7d971251605cdcf41cf...v0.1.10) (2018-02-02)
 
