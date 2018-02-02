@@ -1,3 +1,12 @@
+<a name="0.1.10"></a>
+## [0.1.10](https://github.com/anycli/plugin-not-found/compare/6c92b0b946510fd16cecf7d971251605cdcf41cf...v0.1.10) (2018-02-02)
+
+
+### Bug Fixes
+
+* fixed test suite ([188debd](https://github.com/anycli/plugin-not-found/commit/188debd))
+* use [@heroku-cli](https://github.com/heroku-cli)/color ([5584f1e](https://github.com/anycli/plugin-not-found/commit/5584f1e))
+
 <a name="0.1.9"></a>
 ## [0.1.9](https://github.com/anycli/not-found/compare/32c9ac807a8ac7ee906a164ba5f1b4f79c98a6c5...v0.1.9) (2018-02-01)
 
