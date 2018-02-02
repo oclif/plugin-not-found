@@ -5,6 +5,9 @@
   "author": "Jeff Dickey @jdxcode",
   "anycli": {
     "commands": "./lib/commands",
+    "devPlugins": [
+      "@anycli/plugin-version"
+    ],
     "hooks": {
       "command_not_found": "./lib/hooks/not_found"
     }
@@ -18,7 +21,8 @@
   },
   "devDependencies": {
     "@anycli/config": "^0.2.11",
-    "@anycli/engine": "^0.1.45",
+    "@anycli/engine": "^0.1.46",
+    "@anycli/plugin-version": "^0.1.19",
     "@anycli/test": "^0.10.2",
     "@anycli/tslint": "^0.2.2",
     "@anycli/version-plugin": "^0.1.18",
