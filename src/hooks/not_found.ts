@@ -3,9 +3,8 @@ import {color} from '@heroku-cli/color'
 import cli from 'cli-ux'
 
 const hook: Hook<'command_not_found'> = async opts => {
-  const commands = opts.config.allCommands()
-  const commandIDs = commands.map(c => c.id)
-  if (!commands.length) return
+  const commandIDs = opts.config.commandIDs
+  if (!commandIDs.length) return
   function closest(cmd: string) {
     const DCE = require('string-similarity')
     return DCE.findBestMatch(cmd, commandIDs).bestMatch.target
