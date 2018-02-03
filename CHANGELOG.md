@@ -1,3 +1,12 @@
+<a name="0.1.15"></a>
+## [0.1.15](https://github.com/anycli/plugin-not-found/compare/621ba617c5dea977b0962641010ec5e435bbafc6...v0.1.15) (2018-02-03)
+
+
+### Bug Fixes
+
+* updated config ([e4db80b](https://github.com/anycli/plugin-not-found/commit/e4db80b))
+* updated deps ([58f9612](https://github.com/anycli/plugin-not-found/commit/58f9612))
+
 <a name="0.1.14"></a>
 ## [0.1.14](https://github.com/anycli/plugin-not-found/compare/9a402d89715958e43a11944367c40f80328f170b...v0.1.14) (2018-02-02)
 
