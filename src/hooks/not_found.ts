@@ -1,17 +1,19 @@
-import {Hooks, IHook} from '@anycli/config'
+import {Hook} from '@anycli/config'
 import {color} from '@heroku-cli/color'
 import cli from 'cli-ux'
 
-const hook: IHook<Hooks['command_not_found']> = async opts => {
-  if (!opts.config.engine.commandIDs.length) return
+const hook: Hook<'command_not_found'> = async opts => {
+  const commands = opts.config.allCommands()
+  const commandIDs = commands.map(c => c.id)
+  if (!commands.length) return
   function closest(cmd: string) {
     const DCE = require('string-similarity')
-    return DCE.findBestMatch(cmd, opts.config.engine.commandIDs).bestMatch.target
+    return DCE.findBestMatch(cmd, commandIDs).bestMatch.target
   }
 
   let binHelp = `${opts.config.bin} help`
   let idSplit = opts.id.split(':')
-  if (await opts.config.engine.findTopic(idSplit[0])) {
+  if (await opts.config.findTopic(idSplit[0])) {
     // if valid topic, update binHelp with topic
     binHelp = `${binHelp} ${idSplit[0]}`
     // if topic:COMMAND present, try closest for id
