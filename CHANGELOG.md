@@ -1,3 +1,11 @@
+<a name="0.1.16"></a>
+## [0.1.16](https://github.com/anycli/plugin-not-found/compare/58f961275e5e587050b5a3bda610b2883d3a4a7f...v0.1.16) (2018-02-05)
+
+
+### Bug Fixes
+
+* remove cli-ux ([1602a58](https://github.com/anycli/plugin-not-found/commit/1602a58))
+
 <a name="0.1.15"></a>
 ## [0.1.15](https://github.com/anycli/plugin-not-found/compare/621ba617c5dea977b0962641010ec5e435bbafc6...v0.1.15) (2018-02-03)
 
