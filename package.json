@@ -4,40 +4,31 @@
   "version": "0.1.15",
   "author": "Jeff Dickey @jdxcode",
   "anycli": {
-    "commands": "./lib/commands",
-    "devPlugins": [
-      "@anycli/plugin-version"
-    ],
     "hooks": {
-      "command_not_found": "./lib/hooks/not_found"
-    }
+      "command_not_found": "./lib"
+    },
+    "devPlugins": [
+      "@anycli/plugin-help"
+    ]
   },
   "bugs": "https://github.com/anycli/plugin-not-found/issues",
   "dependencies": {
-    "@anycli/command": "^1.2.2",
+    "@anycli/command": "^1.2.5",
     "@heroku-cli/color": "^1.1.3",
-    "cli-ux": "^3.3.13",
     "string-similarity": "^1.2.0"
   },
   "devDependencies": {
-    "@anycli/config": "^1.0.17",
-    "@anycli/dev-cli": "^0.1.4",
-    "@anycli/engine": "^0.3.6",
-    "@anycli/test": "^0.10.8",
+    "@anycli/config": "^1.2.1",
+    "@anycli/dev-cli": "^0.1.6",
+    "@anycli/plugin-help": "^0.6.3",
+    "@anycli/test": "^0.10.10",
     "@anycli/tslint": "^0.2.5",
-    "@anycli/version-plugin": "^0.1.18",
     "@types/chai": "^4.1.2",
-    "@types/lodash": "^4.14.100",
     "@types/mocha": "^2.2.48",
-    "@types/nock": "^9.1.2",
     "@types/node": "^9.4.0",
-    "@types/node-notifier": "^0.0.28",
-    "@types/read-pkg": "^3.0.0",
     "@types/supports-color": "^3.1.0",
     "chai": "^4.1.2",
     "concurrently": "^3.5.1",
-    "eslint": "^4.17.0",
-    "eslint-config-anycli": "^1.3.2",
     "mocha": "^5.0.0",
     "ts-node": "^4.1.0",
     "typescript": "^2.7.1"
@@ -58,7 +49,7 @@
   "repository": "anycli/plugin-not-found",
   "scripts": {
     "build": "rm -rf lib && tsc",
-    "lint": "concurrently -p command \"eslint .\" \"tsc -p test --noEmit\" \"tslint -p test\"",
+    "lint": "concurrently -p command \"tsc -p test --noEmit\" \"tslint -p test\"",
     "postpublish": "rm .anycli.manifest.json",
     "posttest": "yarn run lint",
     "prepublishOnly": "yarn run build && anycli-dev manifest",
