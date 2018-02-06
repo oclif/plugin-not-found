@@ -8,13 +8,19 @@
   dependencies:
     "@anycli/parser" "^3.2.4"
 
+"@anycli/command@^1.2.9":
+  version "1.2.9"
+  resolved "https://registry.yarnpkg.com/@anycli/command/-/command-1.2.9.tgz#6db08fbb3537c8cc2f616415fcd6360043750f38"
+  dependencies:
+    "@anycli/parser" "^3.2.5"
+
 "@anycli/config@^1.1.8":
   version "1.1.8"
   resolved "https://registry.yarnpkg.com/@anycli/config/-/config-1.1.8.tgz#986eedd29ec8ccecb5454d080c16e65c37ae28e5"
 
-"@anycli/config@^1.2.1":
-  version "1.2.1"
-  resolved "https://registry.yarnpkg.com/@anycli/config/-/config-1.2.1.tgz#a946156c0c9fe01c57c0df661ce0ab1f13fec4c5"
+"@anycli/config@^1.3.10":
+  version "1.3.10"
+  resolved "https://registry.yarnpkg.com/@anycli/config/-/config-1.3.10.tgz#8d821fe8a60ec400dd49d9b1a12f7062e590dd4f"
 
 "@anycli/dev-cli@^0.1.6":
   version "0.1.6"
@@ -24,9 +30,23 @@
     "@anycli/config" "^1.1.8"
     "@anycli/plugin-help" "^0.6.2"
 
+"@anycli/errors@^0.2.0":
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/@anycli/errors/-/errors-0.2.0.tgz#ee421115dcdb499d76de9d4853718c06e1c5d5f0"
+  dependencies:
+    clean-stack "^1.3.0"
+    fs-extra "^5.0.0"
+    indent-string "^3.2.0"
+    strip-ansi "^4.0.0"
+    wrap-ansi "^3.0.1"
+
 "@anycli/parser@^3.2.4":
   version "3.2.4"
   resolved "https://registry.yarnpkg.com/@anycli/parser/-/parser-3.2.4.tgz#30297ac2fa225b37efaab5c0062bf189988b3ce8"
+
+"@anycli/parser@^3.2.5":
+  version "3.2.5"
+  resolved "https://registry.yarnpkg.com/@anycli/parser/-/parser-3.2.5.tgz#d0e7ddb14945cb84377fa69095009ca6005e6b6d"
 
 "@anycli/plugin-help@^0.6.2", "@anycli/plugin-help@^0.6.3":
   version "0.6.3"
@@ -40,15 +60,15 @@
     widest-line "^2.0.0"
     wrap-ansi "^3.0.1"
 
-"@anycli/test@^0.10.10":
-  version "0.10.10"
-  resolved "https://registry.yarnpkg.com/@anycli/test/-/test-0.10.10.tgz#1b43d394c13f42e05dffdebecdf352dc51f920d1"
+"@anycli/test@^0.10.11":
+  version "0.10.11"
+  resolved "https://registry.yarnpkg.com/@anycli/test/-/test-0.10.11.tgz#0d1004c8c0b34a8853ee7a3a26c90ed12ce6e42f"
   dependencies:
     fancy-test "^1.0.1"
 
-"@anycli/tslint@^0.2.5":
-  version "0.2.5"
-  resolved "https://registry.yarnpkg.com/@anycli/tslint/-/tslint-0.2.5.tgz#63feeb981b11f36326e0cb745c62f51d55c2ed67"
+"@anycli/tslint@^0.2.6":
+  version "0.2.6"
+  resolved "https://registry.yarnpkg.com/@anycli/tslint/-/tslint-0.2.6.tgz#4251f4cb3744dc577309b4351d2c2e8b65072de2"
   dependencies:
     tslint "^5.9.1"
     tslint-xo "^0.6.0"
@@ -196,6 +216,10 @@ check-error@^1.0.1:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/check-error/-/check-error-1.0.2.tgz#574d312edd88bb5dd8912e9286dd6c0aed4aac82"
 
+clean-stack@^1.3.0:
+  version "1.3.0"
+  resolved "https://registry.yarnpkg.com/clean-stack/-/clean-stack-1.3.0.tgz#9e821501ae979986c46b1d66d2d432db2fd4ae31"
+
 color-convert@^1.9.0:
   version "1.9.1"
   resolved "https://registry.yarnpkg.com/color-convert/-/color-convert-1.9.1.tgz#c1261107aeb2f294ebffec9ed9ecad529a6097ed"
@@ -289,6 +313,14 @@ fancy-test@^1.0.1:
     lodash "^4.17.4"
     stdout-stderr "^0.1.6"
 
+fs-extra@^5.0.0:
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/fs-extra/-/fs-extra-5.0.0.tgz#414d0110cdd06705734d055652c5411260c31abd"
+  dependencies:
+    graceful-fs "^4.1.2"
+    jsonfile "^4.0.0"
+    universalify "^0.1.0"
+
 fs.realpath@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/fs.realpath/-/fs.realpath-1.0.0.tgz#1504ad2523158caa40db4a2787cb01411994ea4f"
@@ -307,6 +339,10 @@ glob@7.1.2, glob@^7.1.1:
     minimatch "^3.0.4"
     once "^1.3.0"
     path-is-absolute "^1.0.0"
+
+graceful-fs@^4.1.2, graceful-fs@^4.1.6:
+  version "4.1.11"
+  resolved "https://registry.yarnpkg.com/graceful-fs/-/graceful-fs-4.1.11.tgz#0e8bdfe4d1ddb8854d64e04ea7c00e2a026e5658"
 
 growl@1.10.3:
   version "1.10.3"
@@ -375,6 +411,12 @@ js-yaml@^3.7.0:
   dependencies:
     argparse "^1.0.7"
     esprima "^4.0.0"
+
+jsonfile@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/jsonfile/-/jsonfile-4.0.0.tgz#8771aae0799b64076b76640fca058f9c10e33ecb"
+  optionalDependencies:
+    graceful-fs "^4.1.6"
 
 lodash._reinterpolate@~3.0.0:
   version "3.0.0"
@@ -667,6 +709,10 @@ type-detect@^4.0.0:
 typescript@^2.7.1:
   version "2.7.1"
   resolved "https://registry.yarnpkg.com/typescript/-/typescript-2.7.1.tgz#bb3682c2c791ac90e7c6210b26478a8da085c359"
+
+universalify@^0.1.0:
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/universalify/-/universalify-0.1.1.tgz#fa71badd4437af4c148841e3b3b165f9e9e590b7"
 
 v8flags@^3.0.0:
   version "3.0.1"
