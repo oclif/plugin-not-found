@@ -1,3 +1,11 @@
+<a name="0.1.18"></a>
+## [0.1.18](https://github.com/anycli/plugin-not-found/compare/d1ba5fb8027872305a67cdac29df6161ec8453b9...v0.1.18) (2018-02-07)
+
+
+### Bug Fixes
+
+* updated config ([a2871d6](https://github.com/anycli/plugin-not-found/commit/a2871d6))
+
 <a name="0.1.17"></a>
 ## [0.1.17](https://github.com/anycli/plugin-not-found/compare/1602a582d3609d99755e160934ac2ce77df15cb9...v0.1.17) (2018-02-06)
 
