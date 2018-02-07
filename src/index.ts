@@ -21,7 +21,7 @@ const hook: Hook<'command_not_found'> = async function (opts) {
   let perhaps = closest ? `Perhaps you meant ${color.yellow(closest(opts.id))}\n` : ''
   this.error(
     `${color.yellow(opts.id)} is not a ${opts.config.bin} command.
-    ${perhaps}Run ${color.cmd(binHelp)} for a list of available commands.`,
+${perhaps}Run ${color.cmd(binHelp)} for a list of available commands.`,
     {exit: 127},
   )
 }
