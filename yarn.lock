@@ -2,37 +2,34 @@
 # yarn lockfile v1
 
 
-"@anycli/command@^1.2.5":
-  version "1.2.5"
-  resolved "https://registry.yarnpkg.com/@anycli/command/-/command-1.2.5.tgz#c7a6ee35344f1d854d5323e1f5a3f6b6da7e1b6d"
+"@anycli/command@^1.2.13", "@anycli/command@^1.2.14":
+  version "1.2.14"
+  resolved "https://registry.yarnpkg.com/@anycli/command/-/command-1.2.14.tgz#de8e1be33f64143c49242c0deb7bf9a06a826813"
   dependencies:
-    "@anycli/parser" "^3.2.4"
+    "@anycli/parser" "^3.2.6"
 
-"@anycli/command@^1.2.9":
-  version "1.2.9"
-  resolved "https://registry.yarnpkg.com/@anycli/command/-/command-1.2.9.tgz#6db08fbb3537c8cc2f616415fcd6360043750f38"
+"@anycli/config@^1.3.23":
+  version "1.3.25"
+  resolved "https://registry.yarnpkg.com/@anycli/config/-/config-1.3.25.tgz#659dd6f3eec5b1f69b4518fb8a3c635529482e2a"
+
+"@anycli/config@^1.3.27":
+  version "1.3.27"
+  resolved "https://registry.yarnpkg.com/@anycli/config/-/config-1.3.27.tgz#b9bf6f0d87b7f94081cbbeb1f2b524e46a4b5375"
+
+"@anycli/dev-cli@^0.3.2":
+  version "0.3.2"
+  resolved "https://registry.yarnpkg.com/@anycli/dev-cli/-/dev-cli-0.3.2.tgz#9ed9fe4994fa9ccf8ac1c77a47f6aa9cde2cb1d1"
   dependencies:
-    "@anycli/parser" "^3.2.5"
+    "@anycli/command" "^1.2.13"
+    "@anycli/config" "^1.3.23"
+    "@anycli/errors" "^0.2.1"
+    "@anycli/plugin-help" "^0.6.8"
+    lodash.template "^4.4.0"
+    normalize-package-data "^2.4.0"
 
-"@anycli/config@^1.1.8":
-  version "1.1.8"
-  resolved "https://registry.yarnpkg.com/@anycli/config/-/config-1.1.8.tgz#986eedd29ec8ccecb5454d080c16e65c37ae28e5"
-
-"@anycli/config@^1.3.10":
-  version "1.3.10"
-  resolved "https://registry.yarnpkg.com/@anycli/config/-/config-1.3.10.tgz#8d821fe8a60ec400dd49d9b1a12f7062e590dd4f"
-
-"@anycli/dev-cli@^0.1.6":
-  version "0.1.6"
-  resolved "https://registry.yarnpkg.com/@anycli/dev-cli/-/dev-cli-0.1.6.tgz#bb27980fe2cfb26f889768006c26735350fdfe28"
-  dependencies:
-    "@anycli/command" "^1.2.5"
-    "@anycli/config" "^1.1.8"
-    "@anycli/plugin-help" "^0.6.2"
-
-"@anycli/errors@^0.2.0":
-  version "0.2.0"
-  resolved "https://registry.yarnpkg.com/@anycli/errors/-/errors-0.2.0.tgz#ee421115dcdb499d76de9d4853718c06e1c5d5f0"
+"@anycli/errors@^0.2.1":
+  version "0.2.1"
+  resolved "https://registry.yarnpkg.com/@anycli/errors/-/errors-0.2.1.tgz#719a95cd9c23838c65929da5d625a7537dd7d035"
   dependencies:
     clean-stack "^1.3.0"
     fs-extra "^5.0.0"
@@ -40,19 +37,15 @@
     strip-ansi "^4.0.0"
     wrap-ansi "^3.0.1"
 
-"@anycli/parser@^3.2.4":
-  version "3.2.4"
-  resolved "https://registry.yarnpkg.com/@anycli/parser/-/parser-3.2.4.tgz#30297ac2fa225b37efaab5c0062bf189988b3ce8"
+"@anycli/parser@^3.2.6":
+  version "3.2.6"
+  resolved "https://registry.yarnpkg.com/@anycli/parser/-/parser-3.2.6.tgz#bbd119a80709099179a9f11af0dc44b68c54575b"
 
-"@anycli/parser@^3.2.5":
-  version "3.2.5"
-  resolved "https://registry.yarnpkg.com/@anycli/parser/-/parser-3.2.5.tgz#d0e7ddb14945cb84377fa69095009ca6005e6b6d"
-
-"@anycli/plugin-help@^0.6.2", "@anycli/plugin-help@^0.6.3":
-  version "0.6.3"
-  resolved "https://registry.yarnpkg.com/@anycli/plugin-help/-/plugin-help-0.6.3.tgz#e365947b69ce232cbd49fcda934dd53852d2503f"
+"@anycli/plugin-help@^0.6.8":
+  version "0.6.8"
+  resolved "https://registry.yarnpkg.com/@anycli/plugin-help/-/plugin-help-0.6.8.tgz#1102006c7b8a49d3f6e56d9dad1f7fc5f69a223c"
   dependencies:
-    "@anycli/command" "^1.2.5"
+    "@anycli/command" "^1.2.13"
     chalk "^2.3.0"
     indent-string "^3.2.0"
     lodash.template "^4.4.0"
@@ -60,15 +53,15 @@
     widest-line "^2.0.0"
     wrap-ansi "^3.0.1"
 
-"@anycli/test@^0.10.11":
-  version "0.10.11"
-  resolved "https://registry.yarnpkg.com/@anycli/test/-/test-0.10.11.tgz#0d1004c8c0b34a8853ee7a3a26c90ed12ce6e42f"
+"@anycli/test@^0.10.12":
+  version "0.10.12"
+  resolved "https://registry.yarnpkg.com/@anycli/test/-/test-0.10.12.tgz#1a224be9d7c3f6d3504e7655c5aa41d2d03c6b95"
   dependencies:
     fancy-test "^1.0.1"
 
-"@anycli/tslint@^0.2.6":
-  version "0.2.6"
-  resolved "https://registry.yarnpkg.com/@anycli/tslint/-/tslint-0.2.6.tgz#4251f4cb3744dc577309b4351d2c2e8b65072de2"
+"@anycli/tslint@^0.2.7":
+  version "0.2.7"
+  resolved "https://registry.yarnpkg.com/@anycli/tslint/-/tslint-0.2.7.tgz#68b81121f33e9aa8240bd12cfade1f6023e6820d"
   dependencies:
     tslint "^5.9.1"
     tslint-xo "^0.6.0"
@@ -90,9 +83,9 @@
   version "2.2.48"
   resolved "https://registry.yarnpkg.com/@types/mocha/-/mocha-2.2.48.tgz#3523b126a0b049482e1c3c11877460f76622ffab"
 
-"@types/node@^9.4.0":
-  version "9.4.0"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-9.4.0.tgz#b85a0bcf1e1cc84eb4901b7e96966aedc6f078d1"
+"@types/node@^9.4.1":
+  version "9.4.1"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-9.4.1.tgz#0f636f7837e15d2d73a7f6f3ea0e322eb2a5ab65"
 
 "@types/strip-bom@^3.0.0":
   version "3.0.0"
@@ -169,7 +162,7 @@ browser-stdout@1.3.0:
   version "1.3.0"
   resolved "https://registry.yarnpkg.com/browser-stdout/-/browser-stdout-1.3.0.tgz#f351d32969d32fa5d7a5567154263d928ae3bd1f"
 
-builtin-modules@^1.1.1:
+builtin-modules@^1.0.0, builtin-modules@^1.1.1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/builtin-modules/-/builtin-modules-1.1.1.tgz#270f076c5a72c02f5b65a47df94c5fe3a278892f"
 
@@ -378,6 +371,10 @@ homedir-polyfill@^1.0.1:
   dependencies:
     parse-passwd "^1.0.0"
 
+hosted-git-info@^2.1.4:
+  version "2.5.0"
+  resolved "https://registry.yarnpkg.com/hosted-git-info/-/hosted-git-info-2.5.0.tgz#6d60e34b3abbc8313062c3b798ef8d901a07af3c"
+
 indent-string@^3.2.0:
   version "3.2.0"
   resolved "https://registry.yarnpkg.com/indent-string/-/indent-string-3.2.0.tgz#4a5fd6d27cc332f37e5419a504dbb837105c9289"
@@ -392,6 +389,12 @@ inflight@^1.0.4:
 inherits@2:
   version "2.0.3"
   resolved "https://registry.yarnpkg.com/inherits/-/inherits-2.0.3.tgz#633c2c83e3da42a502f52466022480f4208261de"
+
+is-builtin-module@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/is-builtin-module/-/is-builtin-module-1.0.0.tgz#540572d34f7ac3119f8f76c30cbc1b1e037affbe"
+  dependencies:
+    builtin-modules "^1.0.0"
 
 is-fullwidth-code-point@^2.0.0:
   version "2.0.0"
@@ -482,6 +485,15 @@ ms@2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/ms/-/ms-2.0.0.tgz#5608aeadfc00be6c2901df5f9861788de0d597c8"
 
+normalize-package-data@^2.4.0:
+  version "2.4.0"
+  resolved "https://registry.yarnpkg.com/normalize-package-data/-/normalize-package-data-2.4.0.tgz#12f95a307d58352075a04907b84ac8be98ac012f"
+  dependencies:
+    hosted-git-info "^2.1.4"
+    is-builtin-module "^1.0.0"
+    semver "2 || 3 || 4 || 5"
+    validate-npm-package-license "^3.0.1"
+
 once@^1.3.0:
   version "1.4.0"
   resolved "https://registry.yarnpkg.com/once/-/once-1.4.0.tgz#583b1aa775961d4b113ac17d9c50baef9dd76bd1"
@@ -514,7 +526,7 @@ rx@2.3.24:
   version "2.3.24"
   resolved "https://registry.yarnpkg.com/rx/-/rx-2.3.24.tgz#14f950a4217d7e35daa71bbcbe58eff68ea4b2b7"
 
-semver@^5.3.0:
+"semver@2 || 3 || 4 || 5", semver@^5.3.0:
   version "5.5.0"
   resolved "https://registry.yarnpkg.com/semver/-/semver-5.5.0.tgz#dc4bbc7a6ca9d916dee5d43516f0092b58f7b8ab"
 
@@ -531,6 +543,20 @@ source-map@^0.6.0:
 spawn-command@^0.0.2-1:
   version "0.0.2-1"
   resolved "https://registry.yarnpkg.com/spawn-command/-/spawn-command-0.0.2-1.tgz#62f5e9466981c1b796dc5929937e11c9c6921bd0"
+
+spdx-correct@~1.0.0:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/spdx-correct/-/spdx-correct-1.0.2.tgz#4b3073d933ff51f3912f03ac5519498a4150db40"
+  dependencies:
+    spdx-license-ids "^1.0.2"
+
+spdx-expression-parse@~1.0.0:
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/spdx-expression-parse/-/spdx-expression-parse-1.0.4.tgz#9bdf2f20e1f40ed447fbe273266191fced51626c"
+
+spdx-license-ids@^1.0.2:
+  version "1.2.2"
+  resolved "https://registry.yarnpkg.com/spdx-license-ids/-/spdx-license-ids-1.2.2.tgz#c9df7a3424594ade6bd11900d596696dc06bac57"
 
 sprintf-js@~1.0.2:
   version "1.0.3"
@@ -719,6 +745,13 @@ v8flags@^3.0.0:
   resolved "https://registry.yarnpkg.com/v8flags/-/v8flags-3.0.1.tgz#dce8fc379c17d9f2c9e9ed78d89ce00052b1b76b"
   dependencies:
     homedir-polyfill "^1.0.1"
+
+validate-npm-package-license@^3.0.1:
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/validate-npm-package-license/-/validate-npm-package-license-3.0.1.tgz#2804babe712ad3379459acfbe24746ab2c303fbc"
+  dependencies:
+    spdx-correct "~1.0.0"
+    spdx-expression-parse "~1.0.0"
 
 widest-line@^2.0.0:
   version "2.0.0"
