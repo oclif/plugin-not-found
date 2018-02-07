@@ -1,3 +1,11 @@
+<a name="0.1.20"></a>
+## [0.1.20](https://github.com/anycli/plugin-not-found/compare/e87d80e567b7fa9b4353a6521fc051dcbdd24ea8...v0.1.20) (2018-02-07)
+
+
+### Bug Fixes
+
+* fixed indentation ([bb19703](https://github.com/anycli/plugin-not-found/commit/bb19703))
+
 <a name="0.1.19"></a>
 ## [0.1.19](https://github.com/anycli/plugin-not-found/compare/a2871d62aff4144984b4cd86964cafe65ce2dd54...v0.1.19) (2018-02-07)
 
