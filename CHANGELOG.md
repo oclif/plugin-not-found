@@ -1,3 +1,11 @@
+<a name="0.1.19"></a>
+## [0.1.19](https://github.com/anycli/plugin-not-found/compare/a2871d62aff4144984b4cd86964cafe65ce2dd54...v0.1.19) (2018-02-07)
+
+
+### Bug Fixes
+
+* updated deps ([e87d80e](https://github.com/anycli/plugin-not-found/commit/e87d80e))
+
 <a name="0.1.18"></a>
 ## [0.1.18](https://github.com/anycli/plugin-not-found/compare/d1ba5fb8027872305a67cdac29df6161ec8453b9...v0.1.18) (2018-02-07)
 
