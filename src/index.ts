@@ -1,5 +1,5 @@
-import {Hook} from '@oclif/config'
 import {color} from '@heroku-cli/color'
+import {Hook} from '@oclif/config'
 
 const hook: Hook<'command_not_found'> = async function (opts) {
   const commandIDs = opts.config.commandIDs

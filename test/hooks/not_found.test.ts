@@ -1,5 +1,5 @@
-import {test} from '@oclif/test'
 import chalk from '@heroku-cli/color'
+import {test} from '@oclif/test'
 
 chalk.enabled = false
 
