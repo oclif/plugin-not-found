@@ -11,9 +11,15 @@
     strip-ansi "^4.0.0"
     supports-color "^5.1.0"
 
-"@oclif/command@^1.2.19", "@oclif/command@^1.2.20", "@oclif/command@^1.2.21":
+"@oclif/command@^1.2.20":
   version "1.2.21"
   resolved "https://registry.yarnpkg.com/@oclif/command/-/command-1.2.21.tgz#73bd84fd2207df2ad414dcf91e3eebe7f944a95a"
+  dependencies:
+    "@oclif/parser" "^3.2.8"
+
+"@oclif/command@^1.2.22", "@oclif/command@^1.2.23":
+  version "1.2.23"
+  resolved "https://registry.yarnpkg.com/@oclif/command/-/command-1.2.23.tgz#12bd96c3b4839a712f364d9aa36e463ba870d906"
   dependencies:
     "@oclif/parser" "^3.2.8"
 
@@ -21,14 +27,18 @@
   version "1.3.47"
   resolved "https://registry.yarnpkg.com/@oclif/config/-/config-1.3.47.tgz#7e7cf7ab0634edd60bd1675260ac588e6f6521fe"
 
-"@oclif/dev-cli@^0.3.13":
-  version "0.3.13"
-  resolved "https://registry.yarnpkg.com/@oclif/dev-cli/-/dev-cli-0.3.13.tgz#2ebc33e67dc80ba168172bf6655fa1ec9cbd5e03"
+"@oclif/config@^1.3.48":
+  version "1.3.48"
+  resolved "https://registry.yarnpkg.com/@oclif/config/-/config-1.3.48.tgz#ec89b51ca424854cb0f5ce1afb7747f4113ef1e4"
+
+"@oclif/dev-cli@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@oclif/dev-cli/-/dev-cli-1.0.0.tgz#c5db83373996050d931d31323b26e407c68397f5"
   dependencies:
-    "@oclif/command" "^1.2.19"
+    "@oclif/command" "^1.2.22"
     "@oclif/config" "^1.3.45"
     "@oclif/errors" "^1.0.1"
-    "@oclif/plugin-help" "^0.7.2"
+    "@oclif/plugin-help" "^0.7.4"
     lodash.template "^4.4.0"
     normalize-package-data "^2.4.0"
     require-resolve "^0.0.2"
@@ -47,7 +57,7 @@
   version "3.2.8"
   resolved "https://registry.yarnpkg.com/@oclif/parser/-/parser-3.2.8.tgz#2b2e35b5c075d200d70950923acd64e258c5ae1d"
 
-"@oclif/plugin-help@^0.7.2", "@oclif/plugin-help@^0.7.4":
+"@oclif/plugin-help@^0.7.4":
   version "0.7.4"
   resolved "https://registry.yarnpkg.com/@oclif/plugin-help/-/plugin-help-0.7.4.tgz#1b7903ad303bc9c2816e1f8a8275da051b2361f7"
   dependencies:
@@ -59,17 +69,28 @@
     widest-line "^2.0.0"
     wrap-ansi "^3.0.1"
 
-"@oclif/test@^0.10.16":
-  version "0.10.16"
-  resolved "https://registry.yarnpkg.com/@oclif/test/-/test-0.10.16.tgz#3b8ec5240e6e49e8a3c81d8beb8bf20702f81bec"
+"@oclif/plugin-help@^1.0.1":
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/@oclif/plugin-help/-/plugin-help-1.0.1.tgz#1421438edfade7fa6aed4ae9b4aa6a8ff2d226d3"
+  dependencies:
+    "@oclif/command" "^1.2.23"
+    chalk "^2.3.1"
+    indent-string "^3.2.0"
+    lodash.template "^4.4.0"
+    string-width "^2.1.1"
+    widest-line "^2.0.0"
+    wrap-ansi "^3.0.1"
+
+"@oclif/test@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@oclif/test/-/test-1.0.0.tgz#0f6458f18f89d316fcc50abf3ef020fb77dd06e2"
   dependencies:
     fancy-test "^1.0.1"
 
-"@oclif/tslint@^0.2.7":
-  version "0.2.9"
-  resolved "https://registry.yarnpkg.com/@oclif/tslint/-/tslint-0.2.9.tgz#804c64b4ed92fa4087276295cdafbcdc78485f3a"
+"@oclif/tslint@^1.0.1":
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/@oclif/tslint/-/tslint-1.0.1.tgz#ef68459638548e3a3a06fd6da60025fe33f4bcb8"
   dependencies:
-    tslint "^5.9.1"
     tslint-xo "^0.6.0"
 
 "@types/chai@^4.1.2":
