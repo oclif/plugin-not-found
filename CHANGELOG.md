@@ -1,3 +1,11 @@
+<a name="0.1.21"></a>
+## [0.1.21](https://github.com/oclif/plugin-not-found/compare/9ddeda3adef519c3e11f0bee6678c34f4108482d...v0.1.21) (2018-02-13)
+
+
+### Bug Fixes
+
+* updated command ([43f6fe5](https://github.com/oclif/plugin-not-found/commit/43f6fe5))
+
 <a name="0.1.20"></a>
 ## [0.1.20](https://github.com/anycli/plugin-not-found/compare/e87d80e567b7fa9b4353a6521fc051dcbdd24ea8...v0.1.20) (2018-02-07)
 
