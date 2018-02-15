@@ -1,3 +1,11 @@
+<a name="1.0.2"></a>
+## [1.0.2](https://github.com/oclif/plugin-not-found/compare/289dcd55848ccd30ffb3a7d46df8c2300b8c73fd...v1.0.2) (2018-02-15)
+
+
+### Bug Fixes
+
+* updated command ([ffb4c94](https://github.com/oclif/plugin-not-found/commit/ffb4c94))
+
 <a name="1.0.1"></a>
 ## [1.0.1](https://github.com/oclif/plugin-not-found/compare/v1.0.0...v1.0.1) (2018-02-13)
 
