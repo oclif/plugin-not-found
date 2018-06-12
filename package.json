@@ -16,7 +16,7 @@
   "dependencies": {
     "@heroku-cli/color": "^1.1.5",
     "@oclif/command": "^1.4.33",
-    "cli-ux": "^4.6.2",
+    "cli-ux": "^4.6.3",
     "string-similarity": "^1.2.0"
   },
   "devDependencies": {
