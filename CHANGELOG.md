@@ -1,3 +1,11 @@
+<a name="1.1.0"></a>
+# [1.1.0](https://github.com/oclif/plugin-not-found/compare/df00d62218bed7c4d40a9c8e4a86cb4a29d3639a...v1.1.0) (2018-06-12)
+
+
+### Features
+
+* did you mean ([#21](https://github.com/oclif/plugin-not-found/issues/21)) ([7d6dd81](https://github.com/oclif/plugin-not-found/commit/7d6dd81))
+
 <a name="1.0.9"></a>
 ## [1.0.9](https://github.com/oclif/plugin-not-found/compare/e0e49999632449d6345fa7828274a5f779140c77...v1.0.9) (2018-05-03)
 
