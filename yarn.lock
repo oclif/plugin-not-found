@@ -63,9 +63,9 @@
     debug "^3.1.0"
     tslib "^1.9.2"
 
-"@oclif/config@^1.6.28":
-  version "1.6.28"
-  resolved "https://registry.yarnpkg.com/@oclif/config/-/config-1.6.28.tgz#bfda0718ba5dfbdeb364350990ed79540f9c3d0b"
+"@oclif/config@^1.6.30":
+  version "1.6.30"
+  resolved "https://registry.yarnpkg.com/@oclif/config/-/config-1.6.30.tgz#ec5d60c86a5f5e4c04a02c73c43459d56140fafd"
   dependencies:
     debug "^3.1.0"
     tslib "^1.9.2"
@@ -134,11 +134,11 @@
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/@oclif/screen/-/screen-1.0.2.tgz#c9d7c84b0ea60ecec8dd7a9b22c012ba9967aed8"
 
-"@oclif/test@^1.0.9":
-  version "1.0.9"
-  resolved "https://registry.yarnpkg.com/@oclif/test/-/test-1.0.9.tgz#302955b80159be78bc7b698aec4b0d2164d06b76"
+"@oclif/test@^1.1.0":
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/@oclif/test/-/test-1.1.0.tgz#63eea93f3b20ff534831b1a281d217eb02073a9c"
   dependencies:
-    fancy-test "^1.1.4"
+    fancy-test "^1.2.0"
 
 "@oclif/tslint@^1.1.2":
   version "1.1.2"
@@ -146,17 +146,17 @@
   dependencies:
     tslint-xo "^0.8.0"
 
-"@types/chai@^4.1.3":
-  version "4.1.3"
-  resolved "https://registry.yarnpkg.com/@types/chai/-/chai-4.1.3.tgz#b8a74352977a23b604c01aa784f5b793443fb7dc"
+"@types/chai@^4.1.4":
+  version "4.1.4"
+  resolved "https://registry.yarnpkg.com/@types/chai/-/chai-4.1.4.tgz#5ca073b330d90b4066d6ce18f60d57f2084ce8ca"
+
+"@types/fast-levenshtein@^0.0.1":
+  version "0.0.1"
+  resolved "https://registry.yarnpkg.com/@types/fast-levenshtein/-/fast-levenshtein-0.0.1.tgz#3a3615cf173645c8fca58d051e4e32824e4bd286"
 
 "@types/lodash@^4.14.109":
   version "4.14.109"
   resolved "https://registry.yarnpkg.com/@types/lodash/-/lodash-4.14.109.tgz#b1c4442239730bf35cabaf493c772b18c045886d"
-
-"@types/mocha@^5.2.0":
-  version "5.2.1"
-  resolved "https://registry.yarnpkg.com/@types/mocha/-/mocha-5.2.1.tgz#465450aaf5cec6f7d35523748c6cc89a5e222dc5"
 
 "@types/mocha@^5.2.2":
   version "5.2.2"
@@ -168,13 +168,13 @@
   dependencies:
     "@types/node" "*"
 
-"@types/node@*", "@types/node@^10.3.0":
+"@types/node@*":
   version "10.3.0"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-10.3.0.tgz#078516315a84d56216b5d4fed8f75d59d3b16cac"
 
-"@types/node@^10.3.2":
-  version "10.3.2"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-10.3.2.tgz#3840ec6c12556fdda6e0e6d036df853101d732a4"
+"@types/node@^10.3.3":
+  version "10.3.3"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-10.3.3.tgz#8798d9e39af2fa604f715ee6a6b19796528e46c3"
 
 "@types/sinon@^5.0.1":
   version "5.0.1"
@@ -714,17 +714,18 @@ extract-stack@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/extract-stack/-/extract-stack-1.0.0.tgz#b97acaf9441eea2332529624b732fc5a1c8165fa"
 
-fancy-test@^1.1.4:
-  version "1.1.4"
-  resolved "https://registry.yarnpkg.com/fancy-test/-/fancy-test-1.1.4.tgz#1bcc7b7a526218a85ed1ff0d2e95afc4b69fab23"
+fancy-test@^1.2.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/fancy-test/-/fancy-test-1.2.0.tgz#c5f6f81725ea42b9caec9bb18731449cfab526f3"
   dependencies:
-    "@types/chai" "^4.1.3"
+    "@types/chai" "^4.1.4"
     "@types/lodash" "^4.14.109"
-    "@types/mocha" "^5.2.0"
+    "@types/mocha" "^5.2.2"
     "@types/nock" "^9.1.3"
-    "@types/node" "^10.3.0"
+    "@types/node" "^10.3.3"
     "@types/sinon" "^5.0.1"
     lodash "^4.17.10"
+    mock-stdin "^0.3.1"
     stdout-stderr "^0.1.9"
 
 fast-glob@^2.0.2:
@@ -737,6 +738,10 @@ fast-glob@^2.0.2:
     is-glob "^4.0.0"
     merge2 "^1.2.1"
     micromatch "^3.1.10"
+
+fast-levenshtein@^2.0.6:
+  version "2.0.6"
+  resolved "https://registry.yarnpkg.com/fast-levenshtein/-/fast-levenshtein-2.0.6.tgz#3d8a5c66883a16a30ca8643e851f19baa7797917"
 
 fill-range@^4.0.0:
   version "4.0.0"
@@ -1159,7 +1164,7 @@ lodash.templatesettings@^4.0.0:
   dependencies:
     lodash._reinterpolate "~3.0.0"
 
-lodash@^4.13.1, lodash@^4.17.10, lodash@^4.5.1:
+lodash@^4.17.10, lodash@^4.5.1:
   version "4.17.10"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.10.tgz#1b7793cf7259ea38fb3661d4d38b3260af8ae4e7"
 
@@ -1247,6 +1252,10 @@ mocha@^5.2.0:
     minimatch "3.0.4"
     mkdirp "0.5.1"
     supports-color "5.4.0"
+
+mock-stdin@^0.3.1:
+  version "0.3.1"
+  resolved "https://registry.yarnpkg.com/mock-stdin/-/mock-stdin-0.3.1.tgz#c657d9642d90786435c64ca5e99bbd4d09bd7dd3"
 
 ms@2.0.0:
   version "2.0.0"
@@ -1656,12 +1665,6 @@ stdout-stderr@^0.1.9:
     debug "^3.1.0"
     strip-ansi "^4.0.0"
 
-string-similarity@^1.2.0:
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/string-similarity/-/string-similarity-1.2.0.tgz#d75153cb383846318b7a39a8d9292bb4db4e9c30"
-  dependencies:
-    lodash "^4.13.1"
-
 string-width@^2.1.1:
   version "2.1.1"
   resolved "https://registry.yarnpkg.com/string-width/-/string-width-2.1.1.tgz#ab93f27a8dc13d28cac815c462143a6d9012ae9e"
@@ -1874,9 +1877,9 @@ type-detect@^4.0.0:
   version "4.0.8"
   resolved "https://registry.yarnpkg.com/type-detect/-/type-detect-4.0.8.tgz#7646fb5f18871cfbb7749e69bd39a6388eb7450c"
 
-typescript@^2.9.1:
-  version "2.9.1"
-  resolved "https://registry.yarnpkg.com/typescript/-/typescript-2.9.1.tgz#fdb19d2c67a15d11995fd15640e373e09ab09961"
+typescript@^2.9.2:
+  version "2.9.2"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-2.9.2.tgz#1cbf61d05d6b96269244eb6a3bce4bd914e0f00c"
 
 union-value@^1.0.0:
   version "1.0.0"
