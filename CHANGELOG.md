@@ -1,3 +1,11 @@
+<a name="1.1.2"></a>
+## [1.1.2](https://github.com/oclif/plugin-not-found/compare/a67469fb44f419cb7316d4153ecdfb8ecdc08917...v1.1.2) (2018-06-15)
+
+
+### Bug Fixes
+
+* add aliases ([56a4f62](https://github.com/oclif/plugin-not-found/commit/56a4f62))
+
 <a name="1.1.1"></a>
 ## [1.1.1](https://github.com/oclif/plugin-not-found/compare/7d6dd81dc1a7896a8fa07ffb8227e1f27bf967b2...v1.1.1) (2018-06-15)
 
