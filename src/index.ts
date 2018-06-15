@@ -1,13 +1,14 @@
 import {color} from '@heroku-cli/color'
 import {Hook} from '@oclif/config'
 import {cli} from 'cli-ux'
+import * as Levenshtein from 'fast-levenshtein'
+import * as _ from 'lodash'
 
 const hook: Hook<'command_not_found'> = async function (opts) {
   const commandIDs = opts.config.commandIDs
   if (!commandIDs.length) return
   function closest(cmd: string) {
-    const DCE = require('string-similarity')
-    return DCE.findBestMatch(cmd, commandIDs).bestMatch.target
+    return _.minBy(commandIDs, c => Levenshtein.get(cmd, c))!
   }
 
   let binHelp = `${opts.config.bin} help`
@@ -22,7 +23,7 @@ const hook: Hook<'command_not_found'> = async function (opts) {
 
   let response
   try {
-    response = await cli.prompt(`Did you mean ${suggestion}? [y/n]`, {timeout: 4900})
+    response = await cli.prompt(`Did you mean ${color.blueBright(suggestion)}? [y/n]`, {timeout: 4900})
   } catch (err) {
     this.log('')
     this.debug(err)
