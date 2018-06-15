@@ -1,3 +1,12 @@
+<a name="1.1.1"></a>
+## [1.1.1](https://github.com/oclif/plugin-not-found/compare/7d6dd81dc1a7896a8fa07ffb8227e1f27bf967b2...v1.1.1) (2018-06-15)
+
+
+### Bug Fixes
+
+* Merge pull request [#22](https://github.com/oclif/plugin-not-found/issues/22) from oclif/levenshtein-r000ls ([a67469f](https://github.com/oclif/plugin-not-found/commit/a67469f))
+* screw dice ([22de529](https://github.com/oclif/plugin-not-found/commit/22de529))
+
 <a name="1.1.0"></a>
 # [1.1.0](https://github.com/oclif/plugin-not-found/compare/df00d62218bed7c4d40a9c8e4a86cb4a29d3639a...v1.1.0) (2018-06-12)
 
