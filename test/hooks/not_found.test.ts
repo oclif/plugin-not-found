@@ -1,4 +1,4 @@
-import chalk from '@heroku-cli/color'
+import chalk from '@oclif/color'
 import {expect, test} from '@oclif/test'
 import {cli} from 'cli-ux'
 

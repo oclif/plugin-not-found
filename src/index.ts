@@ -1,4 +1,4 @@
-import {color} from '@heroku-cli/color'
+import {color} from '@oclif/color'
 import {Hook} from '@oclif/config'
 import {cli} from 'cli-ux'
 import * as Levenshtein from 'fast-levenshtein'
