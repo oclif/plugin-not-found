@@ -1,3 +1,11 @@
+<a name="1.1.3"></a>
+## [1.1.3](https://github.com/oclif/plugin-not-found/compare/56a4f62e911816f0a33242d458acbe446c5cf6b9...v1.1.3) (2018-06-29)
+
+
+### Bug Fixes
+
+* switch to [@oclif](https://github.com/oclif)/color ([609c4fd](https://github.com/oclif/plugin-not-found/commit/609c4fd))
+
 <a name="1.1.2"></a>
 ## [1.1.2](https://github.com/oclif/plugin-not-found/compare/a67469fb44f419cb7316d4153ecdfb8ecdc08917...v1.1.2) (2018-06-15)
 
