@@ -1,3 +1,10 @@
+## [1.1.4](https://github.com/oclif/plugin-not-found/compare/v1.1.3...v1.1.4) (2018-06-29)
+
+
+### Bug Fixes
+
+* bump semantic-release ([618f399](https://github.com/oclif/plugin-not-found/commit/618f399))
+
 <a name="1.1.3"></a>
 ## [1.1.3](https://github.com/oclif/plugin-not-found/compare/56a4f62e911816f0a33242d458acbe446c5cf6b9...v1.1.3) (2018-06-29)
 
