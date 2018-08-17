@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/oclif/plugin-not-found/compare/v1.1.4...v1.2.0) (2018-08-17)
+
+
+### Features
+
+* typescript 3 ([944cac2](https://github.com/oclif/plugin-not-found/commit/944cac2))
+
 ## [1.1.4](https://github.com/oclif/plugin-not-found/compare/v1.1.3...v1.1.4) (2018-06-29)
 
 
