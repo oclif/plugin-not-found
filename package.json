@@ -27,7 +27,7 @@
     "@oclif/plugin-commands": "^1.2.0",
     "@oclif/plugin-help": "^2.0.5",
     "@oclif/test": "^1.2.0",
-    "@oclif/tslint": "^2.0.0",
+    "@oclif/tslint": "^3.1.0",
     "@types/chai": "^4.1.4",
     "@types/fast-levenshtein": "^0.0.1",
     "@types/lodash": "^4.14.116",
