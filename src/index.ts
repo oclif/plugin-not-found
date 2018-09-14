@@ -34,9 +34,9 @@ const hook: Hook<'command_not_found'> = async function (opts) {
   }
 
   if (response === 'y') {
-      const argv = process.argv
-      await this.config.runCommand(suggestion, argv.slice(3, argv.length))
-      this.exit(0)
+    const argv = process.argv
+    await this.config.runCommand(suggestion, argv.slice(3, argv.length))
+    this.exit(0)
   }
 
   this.error(`Run ${color.cmd(binHelp)} for a list of available commands.`, {exit: 127})
