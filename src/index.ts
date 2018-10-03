@@ -4,7 +4,7 @@ import {cli} from 'cli-ux'
 import * as Levenshtein from 'fast-levenshtein'
 import * as _ from 'lodash'
 
-const hook: Hook<'command_not_found'> = async function (opts) {
+const hook: Hook.CommandNotFound = async function (opts) {
   const commandIDs = [
     ...opts.config.commandIDs,
     ..._.flatten(opts.config.commands.map(c => c.aliases)),
