@@ -1,3 +1,10 @@
+## [1.2.1](https://github.com/oclif/plugin-not-found/compare/v1.2.0...v1.2.1) (2018-10-03)
+
+
+### Bug Fixes
+
+* updated hook ([7e71672](https://github.com/oclif/plugin-not-found/commit/7e71672))
+
 # [1.2.0](https://github.com/oclif/plugin-not-found/compare/v1.1.4...v1.2.0) (2018-08-17)
 
 
