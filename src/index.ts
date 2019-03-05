@@ -1,6 +1,7 @@
 import {color} from '@oclif/color'
 import {Hook} from '@oclif/config'
 import {cli} from 'cli-ux'
+import * as execa from 'execa'
 import * as Levenshtein from 'fast-levenshtein'
 import * as _ from 'lodash'
 
@@ -14,7 +15,6 @@ const hook: Hook.CommandNotFound = async function (opts) {
   function closest(cmd: string) {
     return _.minBy(commandIDs, c => Levenshtein.get(cmd, c))!
   }
-
   let binHelp = `${opts.config.bin} help`
   let idSplit = opts.id.split(':')
   if (await opts.config.findTopic(idSplit[0])) {
@@ -34,6 +34,13 @@ const hook: Hook.CommandNotFound = async function (opts) {
   }
 
   if (response === 'y') {
+    if (suggestion === 'version') {
+      await (async () => {
+        const {stdout} = await execa(`${opts.config.bin}`, [suggestion])
+        this.log(stdout)
+      })()
+      this.exit(0)
+    }
     const argv = process.argv
     await this.config.runCommand(suggestion, argv.slice(3, argv.length))
     this.exit(0)
