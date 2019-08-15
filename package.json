@@ -44,7 +44,7 @@
     "node": ">=8.0.0"
   },
   "files": [
-    ".oclif.manifest.json",
+    "/oclif.manifest.json",
     "/lib"
   ],
   "homepage": "https://github.com/oclif/plugin-not-found",
@@ -57,7 +57,7 @@
   "scripts": {
     "build": "rm -rf lib && tsc",
     "lint": "tsc -p test --noEmit && tslint -p test",
-    "postpublish": "rm .oclif.manifest.json",
+    "postpublish": "rm oclif.manifest.json",
     "posttest": "yarn run lint",
     "prepublishOnly": "yarn run build && oclif-dev manifest",
     "test": "mocha --forbid-only \"test/**/*.test.ts\""
