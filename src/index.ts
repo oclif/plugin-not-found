@@ -10,27 +10,27 @@ const hook: Hook.CommandNotFound = async function (opts) {
     ..._.flatten(opts.config.commands.map(c => c.aliases)),
     'version',
   ]
-  if (!commandIDs.length) return
+  if (commandIDs.length === 0) return
   function closest(cmd: string) {
     return _.minBy(commandIDs, c => Levenshtein.get(cmd, c))!
   }
 
   let binHelp = `${opts.config.bin} help`
-  let idSplit = opts.id.split(':')
+  const idSplit = opts.id.split(':')
   if (await opts.config.findTopic(idSplit[0])) {
     // if valid topic, update binHelp with topic
     binHelp = `${binHelp} ${idSplit[0]}`
   }
 
-  let suggestion: string = closest(opts.id)
+  const suggestion: string = closest(opts.id)
   this.warn(`${color.yellow(opts.id)} is not a ${opts.config.bin} command.`)
 
   let response
   try {
     response = await cli.prompt(`Did you mean ${color.blueBright(suggestion)}? [y/n]`, {timeout: 4900})
-  } catch (err) {
+  } catch (error) {
     this.log('')
-    this.debug(err)
+    this.debug(error)
   }
 
   if (response === 'y') {
