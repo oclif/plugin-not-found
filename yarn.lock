@@ -31,12 +31,14 @@
   resolved "https://registry.yarnpkg.com/@nodelib/fs.stat/-/fs.stat-1.1.2.tgz#54c5a964462be3d4d78af631363c18d6fa91ac26"
   integrity sha512-yprFYuno9FtNsSHVlSWd+nRlmGoAbqbeCwOryP6sC/zoCjhpArcRMYp19EvpSUSizJAlsXEwJv+wcWS9XaXdMw==
 
-"@oclif/color@^0.0.0":
-  version "0.0.0"
-  resolved "https://registry.yarnpkg.com/@oclif/color/-/color-0.0.0.tgz#54939bbd16d1387511bf1a48ccda1a417248e6a9"
-  integrity sha512-KKd3W7eNwfNF061tr663oUNdt8EMnfuyf5Xv55SGWA1a0rjhWqS/32P7OeB7CbXcJUBdfVrPyR//1afaW12AWw==
+"@oclif/color@^0.x":
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/@oclif/color/-/color-0.1.0.tgz#9bf4aab96c334b55e2f9a71dde125911dd219799"
+  integrity sha512-1Iilw4zMQS3i0/tKiBxsG63JXKFov75h77hDD2lldEvmvNDAjPPVNKI860RyqqG0UutaElLXPkDArrPok9Gi6g==
   dependencies:
     ansi-styles "^3.2.1"
+    chalk "^2.4.2"
+    strip-ansi "^5.2.0"
     supports-color "^5.4.0"
     tslib "^1"
 
