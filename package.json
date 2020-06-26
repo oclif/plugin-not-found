@@ -21,7 +21,7 @@
     "lodash": "^4.17.15"
   },
   "devDependencies": {
-    "@oclif/config": "^1.8.7",
+    "@oclif/config": "^1.15.1",
     "@oclif/dev-cli": "^1.19.1",
     "@oclif/errors": "^1.2.2",
     "@oclif/plugin-commands": "^1.2.1",
