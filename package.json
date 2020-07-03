@@ -16,7 +16,7 @@
   "dependencies": {
     "@oclif/color": "^0.x",
     "@oclif/command": "^1.6.0",
-    "cli-ux": "^5.4.6",
+    "cli-ux": "^5.4.9",
     "fast-levenshtein": "^2.0.6",
     "lodash": "^4.17.15"
   },
