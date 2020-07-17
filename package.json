@@ -18,7 +18,7 @@
     "@oclif/command": "^1.6.0",
     "cli-ux": "^5.4.9",
     "fast-levenshtein": "^2.0.6",
-    "lodash": "^4.17.15"
+    "lodash": "^4.17.19"
   },
   "devDependencies": {
     "@oclif/config": "^1.15.1",
