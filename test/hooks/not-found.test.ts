@@ -1,8 +1,5 @@
-import chalk from '@oclif/color'
 import {expect, test} from '@oclif/test'
 import {cli} from 'cli-ux'
-
-chalk.enabled = false
 
 describe('command_not_found', () => {
   test
