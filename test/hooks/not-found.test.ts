@@ -19,6 +19,16 @@ describe('command_not_found', () => {
 
   test
   .stderr()
+  .stub(cli, 'prompt', () => async () => 'y')
+  .stub(process, 'argv', [])
+  .hook('command_not_found', {id: 'commans', argv: ['foo', '--bar', 'baz']})
+  .catch('Unexpected arguments: foo, --bar, baz\nSee more help with --help')
+  .end('runs hook with suggested command and provided args on yes', (ctx: any) => {
+    expect(ctx.stderr).to.contain('Warning: commans is not a @oclif/plugin-not-found command.\n')
+  })
+
+  test
+  .stderr()
   .stub(cli, 'prompt', () => async () => 'n')
   .hook('command_not_found', {id: 'commans'})
   .catch('Run @oclif/plugin-not-found help for a list of available commands.')
