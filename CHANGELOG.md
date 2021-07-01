@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.1.0](https://github.com/oclif/plugin-not-found/compare/v1.2.4...v2.1.0) (2021-07-01)
+
+
+### Features
+
+* support spaced commands ([#166](https://github.com/oclif/plugin-not-found/issues/166)) ([4222d2d](https://github.com/oclif/plugin-not-found/commit/4222d2df7d88fcc21e3ac71bfaf4cb44f317e551))
+
+
+### Bug Fixes
+
+* downgrade to node 12 ([15b9382](https://github.com/oclif/plugin-not-found/commit/15b9382bb2fc83e4246c8557f2b51dfb2ecd4f72))
+
 ## [2.0.0](https://github.com/oclif/plugin-not-found/compare/v1.2.4...v2.0.0) (2021-04-21)
 
 
