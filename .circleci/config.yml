@@ -20,7 +20,6 @@ workflows:
               - os: windows
                 node_version: lts
       - release-management/release-package:
-          node_version: "14"
           github-release: true
           tag: core-v1
           requires:
