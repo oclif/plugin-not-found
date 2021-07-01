@@ -27,7 +27,7 @@
     "@oclif/plugin-commands": "^1.2.1",
     "@oclif/plugin-help": "^3",
     "@oclif/test": "^1.2.1",
-    "@types/chai": "^4.2.18",
+    "@types/chai": "^4.2.19",
     "@types/fast-levenshtein": "^0.0.1",
     "@types/lodash": "^4.14.170",
     "@types/mocha": "^8.2.0",
