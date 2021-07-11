@@ -107,10 +107,10 @@
     is-wsl "^2.1.1"
     tslib "^2.0.0"
 
-"@oclif/core@0.5.3":
-  version "0.5.3"
-  resolved "https://registry.npmjs.org/@oclif/core/-/core-0.5.3.tgz#ac360e9a37aa8d57c93081906292a13d2c41bd52"
-  integrity sha512-MtaSCv6O3NagFPHPHYssYSHZ/K2BExI/zB6exaWA9kjycTYgnLABwUjw5kaHmX9WkXDNGOyjaHBhqmoRSozfOA==
+"@oclif/core@^0.5.21":
+  version "0.5.21"
+  resolved "https://registry.npmjs.org/@oclif/core/-/core-0.5.21.tgz#9686b899fb8431275f3aa357ff110f8e6f2c968d"
+  integrity sha512-bfwh2ow3XeTgYXjV0h2dn5mq9261WZ/iaY0p2wL2lvRfMAFvGc1AbN5Wfd5s2hDhvU+dMP7fbHB1ymbTBJM5Ig==
   dependencies:
     "@oclif/linewrap" "^1.0.0"
     chalk "^4.1.0"
@@ -118,6 +118,7 @@
     cli-ux "^5.1.0"
     debug "^4.1.1"
     fs-extra "^9.0.1"
+    get-package-type "^0.1.0"
     globby "^11.0.1"
     indent-string "^4.0.0"
     is-wsl "^2.1.1"
@@ -1514,6 +1515,11 @@ get-func-name@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/get-func-name/-/get-func-name-2.0.0.tgz#ead774abee72e20409433a066366023dd6887a41"
   integrity sha1-6td0q+5y4gQJQzoGY2YCPdaIekE=
+
+get-package-type@^0.1.0:
+  version "0.1.0"
+  resolved "https://registry.npmjs.org/get-package-type/-/get-package-type-0.1.0.tgz#8de2d803cff44df3bc6c456e6668b36c3926e11a"
+  integrity sha512-pjzuKtY64GYfWizNAJ0fr9VqttZkNiK2iS430LtIHzjBEr6bX8Am2zm4sW4Ro5wjWW5cAlRL1qAMTcXbjNAO2Q==
 
 get-stream@^3.0.0:
   version "3.0.0"
