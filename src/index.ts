@@ -9,7 +9,6 @@ const hook: Hook.CommandNotFound = async function (opts) {
   const commandIDs = [
     ...opts.config.commandIDs,
     ..._.flatten(opts.config.commands.map(c => c.aliases)),
-    'version',
   ].filter(c => !hiddenCommandIds.includes(c))
 
   if (commandIDs.length === 0) return
