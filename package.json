@@ -59,7 +59,7 @@
     "pretest": "yarn build --noEmit && tsc -p test --noEmit",
     "test": "mocha --forbid-only \"test/**/*.test.ts\"",
     "posttest": "yarn lint",
-    "prepublishOnly": "yarn run build && oclif manifest",
+    "prepublishOnly": "yarn run build && oclif manifest .",
     "postpublish": "rm oclif.manifest.json"
   },
   "types": "lib/index.d.ts"
