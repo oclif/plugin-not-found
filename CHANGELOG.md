@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.2.0](https://github.com/oclif/plugin-not-found/compare/v2.1.4...v2.2.0) (2021-09-29)
+
+
+### Features
+
+* use oclif/core ([#208](https://github.com/oclif/plugin-not-found/issues/208)) ([7f0820f](https://github.com/oclif/plugin-not-found/commit/7f0820fc5084e6e0ea37d24e4c8ce0121f8303c3))
+
 ### [2.1.4](https://github.com/oclif/plugin-not-found/compare/v2.1.3...v2.1.4) (2021-09-22)
 
 ### [2.1.3](https://github.com/oclif/plugin-not-found/compare/v2.1.2...v2.1.3) (2021-08-26)
