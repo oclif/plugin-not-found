@@ -15,18 +15,18 @@
   "bugs": "https://github.com/oclif/plugin-not-found/issues",
   "dependencies": {
     "@oclif/color": "^0.x",
-    "@oclif/core": "^0.5.39",
-    "cli-ux": "^5.6.3",
+    "@oclif/core": "^1.0.7",
+    "cli-ux": "^6.0.3",
     "fast-levenshtein": "^3.0.0",
     "lodash": "^4.17.21"
   },
   "devDependencies": {
     "@oclif/plugin-commands": "^1.2.1",
-    "@oclif/plugin-help": "^5.1.0",
-    "@oclif/test": "^1.2.1",
+    "@oclif/plugin-help": "^5.1.7",
+    "@oclif/test": "^1.2.8",
     "@types/chai": "^4.2.18",
     "@types/fast-levenshtein": "^0.0.1",
-    "@types/lodash": "^4.14.170",
+    "@types/lodash": "^4.14.177",
     "@types/mocha": "^8.2.2",
     "@types/node": "^15.6.1",
     "@types/supports-color": "^8.1.0",

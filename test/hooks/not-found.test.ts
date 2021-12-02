@@ -5,11 +5,20 @@ import {cli} from 'cli-ux'
 chalk.enabled = false
 
 describe('command_not_found', () => {
+  let oldArgv: string[]
+  beforeEach(() => {
+    oldArgv = process.argv
+  })
+  afterEach(() => {
+    process.argv = oldArgv
+  })
   test
   .stub(cli, 'prompt', () => async () => 'y')
-  .stub(process, 'argv', [])
   .stdout()
   .stderr()
+  .do(() => {
+    process.argv = []
+  })
   .hook('command_not_found', {id: 'commans'})
   .catch('EEXIT: 0')
   .end('runs hook with suggested command on yes', (ctx: any) => {
@@ -20,7 +29,9 @@ describe('command_not_found', () => {
   test
   .stderr()
   .stub(cli, 'prompt', () => async () => 'y')
-  .stub(process, 'argv', [])
+  .do(() => {
+    process.argv = []
+  })
   .hook('command_not_found', {id: 'commans', argv: ['foo', '--bar', 'baz']})
   .catch('Unexpected arguments: foo, --bar, baz\nSee more help with --help')
   .end('runs hook with suggested command and provided args on yes', (ctx: any) => {
