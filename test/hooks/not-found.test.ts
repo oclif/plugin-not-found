@@ -1,8 +1,8 @@
-import chalk from '@oclif/color'
+import * as chalk from 'chalk'
 import {expect, test} from '@oclif/test'
 import {cli} from 'cli-ux'
 
-chalk.enabled = false
+Object.assign(chalk, {level: 0})
 
 describe('command_not_found', () => {
   let oldArgv: string[]
