@@ -5,11 +5,11 @@ import * as Levenshtein from 'fast-levenshtein'
 import * as _ from 'lodash'
 
 const hook: Hook.CommandNotFound = async function (opts) {
-  const hiddenCommandIds = opts.config.commands.filter(c => c.hidden).map(c => c.id)
+  const hiddenCommandIds = new Set(opts.config.commands.filter(c => c.hidden).map(c => c.id))
   const commandIDs = [
     ...opts.config.commandIDs,
-    ..._.flatten(opts.config.commands.map(c => c.aliases)),
-  ].filter(c => !hiddenCommandIds.includes(c))
+    ...opts.config.commands.flatMap(c => c.aliases),
+  ].filter(c => !hiddenCommandIds.has(c))
 
   if (commandIDs.length === 0) return
   function closest(cmd: string): string {
