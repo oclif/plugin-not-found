@@ -57,7 +57,7 @@
   "repository": "oclif/plugin-not-found",
   "scripts": {
     "build": "rm -rf lib && tsc",
-    "lint": "eslint . --ext .ts --config .eslintrc",
+    "lint": "eslint . --ext .ts",
     "pretest": "yarn build --noEmit && tsc -p test --noEmit",
     "test": "mocha --forbid-only \"test/**/*.test.ts\"",
     "posttest": "yarn lint",
