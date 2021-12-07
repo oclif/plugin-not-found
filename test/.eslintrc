@@ -1,0 +1,7 @@
+{
+  "extends": ["../.eslintrc"
+  ],
+  "rules": {
+    "unicorn/no-abusive-eslint-disable": "off"
+  }
+}
