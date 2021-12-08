@@ -32,7 +32,7 @@
     "@types/lodash": "^4.14.177",
     "@types/mocha": "^8.2.0",
     "@types/node": "^15.6.1",
-    "@types/supports-color": "^8.1.0",
+    "@types/supports-color": "^8.1.1",
     "chai": "^4.2.0",
     "eslint": "^7.27.0",
     "eslint-config-oclif": "^3.1.0",
