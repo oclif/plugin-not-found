@@ -1,3 +1,10 @@
+## [1.2.6](https://github.com/oclif/plugin-not-found/compare/v1.2.5...v1.2.6) (2021-12-09)
+
+
+### Bug Fixes
+
+* bump deps ([#249](https://github.com/oclif/plugin-not-found/issues/249)) ([34d9844](https://github.com/oclif/plugin-not-found/commit/34d984458605b29e42084ec8c756ec407f214012))
+
 ## [1.2.5](https://github.com/oclif/plugin-not-found/compare/v1.2.4...v1.2.5) (2021-12-07)
 
 
