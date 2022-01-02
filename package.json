@@ -28,7 +28,7 @@
     "@types/chai": "^4.2.18",
     "@types/fast-levenshtein": "^0.0.1",
     "@types/lodash": "^4.14.178",
-    "@types/mocha": "^8.2.2",
+    "@types/mocha": "^8.2.3",
     "@types/node": "^15.6.1",
     "@types/supports-color": "^8.1.0",
     "chai": "^4.3.4",
