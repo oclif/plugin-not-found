@@ -30,7 +30,7 @@
     "@types/lodash": "^4.14.178",
     "@types/mocha": "^8.2.3",
     "@types/node": "^15.14.9",
-    "@types/supports-color": "^8.1.0",
+    "@types/supports-color": "^8.1.1",
     "chai": "^4.3.4",
     "chalk": "^5.0.0",
     "eslint": "^7.32.0",
