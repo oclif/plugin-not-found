@@ -1,6 +1,6 @@
 import chalk, {color} from '@oclif/color'
 import {expect, test} from '@oclif/test'
-import {cli} from 'cli-ux'
+import {CliUx} from '@oclif/core'
 
 const yes = () => 'y'
 const no = () => 'n'
@@ -9,7 +9,7 @@ color(chalk, 'enabled', 0)
 
 describe('command_not_found', () => {
   test
-  .stub(cli, 'prompt', () => yes)
+  .stub(CliUx.ux, 'prompt', () => yes)
   // eslint-disable-next-line @typescript-eslint/ban-ts-comment
   // @ts-ignore
   .stub(process, 'argv', [])
@@ -24,7 +24,7 @@ describe('command_not_found', () => {
 
   test
   .stderr()
-  .stub(cli, 'prompt', yes)
+  .stub(CliUx.ux, 'prompt', yes)
   .hook('command_not_found', {id: 'commans', argv: ['foo', '--bar', 'baz']})
   .catch((error: Error) => error.message.includes('Unexpected arguments: foo, --bar, baz\nSee more help with --help'))
   .end('runs hook with suggested command and provided args on yes', (ctx: any) => {
@@ -33,7 +33,7 @@ describe('command_not_found', () => {
 
   test
   .stderr()
-  .stub(cli, 'prompt', () => no)
+  .stub(CliUx.ux, 'prompt', () => no)
   .hook('command_not_found', {id: 'commans'})
   .catch((error: Error) => error.message.includes('Run @oclif/plugin-not-found help for a list of available commands.'))
   .end('runs hook with not found error on no', (ctx: any) => {
