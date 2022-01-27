@@ -1,6 +1,5 @@
 import {color} from '@oclif/color'
-import {Hook, toConfiguredId} from '@oclif/core'
-import {cli} from 'cli-ux'
+import {CliUx, Hook, toConfiguredId} from '@oclif/core'
 import * as Levenshtein from 'fast-levenshtein'
 import * as _ from 'lodash'
 
@@ -30,7 +29,7 @@ const hook: Hook.CommandNotFound = async function (opts) {
 
   let response = ''
   try {
-    response = await cli.prompt(`Did you mean ${color.blueBright(readableSuggestion)}? [y/n]`, {timeout: 4900})
+    response = await CliUx.ux.prompt(`Did you mean ${color.blueBright(readableSuggestion)}? [y/n]`, {timeout: 4900})
   } catch (error) {
     this.log('')
     this.debug(error)
