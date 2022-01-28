@@ -16,7 +16,6 @@ describe('command_not_found', () => {
   .stdout()
   .stderr()
   .hook('command_not_found', {id: 'commans'})
-  .catch('EEXIT: 0')
   .end('runs hook with suggested command on yes', (ctx: any) => {
     expect(ctx.stderr).to.be.contain('Warning: commans is not a @oclif/plugin-not-found command.\n')
     expect(ctx.stdout).to.match(/commands.+?\n.*?help/)
