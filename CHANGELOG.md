@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.3.0](https://github.com/oclif/plugin-not-found/compare/v2.2.4...v2.3.0) (2022-01-28)
+
+
+### Features
+
+* remove cli-ux ([1284f29](https://github.com/oclif/plugin-not-found/commit/1284f29c10f7445c45702cc9a18b71c4fbde5f99))
+
 ### [2.2.4](https://github.com/oclif/plugin-not-found/compare/v2.2.3...v2.2.4) (2022-01-06)
 
 
