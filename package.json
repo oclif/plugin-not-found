@@ -31,7 +31,7 @@
     "@types/node": "^15.14.9",
     "@types/supports-color": "^8.1.1",
     "chai": "^4.3.6",
-    "chalk": "^5.0.0",
+    "chalk": "^5.0.1",
     "eslint": "^7.32.0",
     "eslint-config-oclif": "^4",
     "eslint-config-oclif-typescript": "^1.0.2",
