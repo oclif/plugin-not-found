@@ -21,7 +21,7 @@
   },
   "devDependencies": {
     "@oclif/config": "^1.18.3",
-    "@oclif/plugin-commands": "^2.1.0",
+    "@oclif/plugin-commands": "^2.2.0",
     "@oclif/plugin-help": "^5.1.12",
     "@oclif/test": "^1.2.9",
     "@types/chai": "^4.3.0",
