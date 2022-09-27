@@ -26,7 +26,7 @@
     "@oclif/test": "^1.2.9",
     "@types/chai": "^4.3.0",
     "@types/fast-levenshtein": "^0.0.2",
-    "@types/lodash": "^4.14.181",
+    "@types/lodash": "^4.14.185",
     "@types/mocha": "^8.2.3",
     "@types/node": "^15.14.9",
     "@types/supports-color": "^8.1.1",
