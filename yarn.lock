@@ -520,10 +520,10 @@
     chalk "^4.1.0"
     tslib "^2.3.1"
 
-"@oclif/plugin-commands@^2.1.0":
-  version "2.1.0"
-  resolved "https://registry.yarnpkg.com/@oclif/plugin-commands/-/plugin-commands-2.1.0.tgz#b756ce6dc76ebbef7ccdc4cfc7354b1132751e69"
-  integrity sha512-P+iZpEZSA3e/V8x4dU2E5ZPh07zzvR2S8wOQajB6GcBGehI1ATjjqmSSld717DG7sThj7fjcK6IU6cskzberTw==
+"@oclif/plugin-commands@^2.2.1":
+  version "2.2.1"
+  resolved "https://registry.yarnpkg.com/@oclif/plugin-commands/-/plugin-commands-2.2.1.tgz#cf985f20ba67b1aa0dac8e08db3c993c19680469"
+  integrity sha512-mCv5Dlxkxg5sNaatFgbol9rKS9nBqPydRfxW0vusfzwuYZhxpdrvpgqkjcCO3LnQHSqX4qW5UCF6ZU0bBgnMBQ==
   dependencies:
     "@oclif/core" "^1.2.0"
     lodash "^4.17.11"
