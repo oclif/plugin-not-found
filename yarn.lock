@@ -562,12 +562,12 @@
     "@oclif/core" "^2.0.7"
     lodash "^4.17.11"
 
-"@oclif/plugin-help@^5.1.19", "@oclif/plugin-help@^5.2.1":
-  version "5.2.1"
-  resolved "https://registry.yarnpkg.com/@oclif/plugin-help/-/plugin-help-5.2.1.tgz#beee5beb1accb4100f57f0354f2d261271642d51"
-  integrity sha512-6z/ZholfRZ/k6XonAzV6p34A7LAhr2r2JUOlaCF2ZMrF6LjMN21dWXVK0Sxra+TQqZEm0B2oeSbTmHFtDkbIlw==
+"@oclif/plugin-help@^5.1.19", "@oclif/plugin-help@^5.2.3":
+  version "5.2.3"
+  resolved "https://registry.yarnpkg.com/@oclif/plugin-help/-/plugin-help-5.2.3.tgz#e6e77ab385504913337cdc0c212be3b2e5e3d086"
+  integrity sha512-z1zwpzsPZjA5vLFf1uezcpngbfzcif2u9qGWO4v0C6DBx7sa1ghSWBE/igIerJyP3WJ4FSkZhbPn3kwvsCJGTQ==
   dependencies:
-    "@oclif/core" "^2.0.3"
+    "@oclif/core" "^2.0.7"
 
 "@oclif/plugin-not-found@^2.3.7":
   version "2.3.16"
