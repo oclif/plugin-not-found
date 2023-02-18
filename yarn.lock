@@ -494,10 +494,10 @@
     widest-line "^3.1.0"
     wrap-ansi "^7.0.0"
 
-"@oclif/core@^2.0.3", "@oclif/core@^2.0.8", "@oclif/core@^2.1.1", "@oclif/core@^2.1.2":
-  version "2.1.2"
-  resolved "https://registry.yarnpkg.com/@oclif/core/-/core-2.1.2.tgz#a3e47ed2274e47cb2b3dc1a16b5955cceae5d2d0"
-  integrity sha512-l7Kx+80zuDgi9o4gZe39XQeYvQuj6Hf+B31kXSUSntgXpfLdDbpFSZH/GP7tsldzG4icrpmSwnLDOz8MNB40Hg==
+"@oclif/core@^2.0.3", "@oclif/core@^2.0.8", "@oclif/core@^2.1.1", "@oclif/core@^2.1.6":
+  version "2.1.6"
+  resolved "https://registry.yarnpkg.com/@oclif/core/-/core-2.1.6.tgz#34a1847da7195616fda62663098c9df0c486ae64"
+  integrity sha512-RMqjKVExVxMmAm3a64LFrIZloKD7emSDro1Mmcc8DOB3O+/pL9drqScc/dw/Alhi6KrmdqwOtxHtKrAwqvyKMg==
   dependencies:
     "@types/cli-progress" "^3.11.0"
     ansi-escapes "^4.3.2"
