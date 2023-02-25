@@ -1,75 +1,278 @@
-# Changelog
+## [2.3.21](https://github.com/oclif/plugin-not-found/compare/2.3.20...2.3.21) (2023-02-25)
 
-All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
-### [2.3.1](https://github.com/oclif/plugin-not-found/compare/v2.3.0...v2.3.1) (2022-01-28)
+### Bug Fixes
+
+* **deps:** bump @oclif/core from 2.1.6 to 2.3.0 ([3019c5f](https://github.com/oclif/plugin-not-found/commit/3019c5fa9422d68277aa92ec1e32c7a7063012d7))
+
+
+
+## [2.3.20](https://github.com/oclif/plugin-not-found/compare/2.3.19...2.3.20) (2023-02-12)
+
+
+### Bug Fixes
+
+* **deps:** bump @oclif/color from 1.0.3 to 1.0.4 ([19293f9](https://github.com/oclif/plugin-not-found/commit/19293f961d8b5bda361d59e5d6df7b27a50a6700))
+
+
+
+## [2.3.19](https://github.com/oclif/plugin-not-found/compare/2.3.18...2.3.19) (2023-02-11)
+
+
+### Bug Fixes
+
+* **deps:** bump @oclif/core from 2.0.8 to 2.1.2 ([5416672](https://github.com/oclif/plugin-not-found/commit/5416672860f23cf2ea55ebd1ac864e6394e8470f))
+
+
+
+## [2.3.18](https://github.com/oclif/plugin-not-found/compare/2.3.17...2.3.18) (2023-02-04)
+
+
+### Bug Fixes
+
+* **deps:** bump http-cache-semantics from 4.1.0 to 4.1.1 ([8a00b62](https://github.com/oclif/plugin-not-found/commit/8a00b6267e22072729dd1d621eef1a7d5fa93d60))
+
+
+
+## [2.3.17](https://github.com/oclif/plugin-not-found/compare/2.3.16...2.3.17) (2023-01-23)
+
+
+### Bug Fixes
+
+* use core v2 ([#350](https://github.com/oclif/plugin-not-found/issues/350)) ([b317662](https://github.com/oclif/plugin-not-found/commit/b3176628b2dddd69c4419f8270fbb510231d3f8e))
+
+
+
+## [2.3.16](https://github.com/oclif/plugin-not-found/compare/2.3.15...2.3.16) (2023-01-21)
+
+
+### Bug Fixes
+
+* **deps:** bump @oclif/core from 1.24.0 to 1.25.0 ([4bea3fb](https://github.com/oclif/plugin-not-found/commit/4bea3fbb4b73cdec78d7e7604e080b0406c136c2))
+
+
+
+## [2.3.15](https://github.com/oclif/plugin-not-found/compare/2.3.14...2.3.15) (2023-01-14)
+
+
+### Bug Fixes
+
+* **deps:** bump @oclif/core from 1.23.1 to 1.24.0 ([7d74dbd](https://github.com/oclif/plugin-not-found/commit/7d74dbd119a2fa8831ce7bdee788d4e4780ac53c))
+
+
+
+## [2.3.14](https://github.com/oclif/plugin-not-found/compare/2.3.13...2.3.14) (2023-01-07)
+
+
+### Bug Fixes
+
+* **deps:** bump @oclif/color from 1.0.2 to 1.0.3 ([5d818f5](https://github.com/oclif/plugin-not-found/commit/5d818f543c2dcaae85d29438a21f489199cd4d32))
+
+
+
+## [2.3.13](https://github.com/oclif/plugin-not-found/compare/2.3.12...2.3.13) (2023-01-01)
+
+
+### Bug Fixes
+
+* **deps:** bump @oclif/core from 1.22.0 to 1.23.1 ([c676b34](https://github.com/oclif/plugin-not-found/commit/c676b34a6e5e80d9119c39bd52072d1cfc85e0cb))
+
+
+
+## [2.3.12](https://github.com/oclif/plugin-not-found/compare/2.3.11...2.3.12) (2023-01-01)
+
+
+### Bug Fixes
+
+* **deps:** bump json5 from 2.2.0 to 2.2.2 ([0059f30](https://github.com/oclif/plugin-not-found/commit/0059f309707d24f0169e61866f7d1dd6261a3537))
+
+
+
+## [2.3.11](https://github.com/oclif/plugin-not-found/compare/2.3.10...2.3.11) (2022-12-18)
+
+
+### Bug Fixes
+
+* **deps:** bump @oclif/core from 1.21.0 to 1.22.0 ([c6a2aef](https://github.com/oclif/plugin-not-found/commit/c6a2aef6641d87ffac20fb42e6cc26c9f63835d2))
+
+
+
+## [2.3.10](https://github.com/oclif/plugin-not-found/compare/2.3.9...2.3.10) (2022-12-17)
+
+
+### Bug Fixes
+
+* **deps:** bump @oclif/core from 1.20.4 to 1.21.0 ([4137a07](https://github.com/oclif/plugin-not-found/commit/4137a0772332930e514ae0bb137866e27019bed0))
+
+
+
+## [2.3.9](https://github.com/oclif/plugin-not-found/compare/2.3.8...2.3.9) (2022-11-13)
+
+
+### Bug Fixes
+
+* **deps:** bump @oclif/color from 1.0.1 to 1.0.2 ([9fe38df](https://github.com/oclif/plugin-not-found/commit/9fe38df6d0e7f6b6f5955df459d3d476f37cf8b5))
+
+
+
+## [2.3.8](https://github.com/oclif/plugin-not-found/compare/2.3.7...2.3.8) (2022-11-06)
+
+
+### Bug Fixes
+
+* **deps:** bump @oclif/core from 1.20.0 to 1.20.3 ([3c5352d](https://github.com/oclif/plugin-not-found/commit/3c5352d3b0eca54cebe5d909f4ad59fb64350799))
+
+
+
+## [2.3.7](https://github.com/oclif/plugin-not-found/compare/2.3.6...2.3.7) (2022-10-30)
+
+
+### Bug Fixes
+
+* **deps:** bump @oclif/core from 1.19.1 to 1.20.0 ([1cd2001](https://github.com/oclif/plugin-not-found/commit/1cd20018af49b34d92fe564461e7cadfcb5bffc2))
+
+
+
+## [2.3.6](https://github.com/oclif/plugin-not-found/compare/2.3.5...2.3.6) (2022-10-22)
+
+
+### Bug Fixes
+
+* **deps:** bump @oclif/core from 1.18.0 to 1.19.1 ([4dfa00a](https://github.com/oclif/plugin-not-found/commit/4dfa00acbc528474b35bcd8edac673d187928595))
+
+
+
+## [2.3.5](https://github.com/oclif/plugin-not-found/compare/2.3.4...2.3.5) (2022-10-15)
+
+
+### Bug Fixes
+
+* **deps:** bump @oclif/core from 1.16.5 to 1.18.0 ([a844b43](https://github.com/oclif/plugin-not-found/commit/a844b43774810ec08dcec9e46573875980922a02))
+
+
+
+## [2.3.4](https://github.com/oclif/plugin-not-found/compare/2.3.3...2.3.4) (2022-10-08)
+
+
+### Bug Fixes
+
+* **deps:** bump @oclif/core from 1.16.4 to 1.16.5 ([ba204d6](https://github.com/oclif/plugin-not-found/commit/ba204d694950c11a31c248b4fc8df6c40ba94360))
+
+
+
+## [2.3.3](https://github.com/oclif/plugin-not-found/compare/2.3.2...2.3.3) (2022-09-27)
+
+
+### Bug Fixes
+
+* **deps:** bump ejs from 3.1.6 to 3.1.8 ([f7f17a1](https://github.com/oclif/plugin-not-found/commit/f7f17a194cbc77bbd274f9e32fc8f93cce6f1448))
+
+
+
+## [2.3.2](https://github.com/oclif/plugin-not-found/compare/v2.3.1...2.3.2) (2022-09-27)
+
+
+### Bug Fixes
+
+* **deps:** bump @oclif/core from 1.6.4 to 1.16.4 ([faa9d72](https://github.com/oclif/plugin-not-found/commit/faa9d72ed77bf1140e356778ecc5001e773adfec))
+
+
+
+## [2.3.1](https://github.com/oclif/plugin-not-found/compare/v2.3.0...v2.3.1) (2022-01-28)
 
 
 ### Bug Fixes
 
 * return command result ([8c1d2bb](https://github.com/oclif/plugin-not-found/commit/8c1d2bb3912acd95a5d65b07e62acc1f70a0905c))
 
-## [2.3.0](https://github.com/oclif/plugin-not-found/compare/v2.2.4...v2.3.0) (2022-01-28)
+
+
+# [2.3.0](https://github.com/oclif/plugin-not-found/compare/v2.2.4...v2.3.0) (2022-01-28)
 
 
 ### Features
 
 * remove cli-ux ([1284f29](https://github.com/oclif/plugin-not-found/commit/1284f29c10f7445c45702cc9a18b71c4fbde5f99))
 
-### [2.2.4](https://github.com/oclif/plugin-not-found/compare/v2.2.3...v2.2.4) (2022-01-06)
+
+
+## [2.2.4](https://github.com/oclif/plugin-not-found/compare/v2.2.3...v2.2.4) (2022-01-06)
 
 
 ### Bug Fixes
 
 * bump @oclif/core ([#254](https://github.com/oclif/plugin-not-found/issues/254)) ([c4f282c](https://github.com/oclif/plugin-not-found/commit/c4f282c159ba7885669c47899b9ec8da4badb350))
 
-### [2.2.3](https://github.com/oclif/plugin-not-found/compare/v2.2.2...v2.2.3) (2021-12-08)
+
+
+## [2.2.3](https://github.com/oclif/plugin-not-found/compare/v2.2.2...v2.2.3) (2021-12-08)
 
 
 ### Bug Fixes
 
 * bump deps ([#237](https://github.com/oclif/plugin-not-found/issues/237)) ([4356946](https://github.com/oclif/plugin-not-found/commit/4356946e4d2db524078e9d7060061592066f9469))
 
-### [2.2.2](https://github.com/oclif/plugin-not-found/compare/v2.2.1...v2.2.2) (2021-12-07)
+
+
+## [2.2.2](https://github.com/oclif/plugin-not-found/compare/v2.2.1...v2.2.2) (2021-12-07)
 
 
 ### Bug Fixes
 
 * bump deps ([#236](https://github.com/oclif/plugin-not-found/issues/236)) ([886d06d](https://github.com/oclif/plugin-not-found/commit/886d06d264aea01a151a339b9f02f6e356b5c32b))
 
-### [2.2.1](https://github.com/oclif/plugin-not-found/compare/v2.2.0...v2.2.1) (2021-12-06)
+
+
+## [2.2.1](https://github.com/oclif/plugin-not-found/compare/v2.2.0...v2.2.1) (2021-12-06)
 
 
 ### Bug Fixes
 
 * bump deps ([#234](https://github.com/oclif/plugin-not-found/issues/234)) ([4a64174](https://github.com/oclif/plugin-not-found/commit/4a641746fe8f53d75fac7897cf030d57fe4aec3e))
 
-## [2.2.0](https://github.com/oclif/plugin-not-found/compare/v2.1.4...v2.2.0) (2021-09-29)
+
+
+# [2.2.0](https://github.com/oclif/plugin-not-found/compare/v2.1.4...v2.2.0) (2021-09-29)
 
 
 ### Features
 
 * use oclif/core ([#208](https://github.com/oclif/plugin-not-found/issues/208)) ([7f0820f](https://github.com/oclif/plugin-not-found/commit/7f0820fc5084e6e0ea37d24e4c8ce0121f8303c3))
 
-### [2.1.4](https://github.com/oclif/plugin-not-found/compare/v2.1.3...v2.1.4) (2021-09-22)
 
-### [2.1.3](https://github.com/oclif/plugin-not-found/compare/v2.1.2...v2.1.3) (2021-08-26)
 
-### [2.1.2](https://github.com/oclif/plugin-not-found/compare/v2.1.1...v2.1.2) (2021-07-15)
+## [2.1.4](https://github.com/oclif/plugin-not-found/compare/v2.1.3...v2.1.4) (2021-09-22)
+
+
+
+## [2.1.3](https://github.com/oclif/plugin-not-found/compare/v2.1.2...v2.1.3) (2021-08-26)
+
+
+
+## [2.1.2](https://github.com/oclif/plugin-not-found/compare/v2.1.1...v2.1.2) (2021-07-15)
 
 
 ### Bug Fixes
 
 * remove version suggestion ([#187](https://github.com/oclif/plugin-not-found/issues/187)) ([94a83e0](https://github.com/oclif/plugin-not-found/commit/94a83e0dadcfac1d17cfeb272fc42eac52aadfc0))
 
-### [2.1.1](https://github.com/oclif/plugin-not-found/compare/v2.1.0...v2.1.1) (2021-07-11)
+
+
+## [2.1.1](https://github.com/oclif/plugin-not-found/compare/v2.1.0...v2.1.1) (2021-07-11)
 
 
 ### Bug Fixes
 
 * bump oclif/core ([90e3c7b](https://github.com/oclif/plugin-not-found/commit/90e3c7bbbca21f3f3162e3e1a666251642f8613a))
 
-## [2.1.0](https://github.com/oclif/plugin-not-found/compare/v1.2.4...v2.1.0) (2021-07-01)
+
+
+# [2.1.0](https://github.com/oclif/plugin-not-found/compare/v1.2.4...v2.1.0) (2021-07-01)
+
+
+### Bug Fixes
+
+* downgrade to node 12 ([15b9382](https://github.com/oclif/plugin-not-found/commit/15b9382bb2fc83e4246c8557f2b51dfb2ecd4f72))
 
 
 ### Features
@@ -77,324 +280,383 @@ All notable changes to this project will be documented in this file. See [standa
 * support spaced commands ([#166](https://github.com/oclif/plugin-not-found/issues/166)) ([4222d2d](https://github.com/oclif/plugin-not-found/commit/4222d2df7d88fcc21e3ac71bfaf4cb44f317e551))
 
 
+
+## [1.2.4](https://github.com/oclif/plugin-not-found/compare/v1.2.3...v1.2.4) (2020-05-15)
+
+
 ### Bug Fixes
 
-* downgrade to node 12 ([15b9382](https://github.com/oclif/plugin-not-found/commit/15b9382bb2fc83e4246c8557f2b51dfb2ecd4f72))
-
-## [2.0.0](https://github.com/oclif/plugin-not-found/compare/v1.2.4...v2.0.0) (2021-04-21)
+* @oclif/color dep ([#41](https://github.com/oclif/plugin-not-found/issues/41)) ([835109f](https://github.com/oclif/plugin-not-found/commit/835109fc903731638b7ceccb58354934ebdf9037))
 
 
-### Features
 
-* support spaced commands ([#166](https://github.com/oclif/plugin-not-found/issues/166)) ([b38be86](https://github.com/oclif/plugin-not-found/commit/b38be86fac0652b362898dc2626867af053b5883))
+## [1.2.3](https://github.com/oclif/plugin-not-found/compare/v1.2.2...v1.2.3) (2019-08-15)
+
+
 
 ## [1.2.2](https://github.com/oclif/plugin-not-found/compare/v1.2.1...v1.2.2) (2018-10-13)
 
 
 ### Bug Fixes
 
-* remove greenkeeper badge ([4a5c1de](https://github.com/oclif/plugin-not-found/commit/4a5c1de))
+* remove greenkeeper badge ([4a5c1de](https://github.com/oclif/plugin-not-found/commit/4a5c1de3579bc240bb255355669b353cfa9abb61))
+
+
 
 ## [1.2.1](https://github.com/oclif/plugin-not-found/compare/v1.2.0...v1.2.1) (2018-10-03)
 
 
 ### Bug Fixes
 
-* updated hook ([7e71672](https://github.com/oclif/plugin-not-found/commit/7e71672))
+* updated hook ([7e71672](https://github.com/oclif/plugin-not-found/commit/7e71672f0c311a09d71a6d5c80bc0e590fe18693))
+
+
 
 # [1.2.0](https://github.com/oclif/plugin-not-found/compare/v1.1.4...v1.2.0) (2018-08-17)
 
 
 ### Features
 
-* typescript 3 ([944cac2](https://github.com/oclif/plugin-not-found/commit/944cac2))
+* typescript 3 ([944cac2](https://github.com/oclif/plugin-not-found/commit/944cac219edd6e0bea0941798cb943b1f2a6465b))
+
+
 
 ## [1.1.4](https://github.com/oclif/plugin-not-found/compare/v1.1.3...v1.1.4) (2018-06-29)
 
 
 ### Bug Fixes
 
-* bump semantic-release ([618f399](https://github.com/oclif/plugin-not-found/commit/618f399))
-
-<a name="1.1.3"></a>
-## [1.1.3](https://github.com/oclif/plugin-not-found/compare/56a4f62e911816f0a33242d458acbe446c5cf6b9...v1.1.3) (2018-06-29)
+* bump semantic-release ([618f399](https://github.com/oclif/plugin-not-found/commit/618f399766fde46543b22aed3041c3ef41a35d05))
 
 
-### Bug Fixes
 
-* switch to [@oclif](https://github.com/oclif)/color ([609c4fd](https://github.com/oclif/plugin-not-found/commit/609c4fd))
-
-<a name="1.1.2"></a>
-## [1.1.2](https://github.com/oclif/plugin-not-found/compare/a67469fb44f419cb7316d4153ecdfb8ecdc08917...v1.1.2) (2018-06-15)
+## [1.1.3](https://github.com/oclif/plugin-not-found/compare/v1.1.2...v1.1.3) (2018-06-29)
 
 
 ### Bug Fixes
 
-* add aliases ([56a4f62](https://github.com/oclif/plugin-not-found/commit/56a4f62))
+* switch to @oclif/color ([609c4fd](https://github.com/oclif/plugin-not-found/commit/609c4fd35bc7a95a98b943c53abbd705d4190495))
 
-<a name="1.1.1"></a>
-## [1.1.1](https://github.com/oclif/plugin-not-found/compare/7d6dd81dc1a7896a8fa07ffb8227e1f27bf967b2...v1.1.1) (2018-06-15)
+
+
+## [1.1.2](https://github.com/oclif/plugin-not-found/compare/v1.1.1...v1.1.2) (2018-06-15)
 
 
 ### Bug Fixes
 
-* Merge pull request [#22](https://github.com/oclif/plugin-not-found/issues/22) from oclif/levenshtein-r000ls ([a67469f](https://github.com/oclif/plugin-not-found/commit/a67469f))
-* screw dice ([22de529](https://github.com/oclif/plugin-not-found/commit/22de529))
+* add aliases ([56a4f62](https://github.com/oclif/plugin-not-found/commit/56a4f62e911816f0a33242d458acbe446c5cf6b9))
 
-<a name="1.1.0"></a>
-# [1.1.0](https://github.com/oclif/plugin-not-found/compare/df00d62218bed7c4d40a9c8e4a86cb4a29d3639a...v1.1.0) (2018-06-12)
+
+
+## [1.1.1](https://github.com/oclif/plugin-not-found/compare/v1.1.0...v1.1.1) (2018-06-15)
+
+
+### Bug Fixes
+
+* screw dice ([22de529](https://github.com/oclif/plugin-not-found/commit/22de52944bc722c92b5f8d4ee4e022e32cb22d89))
+
+
+
+# [1.1.0](https://github.com/oclif/plugin-not-found/compare/v1.0.9...v1.1.0) (2018-06-13)
 
 
 ### Features
 
-* did you mean ([#21](https://github.com/oclif/plugin-not-found/issues/21)) ([7d6dd81](https://github.com/oclif/plugin-not-found/commit/7d6dd81))
-
-<a name="1.0.9"></a>
-## [1.0.9](https://github.com/oclif/plugin-not-found/compare/e0e49999632449d6345fa7828274a5f779140c77...v1.0.9) (2018-05-03)
+* did you mean ([#21](https://github.com/oclif/plugin-not-found/issues/21)) ([7d6dd81](https://github.com/oclif/plugin-not-found/commit/7d6dd81dc1a7896a8fa07ffb8227e1f27bf967b2))
 
 
-### Bug Fixes
 
-* updated command ([df00d62](https://github.com/oclif/plugin-not-found/commit/df00d62))
-
-<a name="1.0.8"></a>
-## [1.0.8](https://github.com/oclif/plugin-not-found/compare/4712f16ad98f1ac385c9bfabe4dd4652ee094215...v1.0.8) (2018-05-01)
+## [1.0.9](https://github.com/oclif/plugin-not-found/compare/v1.0.8...v1.0.9) (2018-05-03)
 
 
 ### Bug Fixes
 
-* updated command ([e0e4999](https://github.com/oclif/plugin-not-found/commit/e0e4999))
-
-<a name="1.0.7"></a>
-## [1.0.7](https://github.com/oclif/plugin-not-found/compare/3809b9c0d831630ab2463bd6727a1529b8c9b9e0...v1.0.7) (2018-04-24)
+* updated command ([df00d62](https://github.com/oclif/plugin-not-found/commit/df00d62218bed7c4d40a9c8e4a86cb4a29d3639a))
 
 
-### Bug Fixes
 
-* updated command ([4712f16](https://github.com/oclif/plugin-not-found/commit/4712f16))
-
-<a name="1.0.6"></a>
-## [1.0.6](https://github.com/oclif/plugin-not-found/compare/43e80a330cd3cd1c729b72b25756ab2606797efc...v1.0.6) (2018-04-18)
+## [1.0.8](https://github.com/oclif/plugin-not-found/compare/v1.0.7...v1.0.8) (2018-05-01)
 
 
 ### Bug Fixes
 
-* updated command ([3809b9c](https://github.com/oclif/plugin-not-found/commit/3809b9c))
-
-<a name="1.0.5"></a>
-## [1.0.5](https://github.com/oclif/plugin-not-found/compare/92b7c99bc62babd0649b3e2fa8272a25ef4783bb...v1.0.5) (2018-03-24)
+* updated command ([e0e4999](https://github.com/oclif/plugin-not-found/commit/e0e49999632449d6345fa7828274a5f779140c77))
 
 
-### Bug Fixes
 
-* updated command ([43e80a3](https://github.com/oclif/plugin-not-found/commit/43e80a3))
-
-<a name="1.0.4"></a>
-## [1.0.4](https://github.com/oclif/plugin-not-found/compare/cc651811728f7fe87319682bf527eb8ff7276c04...v1.0.4) (2018-03-23)
+## [1.0.7](https://github.com/oclif/plugin-not-found/compare/v1.0.6...v1.0.7) (2018-04-24)
 
 
 ### Bug Fixes
 
-* updated deps ([92b7c99](https://github.com/oclif/plugin-not-found/commit/92b7c99))
-
-<a name="1.0.3"></a>
-## [1.0.3](https://github.com/oclif/plugin-not-found/compare/ffb4c9437d634a7acf12a9903a6c6dedfda513ab...v1.0.3) (2018-02-28)
+* updated command ([4712f16](https://github.com/oclif/plugin-not-found/commit/4712f16ad98f1ac385c9bfabe4dd4652ee094215))
 
 
-### Bug Fixes
 
-* updated deps ([cc65181](https://github.com/oclif/plugin-not-found/commit/cc65181))
-
-<a name="1.0.2"></a>
-## [1.0.2](https://github.com/oclif/plugin-not-found/compare/289dcd55848ccd30ffb3a7d46df8c2300b8c73fd...v1.0.2) (2018-02-15)
+## [1.0.6](https://github.com/oclif/plugin-not-found/compare/v1.0.5...v1.0.6) (2018-04-18)
 
 
 ### Bug Fixes
 
-* updated command ([ffb4c94](https://github.com/oclif/plugin-not-found/commit/ffb4c94))
+* updated command ([3809b9c](https://github.com/oclif/plugin-not-found/commit/3809b9c0d831630ab2463bd6727a1529b8c9b9e0))
 
-<a name="1.0.1"></a>
+
+
+## [1.0.5](https://github.com/oclif/plugin-not-found/compare/v1.0.4...v1.0.5) (2018-03-24)
+
+
+### Bug Fixes
+
+* updated command ([43e80a3](https://github.com/oclif/plugin-not-found/commit/43e80a330cd3cd1c729b72b25756ab2606797efc))
+
+
+
+## [1.0.4](https://github.com/oclif/plugin-not-found/compare/v1.0.3...v1.0.4) (2018-03-23)
+
+
+### Bug Fixes
+
+* updated deps ([92b7c99](https://github.com/oclif/plugin-not-found/commit/92b7c99bc62babd0649b3e2fa8272a25ef4783bb))
+
+
+
+## [1.0.3](https://github.com/oclif/plugin-not-found/compare/v1.0.2...v1.0.3) (2018-02-28)
+
+
+### Bug Fixes
+
+* updated deps ([cc65181](https://github.com/oclif/plugin-not-found/commit/cc651811728f7fe87319682bf527eb8ff7276c04))
+
+
+
+## [1.0.2](https://github.com/oclif/plugin-not-found/compare/v1.0.1...v1.0.2) (2018-02-15)
+
+
+### Bug Fixes
+
+* updated command ([ffb4c94](https://github.com/oclif/plugin-not-found/commit/ffb4c9437d634a7acf12a9903a6c6dedfda513ab))
+
+
+
 ## [1.0.1](https://github.com/oclif/plugin-not-found/compare/v1.0.0...v1.0.1) (2018-02-13)
 
 
 ### Bug Fixes
 
-* updated deps ([289dcd5](https://github.com/oclif/plugin-not-found/commit/289dcd5))
-
-<a name="0.1.21"></a>
-## [0.1.21](https://github.com/oclif/plugin-not-found/compare/9ddeda3adef519c3e11f0bee6678c34f4108482d...v0.1.21) (2018-02-13)
+* updated deps ([289dcd5](https://github.com/oclif/plugin-not-found/commit/289dcd55848ccd30ffb3a7d46df8c2300b8c73fd))
 
 
-### Bug Fixes
 
-* updated command ([43f6fe5](https://github.com/oclif/plugin-not-found/commit/43f6fe5))
+# [1.0.0](https://github.com/oclif/plugin-not-found/compare/v0.1.21...v1.0.0) (2018-02-13)
 
-<a name="0.1.20"></a>
-## [0.1.20](https://github.com/anycli/plugin-not-found/compare/e87d80e567b7fa9b4353a6521fc051dcbdd24ea8...v0.1.20) (2018-02-07)
+
+
+## [0.1.21](https://github.com/oclif/plugin-not-found/compare/v0.1.20...v0.1.21) (2018-02-13)
 
 
 ### Bug Fixes
 
-* fixed indentation ([bb19703](https://github.com/anycli/plugin-not-found/commit/bb19703))
-
-<a name="0.1.19"></a>
-## [0.1.19](https://github.com/anycli/plugin-not-found/compare/a2871d62aff4144984b4cd86964cafe65ce2dd54...v0.1.19) (2018-02-07)
+* rename to oclif ([9ddeda3](https://github.com/oclif/plugin-not-found/commit/9ddeda3adef519c3e11f0bee6678c34f4108482d))
+* updated command ([43f6fe5](https://github.com/oclif/plugin-not-found/commit/43f6fe52a92a77dcd219bd74ca3fd8621ccc1838))
 
 
-### Bug Fixes
 
-* updated deps ([e87d80e](https://github.com/anycli/plugin-not-found/commit/e87d80e))
-
-<a name="0.1.18"></a>
-## [0.1.18](https://github.com/anycli/plugin-not-found/compare/d1ba5fb8027872305a67cdac29df6161ec8453b9...v0.1.18) (2018-02-07)
+## [0.1.20](https://github.com/oclif/plugin-not-found/compare/v0.1.19...v0.1.20) (2018-02-07)
 
 
 ### Bug Fixes
 
-* updated config ([a2871d6](https://github.com/anycli/plugin-not-found/commit/a2871d6))
-
-<a name="0.1.17"></a>
-## [0.1.17](https://github.com/anycli/plugin-not-found/compare/1602a582d3609d99755e160934ac2ce77df15cb9...v0.1.17) (2018-02-06)
+* fixed indentation ([bb19703](https://github.com/oclif/plugin-not-found/commit/bb19703349cbeb48759a49eda30249abb21a1a77))
 
 
-### Bug Fixes
 
-* updated deps ([d1ba5fb](https://github.com/anycli/plugin-not-found/commit/d1ba5fb))
-
-<a name="0.1.16"></a>
-## [0.1.16](https://github.com/anycli/plugin-not-found/compare/58f961275e5e587050b5a3bda610b2883d3a4a7f...v0.1.16) (2018-02-05)
+## [0.1.19](https://github.com/oclif/plugin-not-found/compare/v0.1.18...v0.1.19) (2018-02-07)
 
 
 ### Bug Fixes
 
-* remove cli-ux ([1602a58](https://github.com/anycli/plugin-not-found/commit/1602a58))
-
-<a name="0.1.15"></a>
-## [0.1.15](https://github.com/anycli/plugin-not-found/compare/621ba617c5dea977b0962641010ec5e435bbafc6...v0.1.15) (2018-02-03)
+* updated deps ([e87d80e](https://github.com/oclif/plugin-not-found/commit/e87d80e567b7fa9b4353a6521fc051dcbdd24ea8))
 
 
-### Bug Fixes
 
-* updated config ([e4db80b](https://github.com/anycli/plugin-not-found/commit/e4db80b))
-* updated deps ([58f9612](https://github.com/anycli/plugin-not-found/commit/58f9612))
-
-<a name="0.1.14"></a>
-## [0.1.14](https://github.com/anycli/plugin-not-found/compare/9a402d89715958e43a11944367c40f80328f170b...v0.1.14) (2018-02-02)
+## [0.1.18](https://github.com/oclif/plugin-not-found/compare/v0.1.17...v0.1.18) (2018-02-07)
 
 
 ### Bug Fixes
 
-* bump dev-cli ([621ba61](https://github.com/anycli/plugin-not-found/commit/621ba61))
-
-<a name="0.1.13"></a>
-## [0.1.13](https://github.com/anycli/plugin-not-found/compare/e75c5c4ed78d94911d64216e2d98544dc88df7e7...v0.1.13) (2018-02-02)
+* updated config ([a2871d6](https://github.com/oclif/plugin-not-found/commit/a2871d62aff4144984b4cd86964cafe65ce2dd54))
 
 
-### Bug Fixes
 
-* fix manifest writing ([9a402d8](https://github.com/anycli/plugin-not-found/commit/9a402d8))
-
-<a name="0.1.12"></a>
-## [0.1.12](https://github.com/anycli/plugin-not-found/compare/f04407596efb636c2a081ef54a4d3403deece519...v0.1.12) (2018-02-02)
+## [0.1.17](https://github.com/oclif/plugin-not-found/compare/v0.1.16...v0.1.17) (2018-02-06)
 
 
 ### Bug Fixes
 
-* bump cache ([e75c5c4](https://github.com/anycli/plugin-not-found/commit/e75c5c4))
-
-<a name="0.1.11"></a>
-## [0.1.11](https://github.com/anycli/plugin-not-found/compare/5584f1e2da1595e39109c0c90107ef9aa8a94440...v0.1.11) (2018-02-02)
+* updated deps ([d1ba5fb](https://github.com/oclif/plugin-not-found/commit/d1ba5fb8027872305a67cdac29df6161ec8453b9))
 
 
-### Bug Fixes
 
-* add plugin manifest ([f044075](https://github.com/anycli/plugin-not-found/commit/f044075))
-
-<a name="0.1.10"></a>
-## [0.1.10](https://github.com/anycli/plugin-not-found/compare/6c92b0b946510fd16cecf7d971251605cdcf41cf...v0.1.10) (2018-02-02)
+## [0.1.16](https://github.com/oclif/plugin-not-found/compare/v0.1.15...v0.1.16) (2018-02-05)
 
 
 ### Bug Fixes
 
-* fixed test suite ([188debd](https://github.com/anycli/plugin-not-found/commit/188debd))
-* use [@heroku-cli](https://github.com/heroku-cli)/color ([5584f1e](https://github.com/anycli/plugin-not-found/commit/5584f1e))
-
-<a name="0.1.9"></a>
-## [0.1.9](https://github.com/anycli/not-found/compare/32c9ac807a8ac7ee906a164ba5f1b4f79c98a6c5...v0.1.9) (2018-02-01)
+* remove cli-ux ([1602a58](https://github.com/oclif/plugin-not-found/commit/1602a582d3609d99755e160934ac2ce77df15cb9))
 
 
-### Bug Fixes
 
-* updated deps ([0534c32](https://github.com/anycli/not-found/commit/0534c32))
-
-<a name="0.1.8"></a>
-## [0.1.8](https://github.com/anycli/not-found/compare/5c0a7b4c93f768d46bc88bdc348352f766ec21a0...v0.1.8) (2018-02-01)
+## [0.1.15](https://github.com/oclif/plugin-not-found/compare/v0.1.14...v0.1.15) (2018-02-03)
 
 
 ### Bug Fixes
 
-* updated engine ([32c9ac8](https://github.com/anycli/not-found/commit/32c9ac8))
-
-<a name="0.1.7"></a>
-## [0.1.7](https://github.com/anycli/not-found/compare/3a2118d21ea80edec1d3898a813ab8d160151cc9...v0.1.7) (2018-01-31)
+* updated config ([e4db80b](https://github.com/oclif/plugin-not-found/commit/e4db80bebdbd674ef765157d3c10d0e4db58d8b6))
+* updated deps ([58f9612](https://github.com/oclif/plugin-not-found/commit/58f961275e5e587050b5a3bda610b2883d3a4a7f))
 
 
-### Bug Fixes
 
-* updated engine ([5c0a7b4](https://github.com/anycli/not-found/commit/5c0a7b4))
-
-<a name="0.1.6"></a>
-## [0.1.6](https://github.com/anycli/not-found/compare/11b331cca379cc564f84f8b607c7f5104689e22b...v0.1.6) (2018-01-31)
+## [0.1.14](https://github.com/oclif/plugin-not-found/compare/v0.1.13...v0.1.14) (2018-02-02)
 
 
 ### Bug Fixes
 
-* typescript 2.7 ([3a2118d](https://github.com/anycli/not-found/commit/3a2118d))
-
-<a name="0.1.5"></a>
-## [0.1.5](https://github.com/anycli/not-found/compare/58be5fd865b4017f733e5845b7c194c07edac617...v0.1.5) (2018-01-31)
+* bump dev-cli ([621ba61](https://github.com/oclif/plugin-not-found/commit/621ba617c5dea977b0962641010ec5e435bbafc6))
 
 
-### Bug Fixes
 
-* skip plugin if no commands ([11b331c](https://github.com/anycli/not-found/commit/11b331c))
-
-<a name="0.1.4"></a>
-## [0.1.4](https://github.com/anycli/not-found/compare/c17b8028f0cc16188ebff803b5418006f7b2460b...v0.1.4) (2018-01-31)
+## [0.1.13](https://github.com/oclif/plugin-not-found/compare/v0.1.12...v0.1.13) (2018-02-02)
 
 
 ### Bug Fixes
 
-* testing release ([58be5fd](https://github.com/anycli/not-found/commit/58be5fd))
-
-<a name="0.1.3"></a>
-## [0.1.3](https://github.com/dxcli/not-found/compare/46c8668c04ed0cfd43bf5e1fe6029021ac62f0ca...v0.1.3) (2018-01-29)
+* fix manifest writing ([9a402d8](https://github.com/oclif/plugin-not-found/commit/9a402d89715958e43a11944367c40f80328f170b))
 
 
-### Bug Fixes
 
-* ran generator ([04b4e5f](https://github.com/dxcli/not-found/commit/04b4e5f))
-
-<a name="0.1.2"></a>
-## [0.1.2](https://github.com/dxcli/not-found/compare/b098ed2c51567fa00fe952ca8b652ca1ba47b54c...v0.1.2) (2018-01-28)
+## [0.1.12](https://github.com/oclif/plugin-not-found/compare/v0.1.11...v0.1.12) (2018-02-02)
 
 
 ### Bug Fixes
 
-* ran generator ([46c8668](https://github.com/dxcli/not-found/commit/46c8668))
+* bump cache ([e75c5c4](https://github.com/oclif/plugin-not-found/commit/e75c5c4ed78d94911d64216e2d98544dc88df7e7))
 
-<a name="0.1.1"></a>
-## [0.1.1](https://github.com/dxcli/not-found/compare/b406cc0ecfbf0bb9cb0c7384c1a17adc4924236a...v0.1.1) (2018-01-25)
+
+
+## [0.1.11](https://github.com/oclif/plugin-not-found/compare/v0.1.10...v0.1.11) (2018-02-02)
 
 
 ### Bug Fixes
 
-* updated deps ([c48e600](https://github.com/dxcli/not-found/commit/c48e600))
+* add plugin manifest ([f044075](https://github.com/oclif/plugin-not-found/commit/f04407596efb636c2a081ef54a4d3403deece519))
 
-<a name="0.1.0"></a>
-# [0.1.0](https://github.com/dxcli/not-found/compare/v0.0.0...v0.1.0) (2018-01-20)
+
+
+## [0.1.10](https://github.com/oclif/plugin-not-found/compare/v0.1.9...v0.1.10) (2018-02-02)
+
+
+### Bug Fixes
+
+* fixed test suite ([188debd](https://github.com/oclif/plugin-not-found/commit/188debd9cf7a17e8c9d9eef889de7341340bbfac))
+* rename to -plugin ([4ae0001](https://github.com/oclif/plugin-not-found/commit/4ae00015c420d243ccc0e0915043894c289df9fc))
+* rename to plugin-not-found ([6c92b0b](https://github.com/oclif/plugin-not-found/commit/6c92b0b946510fd16cecf7d971251605cdcf41cf))
+* use @heroku-cli/color ([5584f1e](https://github.com/oclif/plugin-not-found/commit/5584f1e2da1595e39109c0c90107ef9aa8a94440))
+* use version-plugin ([401fc85](https://github.com/oclif/plugin-not-found/commit/401fc859f014dd10b34de6c7e2826071b5ee968e))
+
+
+
+## [0.1.9](https://github.com/oclif/plugin-not-found/compare/v0.1.8...v0.1.9) (2018-02-01)
+
+
+### Bug Fixes
+
+* updated deps ([0534c32](https://github.com/oclif/plugin-not-found/commit/0534c324a7210e55b6e381c0aa4406b93b12b5d5))
+
+
+
+## [0.1.8](https://github.com/oclif/plugin-not-found/compare/v0.1.7...v0.1.8) (2018-02-01)
+
+
+### Bug Fixes
+
+* updated engine ([32c9ac8](https://github.com/oclif/plugin-not-found/commit/32c9ac807a8ac7ee906a164ba5f1b4f79c98a6c5))
+
+
+
+## [0.1.7](https://github.com/oclif/plugin-not-found/compare/v0.1.6...v0.1.7) (2018-01-31)
+
+
+### Bug Fixes
+
+* updated engine ([5c0a7b4](https://github.com/oclif/plugin-not-found/commit/5c0a7b4c93f768d46bc88bdc348352f766ec21a0))
+
+
+
+## [0.1.6](https://github.com/oclif/plugin-not-found/compare/v0.1.5...v0.1.6) (2018-01-31)
+
+
+### Bug Fixes
+
+* typescript 2.7 ([3a2118d](https://github.com/oclif/plugin-not-found/commit/3a2118d21ea80edec1d3898a813ab8d160151cc9))
+
+
+
+## [0.1.5](https://github.com/oclif/plugin-not-found/compare/v0.1.4...v0.1.5) (2018-01-31)
+
+
+### Bug Fixes
+
+* skip plugin if no commands ([11b331c](https://github.com/oclif/plugin-not-found/commit/11b331cca379cc564f84f8b607c7f5104689e22b))
+
+
+
+## [0.1.4](https://github.com/oclif/plugin-not-found/compare/v0.1.3...v0.1.4) (2018-01-31)
+
+
+### Bug Fixes
+
+* anycli rename ([c17b802](https://github.com/oclif/plugin-not-found/commit/c17b8028f0cc16188ebff803b5418006f7b2460b))
+* testing release ([58be5fd](https://github.com/oclif/plugin-not-found/commit/58be5fd865b4017f733e5845b7c194c07edac617))
+
+
+
+## [0.1.3](https://github.com/oclif/plugin-not-found/compare/v0.1.2...v0.1.3) (2018-01-29)
+
+
+### Bug Fixes
+
+* ran generator ([04b4e5f](https://github.com/oclif/plugin-not-found/commit/04b4e5fd370a9cb94d7906e6bffc9edcd396967e))
+
+
+
+## [0.1.2](https://github.com/oclif/plugin-not-found/compare/v0.1.1...v0.1.2) (2018-01-28)
+
+
+### Bug Fixes
+
+* ran generator ([46c8668](https://github.com/oclif/plugin-not-found/commit/46c8668c04ed0cfd43bf5e1fe6029021ac62f0ca))
+
+
+
+## [0.1.1](https://github.com/oclif/plugin-not-found/compare/v0.1.0...v0.1.1) (2018-01-25)
+
+
+### Bug Fixes
+
+* updated deps ([c48e600](https://github.com/oclif/plugin-not-found/commit/c48e600a69bff441dc53115fa9b67e8942d83c94))
+
+
+
+# [0.1.0](https://github.com/oclif/plugin-not-found/compare/v0.0.0...v0.1.0) (2018-01-20)
 
 
 ### Features
 
-* implemented not found hook ([b406cc0](https://github.com/dxcli/not-found/commit/b406cc0))
+* implemented not found hook ([b406cc0](https://github.com/oclif/plugin-not-found/commit/b406cc0ecfbf0bb9cb0c7384c1a17adc4924236a))
+
+
+
+# 0.0.0 (2018-01-20)
+
+
+
