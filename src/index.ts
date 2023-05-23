@@ -1,7 +1,6 @@
 import {color} from '@oclif/color'
-import {ux, Hook, toConfiguredId} from '@oclif/core'
+import {Hook, toConfiguredId, ux} from '@oclif/core'
 import * as Levenshtein from 'fast-levenshtein'
-import * as _ from 'lodash'
 
 const hook: Hook.CommandNotFound = async function (opts) {
   const hiddenCommandIds = new Set(opts.config.commands.filter(c => c.hidden).map(c => c.id))
@@ -12,7 +11,13 @@ const hook: Hook.CommandNotFound = async function (opts) {
 
   if (commandIDs.length === 0) return
   function closest(cmd: string): string {
-    return _.minBy(commandIDs, c => Levenshtein.get(cmd, c))!
+    // we'll use this array to keep track of which key is the closest to the users entered value.
+    // keys closer to the index 0 will be a closer guess than keys indexed further from 0
+    // an entry at 0 would be a direct match, an entry at 1 would be a single character off, etc.
+    const index: string[] = []
+    // eslint-disable-next-line no-return-assign
+    commandIDs.map(id => (index[Levenshtein.get(cmd, id)] = id))
+    return index.find(item => item !== undefined) ?? ''
   }
 
   let binHelp = `${opts.config.bin} help`
