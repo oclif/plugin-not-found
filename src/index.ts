@@ -29,14 +29,16 @@ const hook: Hook.CommandNotFound = async function (opts) {
 
   let response = ''
   try {
-    response = await ux.prompt(`Did you mean ${color.blueBright(readableSuggestion)}? [y/n]`, {timeout: 4900})
+    response = await ux.prompt(`Did you mean ${color.blueBright(readableSuggestion)}? [y/n]`, {timeout: 10_000})
   } catch (error) {
     this.log('')
     this.debug(error)
   }
 
   if (response === 'y') {
-    const argv = opts.argv || process.argv.slice(3, process.argv.length)
+    // this will split the original command from the suggested replacement, and gather the remaining args as varargs to help with situations like:
+    // confit set foo-bar -> confit:set:foo-bar -> config:set:foo-bar -> config:set foo-bar
+    const argv = opts.argv?.length ? opts.argv : opts.id.split(':').slice(suggestion.split(':').length)
     return this.config.runCommand(suggestion, argv)
   }
 
