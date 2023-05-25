@@ -3,7 +3,7 @@ import {Hook, toConfiguredId, ux} from '@oclif/core'
 import * as Levenshtein from 'fast-levenshtein'
 
 export const closest = (target: string, possibilities: string[]): string =>
-  possibilities.map(id => ({id, distance: Levenshtein.get(target, id)})).sort((a, b) => a.distance - b.distance)[0]?.id ?? ''
+  possibilities.map(id => ({id, distance: Levenshtein.get(target, id, {useCollator: true})})).sort((a, b) => a.distance - b.distance)[0]?.id ?? ''
 
 const hook: Hook.CommandNotFound = async function (opts) {
   const hiddenCommandIds = new Set(opts.config.commands.filter(c => c.hidden).map(c => c.id))
