@@ -22,6 +22,19 @@ describe('command_not_found', () => {
   })
 
   test
+  .stub(ux, 'prompt', yes)
+  // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+  // @ts-ignore
+  .stub(process, 'argv', ['username'])
+  .stdout()
+  .stderr()
+  .hook('command_not_found', {id: 'commans get'})
+  .end('runs hook with suggested command on yes with varargs passed', (ctx: any) => {
+    expect(ctx.stderr).to.be.contain('Warning: commans get is not a @oclif/plugin-not-found command.\n')
+    expect(ctx.stdout).to.match(/commands.+?\n.*?help/)
+  })
+
+  test
   .stderr()
   .stub(ux, 'prompt', yes)
   .hook('command_not_found', {id: 'commans', argv: ['foo', '--bar', 'baz']})
