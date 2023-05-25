@@ -1,3 +1,12 @@
+## [2.3.24](https://github.com/oclif/plugin-not-found/compare/2.3.23...2.3.24) (2023-05-25)
+
+
+### Bug Fixes
+
+* split suggested command from passed command to get varargs ([f79c50c](https://github.com/oclif/plugin-not-found/commit/f79c50cfdd23487c97d8fb71946fc4e2618c3023))
+
+
+
 ## [2.3.23](https://github.com/oclif/plugin-not-found/compare/2.3.22...2.3.23) (2023-04-01)
 
 
