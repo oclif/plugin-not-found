@@ -23,7 +23,7 @@ const hook: Hook.CommandNotFound = async function (opts) {
 
   // alter the suggestion in the help scenario so that help is the first command
   // otherwise the user will be presented 'did you mean 'help'?' instead of 'did you mean "help <command>"?'
-  let suggestion = /:?help:?/.test(opts.id) ? ['help', closest(opts.id.replace(/:?help:?/, ''), commandIDs)].join(':') : closest(opts.id, commandIDs)
+  let suggestion = /:?help:?/.test(opts.id) ? ['help', ...opts.id.split(':').filter(cmd => cmd !== 'help')].join(':') : closest(opts.id, commandIDs)
 
   const readableSuggestion = toConfiguredId(suggestion, this.config)
   const originalCmd = toConfiguredId(opts.id, this.config)
