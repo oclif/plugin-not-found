@@ -45,7 +45,7 @@ const hook: Hook.CommandNotFound = async function (opts) {
     if (suggestion.startsWith('help:')) {
       // the args are the command/partial command you need help for (package:version)
       // we created the suggestion variable to start with "help" so slice the first entry
-      argv = [...suggestion.split(':').slice(1), ...argv]
+      argv = suggestion.split(':').slice(1)
       // the command is just the word "help"
       suggestion = 'help'
     }
