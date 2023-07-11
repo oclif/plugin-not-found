@@ -21,7 +21,9 @@ const hook: Hook.CommandNotFound = async function (opts) {
     binHelp = `${binHelp} ${idSplit[0]}`
   }
 
-  const suggestion = closest(opts.id, commandIDs)
+  // alter the suggestion in the help scenario so that help is the first command
+  // otherwise the user will be presented 'did you mean 'help'?' instead of 'did you mean "help <command>"?'
+  let suggestion = /:?help:?/.test(opts.id) ? ['help', ...opts.id.split(':').filter(cmd => cmd !== 'help')].join(':') : closest(opts.id, commandIDs)
 
   const readableSuggestion = toConfiguredId(suggestion, this.config)
   const originalCmd = toConfiguredId(opts.id, this.config)
@@ -38,7 +40,16 @@ const hook: Hook.CommandNotFound = async function (opts) {
   if (response === 'y') {
     // this will split the original command from the suggested replacement, and gather the remaining args as varargs to help with situations like:
     // confit set foo-bar -> confit:set:foo-bar -> config:set:foo-bar -> config:set foo-bar
-    const argv = opts.argv?.length ? opts.argv : opts.id.split(':').slice(suggestion.split(':').length)
+    let argv = opts.argv?.length ? opts.argv : opts.id.split(':').slice(suggestion.split(':').length)
+
+    if (suggestion.startsWith('help:')) {
+      // the args are the command/partial command you need help for (package:version)
+      // we created the suggestion variable to start with "help" so slice the first entry
+      argv = suggestion.split(':').slice(1)
+      // the command is just the word "help"
+      suggestion = 'help'
+    }
+
     return this.config.runCommand(suggestion, argv)
   }
 
