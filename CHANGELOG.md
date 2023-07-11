@@ -1,3 +1,12 @@
+## [2.3.28](https://github.com/oclif/plugin-not-found/compare/2.3.27...2.3.28) (2023-07-11)
+
+
+### Bug Fixes
+
+* identify when the command is meant to be 'help' ([790e92d](https://github.com/oclif/plugin-not-found/commit/790e92db9f039093503532a1b191b2151b39c2a7))
+
+
+
 ## [2.3.27](https://github.com/oclif/plugin-not-found/compare/2.3.26...2.3.27) (2023-07-09)
 
 
