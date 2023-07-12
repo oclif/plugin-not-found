@@ -1,3 +1,12 @@
+## [2.3.29](https://github.com/oclif/plugin-not-found/compare/2.3.28...2.3.29) (2023-07-12)
+
+
+### Bug Fixes
+
+* **deps:** bump semver from 5.7.1 to 5.7.2 ([0ca4382](https://github.com/oclif/plugin-not-found/commit/0ca4382cf02746a8fd03a82d71c418bc3b5641cb))
+
+
+
 ## [2.3.28](https://github.com/oclif/plugin-not-found/compare/2.3.27...2.3.28) (2023-07-11)
 
 
