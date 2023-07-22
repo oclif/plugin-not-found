@@ -1,3 +1,12 @@
+## [2.3.33](https://github.com/oclif/plugin-not-found/compare/2.3.32...2.3.33) (2023-07-22)
+
+
+### Bug Fixes
+
+* **deps:** bump @oclif/core from 2.9.3 to 2.9.4 ([82dc7db](https://github.com/oclif/plugin-not-found/commit/82dc7dbc912b037bc07ab3675d1c5ceb2821cdc1))
+
+
+
 ## [2.3.32](https://github.com/oclif/plugin-not-found/compare/2.3.31...2.3.32) (2023-07-19)
 
 
