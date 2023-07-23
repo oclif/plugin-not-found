@@ -1,3 +1,12 @@
+## [2.3.34](https://github.com/oclif/plugin-not-found/compare/2.3.33...2.3.34) (2023-07-23)
+
+
+### Bug Fixes
+
+* **deps:** bump @oclif/color from 1.0.8 to 1.0.9 ([59d84e4](https://github.com/oclif/plugin-not-found/commit/59d84e4b78c1bcbad4b20d769dc9a2b626c3afe6))
+
+
+
 ## [2.3.33](https://github.com/oclif/plugin-not-found/compare/2.3.32...2.3.33) (2023-07-22)
 
 
