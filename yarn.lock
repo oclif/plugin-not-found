@@ -519,10 +519,10 @@
     widest-line "^3.1.0"
     wrap-ansi "^7.0.0"
 
-"@oclif/core@^2.8.4", "@oclif/core@^2.9.3", "@oclif/core@^2.9.4":
-  version "2.9.4"
-  resolved "https://registry.yarnpkg.com/@oclif/core/-/core-2.9.4.tgz#5b22415e238fc3e0db08b0350b85b417ead6e6ff"
-  integrity sha512-eFRRpV+tJ6nMkhay2M9IppjSF3atRrgj6Qo83qUslaFSAW3NAl4mIhx1mKmTwQx5rgSrar03xICtSAWJ6gZtag==
+"@oclif/core@^2.11.1", "@oclif/core@^2.8.4", "@oclif/core@^2.9.3", "@oclif/core@^2.9.4":
+  version "2.11.1"
+  resolved "https://registry.yarnpkg.com/@oclif/core/-/core-2.11.1.tgz#69c3cfd3d9b2df9fe94c6d16a3c5da59706f078a"
+  integrity sha512-/DHDtm/PoSNvWdJtTv1GUYnrCrlTsEQd1CsXKNfMSylpkeOjbDIbt1w4NYZ50BfAWxpCunf7RmbwxFBpDa5lHQ==
   dependencies:
     "@types/cli-progress" "^3.11.0"
     ansi-escapes "^4.3.2"
@@ -581,12 +581,12 @@
     chalk "^4.1.0"
     tslib "^2.6.1"
 
-"@oclif/plugin-commands@^2.2.20":
-  version "2.2.20"
-  resolved "https://registry.yarnpkg.com/@oclif/plugin-commands/-/plugin-commands-2.2.20.tgz#7fd8ea1084fb6bf37c51e51f781237f30afb99da"
-  integrity sha512-zhF3rqVH+5AKAxzWKPl+Q8dAPQHoxPJh7QKxWXqsK/OdZ6L1UsstNY+mKDApnOQNVsLdglmexOz/IRDP2dVRBw==
+"@oclif/plugin-commands@^2.2.21":
+  version "2.2.21"
+  resolved "https://registry.yarnpkg.com/@oclif/plugin-commands/-/plugin-commands-2.2.21.tgz#62325acd5271dc89ffbc9d14f9feb505b648d364"
+  integrity sha512-PgYDJxILtXS+Ae/4i9Dj/0Ge7coNjrdGyhtndMRp4jqVeS8K2hjKvwMWLaHmUN3tU3RrdUBxJchaJ1bZ03ShBA==
   dependencies:
-    "@oclif/core" "^2.9.3"
+    "@oclif/core" "^2.11.1"
     lodash "^4.17.11"
 
 "@oclif/plugin-help@^5.1.19", "@oclif/plugin-help@^5.2.14":
