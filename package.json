@@ -19,7 +19,7 @@
     "fast-levenshtein": "^3.0.0"
   },
   "devDependencies": {
-    "@oclif/config": "^1.18.15",
+    "@oclif/config": "^1.18.16",
     "@oclif/plugin-commands": "^2.2.21",
     "@oclif/plugin-help": "^5.2.14",
     "@oclif/test": "^1.2.9",

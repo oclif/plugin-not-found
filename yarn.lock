@@ -473,17 +473,17 @@
     supports-color "^8.1.1"
     tslib "^2"
 
-"@oclif/config@^1.18.15":
-  version "1.18.15"
-  resolved "https://registry.yarnpkg.com/@oclif/config/-/config-1.18.15.tgz#3be95862dda32d759fc61bcadff1e7819915a112"
-  integrity sha512-eBTiFXGfXSzghc4Yjp3EutYU+6MrHX1kzk4j5i4CsR5AEor43ynXFrzpO6v7IwbR1KyUo+9SYE2D69Y+sHIMpg==
+"@oclif/config@^1.18.16":
+  version "1.18.16"
+  resolved "https://registry.yarnpkg.com/@oclif/config/-/config-1.18.16.tgz#3235d260ab1eb8388ebb6255bca3dd956249d796"
+  integrity sha512-VskIxVcN22qJzxRUq+raalq6Q3HUde7sokB7/xk5TqRZGEKRVbFeqdQBxDWwQeudiJEgcNiMvIFbMQ43dY37FA==
   dependencies:
     "@oclif/errors" "^1.3.6"
-    "@oclif/parser" "^3.8.15"
+    "@oclif/parser" "^3.8.16"
     debug "^4.3.4"
     globby "^11.1.0"
     is-wsl "^2.1.1"
-    tslib "^2.5.0"
+    tslib "^2.6.1"
 
 "@oclif/core@^2.11.1", "@oclif/core@^2.11.7", "@oclif/core@^2.9.3", "@oclif/core@^2.9.4":
   version "2.11.7"
@@ -537,7 +537,7 @@
   resolved "https://registry.yarnpkg.com/@oclif/linewrap/-/linewrap-1.0.0.tgz#aedcb64b479d4db7be24196384897b5000901d91"
   integrity sha512-Ups2dShK52xXa8w6iBWLgcjPJWjais6KPJQq3gQ/88AY6BXoTX+MIGFPrWQO1KLMiQfoTpcLnUwloN4brrVUHw==
 
-"@oclif/parser@^3.8.15":
+"@oclif/parser@^3.8.16":
   version "3.8.16"
   resolved "https://registry.yarnpkg.com/@oclif/parser/-/parser-3.8.16.tgz#bedfc55153075b8b2925657f8865035aa877515c"
   integrity sha512-jeleXSh5izmBQ6vwyCJmbFPahPpd/ajxASi25FaYAWcvwVMzP/vKAKQXKWZun6T9K/gd6ywSsTpfAXiZAjBd6g==
