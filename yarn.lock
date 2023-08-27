@@ -547,12 +547,12 @@
     chalk "^4.1.0"
     tslib "^2.6.2"
 
-"@oclif/plugin-commands@^2.2.23":
-  version "2.2.23"
-  resolved "https://registry.yarnpkg.com/@oclif/plugin-commands/-/plugin-commands-2.2.23.tgz#b15c12861feec4013944ab099269bdb85486246c"
-  integrity sha512-R7YTqL3bj1gP+YsI6vEBm+9FFzL8UplDJZbn79glKFAMBkTfLvS6lxbdqjtPJHZdDPv+/ecEaozDQXiZXE++rQ==
+"@oclif/plugin-commands@^2.2.24":
+  version "2.2.24"
+  resolved "https://registry.yarnpkg.com/@oclif/plugin-commands/-/plugin-commands-2.2.24.tgz#86bcc1e9a40c98970f26309156bdc51afb8497ee"
+  integrity sha512-bUZOBefMPR59oHngWNHDn+zGRQctVR5iMkO3qRWFUSVYt1VQtqOwAPBtpTIuIxL17/iGTG+U2b8jafn09lQNxA==
   dependencies:
-    "@oclif/core" "^2.11.8"
+    "@oclif/core" "^2.11.10"
     lodash "^4.17.11"
 
 "@oclif/plugin-help@^5.2.14", "@oclif/plugin-help@^5.2.17":
