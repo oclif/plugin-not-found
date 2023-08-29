@@ -1,4 +1,4 @@
-import {color} from '@oclif/color'
+import * as chalk from 'chalk'
 import {Hook, toConfiguredId, ux} from '@oclif/core'
 import * as Levenshtein from 'fast-levenshtein'
 
@@ -27,11 +27,11 @@ const hook: Hook.CommandNotFound = async function (opts) {
 
   const readableSuggestion = toConfiguredId(suggestion, this.config)
   const originalCmd = toConfiguredId(opts.id, this.config)
-  this.warn(`${color.yellow(originalCmd)} is not a ${opts.config.bin} command.`)
+  this.warn(`${chalk.yellow(originalCmd)} is not a ${opts.config.bin} command.`)
 
   let response = ''
   try {
-    response = await ux.prompt(`Did you mean ${color.blueBright(readableSuggestion)}? [y/n]`, {timeout: 10_000})
+    response = await ux.prompt(`Did you mean ${chalk.blueBright(readableSuggestion)}? [y/n]`, {timeout: 10_000})
   } catch (error) {
     this.log('')
     this.debug(error)
@@ -53,7 +53,7 @@ const hook: Hook.CommandNotFound = async function (opts) {
     return this.config.runCommand(suggestion, argv)
   }
 
-  this.error(`Run ${color.cmd(binHelp)} for a list of available commands.`, {exit: 127})
+  this.error(`Run ${chalk.bold.cyan(binHelp)} for a list of available commands.`, {exit: 127})
 }
 
 export default hook
