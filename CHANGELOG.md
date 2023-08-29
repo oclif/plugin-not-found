@@ -1,3 +1,12 @@
+# [2.4.0](https://github.com/oclif/plugin-not-found/compare/2.3.38...2.4.0) (2023-08-29)
+
+
+### Features
+
+* remove @oclif/color ([#440](https://github.com/oclif/plugin-not-found/issues/440)) ([4c43150](https://github.com/oclif/plugin-not-found/commit/4c43150752f239ee0e7f90cc302b5c2e6918acb5))
+
+
+
 ## [2.3.38](https://github.com/oclif/plugin-not-found/compare/2.3.37...2.3.38) (2023-08-26)
 
 
