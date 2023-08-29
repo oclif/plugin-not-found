@@ -14,8 +14,8 @@
   },
   "bugs": "https://github.com/oclif/plugin-not-found/issues",
   "dependencies": {
-    "@oclif/color": "^1.0.10",
     "@oclif/core": "^2.11.10",
+    "chalk": "^4",
     "fast-levenshtein": "^3.0.0"
   },
   "devDependencies": {

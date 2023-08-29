@@ -1,11 +1,8 @@
-import chalk, {color} from '@oclif/color'
 import {expect, test} from '@oclif/test'
 import {ux} from '@oclif/core'
 
 const yes = () => 'y'
 const no = () => 'n'
-
-color(chalk, 'enabled', 0)
 
 describe('command_not_found', () => {
   test
