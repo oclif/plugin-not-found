@@ -1,3 +1,12 @@
+## [2.4.1](https://github.com/oclif/plugin-not-found/compare/2.4.0...2.4.1) (2023-09-03)
+
+
+### Bug Fixes
+
+* **deps:** bump @oclif/core from 2.11.10 to 2.15.0 ([9f7a814](https://github.com/oclif/plugin-not-found/commit/9f7a81462f66c126dccbc3d77c8960113884e58f))
+
+
+
 # [2.4.0](https://github.com/oclif/plugin-not-found/compare/2.3.38...2.4.0) (2023-08-29)
 
 
