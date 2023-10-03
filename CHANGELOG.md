@@ -1,3 +1,12 @@
+## [2.4.3](https://github.com/oclif/plugin-not-found/compare/2.4.2...2.4.3) (2023-10-03)
+
+
+### Bug Fixes
+
+* **deps:** bump debug from 3.2.5 to 3.2.7 ([6f9a533](https://github.com/oclif/plugin-not-found/commit/6f9a53357c198721563adb07ad37851f75d8c8db))
+
+
+
 ## [2.4.2](https://github.com/oclif/plugin-not-found/compare/2.4.1...2.4.2) (2023-09-28)
 
 
