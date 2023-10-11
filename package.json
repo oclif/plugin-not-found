@@ -3,6 +3,51 @@
   "description": "\"did you mean\" for oclif",
   "version": "2.4.3",
   "author": "Salesforce",
+  "bugs": "https://github.com/oclif/plugin-not-found/issues",
+  "dependencies": {
+    "@oclif/core": "^3.0.5",
+    "chalk": "^5.3.0",
+    "fast-levenshtein": "^3.0.0"
+  },
+  "devDependencies": {
+    "@commitlint/config-conventional": "^17.7.0",
+    "@oclif/plugin-commands": "^2.2.28",
+    "@oclif/plugin-help": "^5.2.20",
+    "@oclif/prettier-config": "^0.2.1",
+    "@oclif/test": "^3.0.2",
+    "@types/chai": "^4.3.6",
+    "@types/fast-levenshtein": "^0.0.2",
+    "@types/mocha": "^10.0.2",
+    "@types/node": "^18",
+    "@types/supports-color": "^8.1.1",
+    "chai": "^4.3.10",
+    "commitlint": "^17.7.2",
+    "eslint": "^8.51.0",
+    "eslint-config-oclif": "^5.0.0",
+    "eslint-config-oclif-typescript": "^3.0.5",
+    "eslint-config-prettier": "^9.0.0",
+    "husky": "^8.0.3",
+    "lint-staged": "^14.0.1",
+    "mocha": "^10.2.0",
+    "oclif": "^4.0.1",
+    "prettier": "^3.0.3",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.2.2"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "exports": "./lib/index.js",
+  "files": [
+    "/oclif.manifest.json",
+    "/lib",
+    "/oclif.lock"
+  ],
+  "homepage": "https://github.com/oclif/plugin-not-found",
+  "keywords": [
+    "oclif-plugin"
+  ],
+  "license": "MIT",
   "oclif": {
     "hooks": {
       "command_not_found": "./lib"
@@ -12,53 +57,17 @@
       "@oclif/plugin-commands"
     ]
   },
-  "bugs": "https://github.com/oclif/plugin-not-found/issues",
-  "dependencies": {
-    "@oclif/core": "^2.15.0",
-    "chalk": "^4",
-    "fast-levenshtein": "^3.0.0"
-  },
-  "devDependencies": {
-    "@oclif/config": "^1.18.17",
-    "@oclif/plugin-commands": "^2.2.28",
-    "@oclif/plugin-help": "^5.2.20",
-    "@oclif/test": "^1.2.9",
-    "@types/chai": "^4.3.6",
-    "@types/fast-levenshtein": "^0.0.2",
-    "@types/mocha": "^8.2.3",
-    "@types/node": "^15.14.9",
-    "@types/supports-color": "^8.1.1",
-    "chai": "^4.3.10",
-    "eslint": "^7.32.0",
-    "eslint-config-oclif": "^4",
-    "eslint-config-oclif-typescript": "^1.0.3",
-    "mocha": "^9",
-    "oclif": "^3.17.2",
-    "ts-node": "^9.1.1",
-    "typescript": "^4.6.3"
-  },
-  "engines": {
-    "node": ">=12.0.0"
-  },
-  "files": [
-    "/oclif.manifest.json",
-    "/lib"
-  ],
-  "homepage": "https://github.com/oclif/plugin-not-found",
-  "keywords": [
-    "oclif-plugin"
-  ],
-  "license": "MIT",
-  "main": "lib/index.js",
   "repository": "oclif/plugin-not-found",
   "scripts": {
     "build": "rm -rf lib && tsc",
-    "lint": "eslint . --ext .ts --config .eslintrc",
-    "pretest": "yarn build && tsc -p test --noEmit",
-    "test": "mocha --forbid-only \"test/**/*.test.ts\"",
+    "lint": "eslint . --ext .ts",
+    "postpublish": "rm oclif.manifest.json",
     "posttest": "yarn lint",
+    "prepare": "husky install",
     "prepublishOnly": "yarn run build && oclif manifest .",
-    "postpublish": "rm oclif.manifest.json"
+    "pretest": "yarn build && tsc -p test --noEmit",
+    "test": "mocha --forbid-only \"test/**/*.test.ts\""
   },
+  "type": "module",
   "types": "lib/index.d.ts"
 }
