@@ -1,5 +1,6 @@
-import {closest} from '../src'
 import {expect} from 'chai'
+
+import {closest} from '../src/index.js'
 
 describe('closest', () => {
   const possibilities = ['abc', 'def', 'ghi', 'jkl', 'jlk']

@@ -1,16 +1,17 @@
-import * as chalk from 'chalk'
 import {Hook, toConfiguredId, ux} from '@oclif/core'
-import * as Levenshtein from 'fast-levenshtein'
+import chalk from 'chalk'
+import {default as levenshtein} from 'fast-levenshtein'
 
 export const closest = (target: string, possibilities: string[]): string =>
-  possibilities.map(id => ({id, distance: Levenshtein.get(target, id, {useCollator: true})})).sort((a, b) => a.distance - b.distance)[0]?.id ?? ''
+  possibilities
+    .map((id) => ({distance: levenshtein.get(target, id, {useCollator: true}), id}))
+    .sort((a, b) => a.distance - b.distance)[0]?.id ?? ''
 
 const hook: Hook.CommandNotFound = async function (opts) {
-  const hiddenCommandIds = new Set(opts.config.commands.filter(c => c.hidden).map(c => c.id))
-  const commandIDs = [
-    ...opts.config.commandIDs,
-    ...opts.config.commands.flatMap(c => c.aliases),
-  ].filter(c => !hiddenCommandIds.has(c))
+  const hiddenCommandIds = new Set(opts.config.commands.filter((c) => c.hidden).map((c) => c.id))
+  const commandIDs = [...opts.config.commandIDs, ...opts.config.commands.flatMap((c) => c.aliases)].filter(
+    (c) => !hiddenCommandIds.has(c),
+  )
 
   if (commandIDs.length === 0) return
 
@@ -23,7 +24,9 @@ const hook: Hook.CommandNotFound = async function (opts) {
 
   // alter the suggestion in the help scenario so that help is the first command
   // otherwise the user will be presented 'did you mean 'help'?' instead of 'did you mean "help <command>"?'
-  let suggestion = /:?help:?/.test(opts.id) ? ['help', ...opts.id.split(':').filter(cmd => cmd !== 'help')].join(':') : closest(opts.id, commandIDs)
+  let suggestion = /:?help:?/.test(opts.id)
+    ? ['help', ...opts.id.split(':').filter((cmd) => cmd !== 'help')].join(':')
+    : closest(opts.id, commandIDs)
 
   const readableSuggestion = toConfiguredId(suggestion, this.config)
   const originalCmd = toConfiguredId(opts.id, this.config)
