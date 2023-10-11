@@ -1,5 +1,4 @@
-@oclif/plugin-not-found
-========================
+# @oclif/plugin-not-found
 
 &#34;did you mean&#34; for oclif
 
