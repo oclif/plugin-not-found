@@ -780,10 +780,10 @@
   resolved "https://registry.npmjs.org/@types/expect/-/expect-1.20.4.tgz#8288e51737bf7e3ab5d7c77bfa695883745264e5"
   integrity sha512-Q5Vn3yjTDyCMV50TB6VRIbQNxSE4OmZR86VSbGaNpfUolm0iePBB4KdEEHmxoY5sT2+2DIvXW0rvMDP2nHZ4Mg==
 
-"@types/fast-levenshtein@^0.0.2":
-  version "0.0.2"
-  resolved "https://registry.yarnpkg.com/@types/fast-levenshtein/-/fast-levenshtein-0.0.2.tgz#9f618cff4469da8df46c9ee91b1c95b9af1d8f6a"
-  integrity sha512-h9AGeNlFimLtFUlEZgk+hb3LUT4tNHu8y0jzCUeTdi1BM4e86sBQs/nQYgHk70ksNyNbuLwpymFAXkb0GAehmw==
+"@types/fast-levenshtein@^0.0.3":
+  version "0.0.3"
+  resolved "https://registry.yarnpkg.com/@types/fast-levenshtein/-/fast-levenshtein-0.0.3.tgz#61510ba62435d76a844f742c7824b54d95922e4b"
+  integrity sha512-KGLJbBibqCUA9WU9aNI7UK1dkw2FVIJ+W4a1JiSDotqRWVofPIr7BZI+UPV3MXOGyHifxzrHPNkpIUAbpqEN5w==
 
 "@types/http-cache-semantics@*":
   version "4.0.1"
