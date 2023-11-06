@@ -63,7 +63,7 @@
     "lint": "eslint . --ext .ts",
     "postpublish": "rm oclif.manifest.json oclif.lock",
     "posttest": "yarn lint",
-    "prepare": "husky install",
+    "prepare": "husky install && yarn build",
     "prepublishOnly": "yarn run build && oclif manifest . && oclif lock",
     "pretest": "yarn build && tsc -p test --noEmit",
     "test": "mocha --forbid-only \"test/**/*.test.ts\""
