@@ -16,7 +16,7 @@
     "@oclif/prettier-config": "^0.2.1",
     "@oclif/test": "^3.1.1",
     "@types/chai": "^4.3.9",
-    "@types/fast-levenshtein": "^0.0.3",
+    "@types/fast-levenshtein": "^0.0.4",
     "@types/mocha": "^10.0.3",
     "@types/node": "^18",
     "@types/supports-color": "^8.1.3",
