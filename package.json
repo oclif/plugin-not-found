@@ -14,7 +14,7 @@
     "@oclif/plugin-commands": "^2.2.28",
     "@oclif/plugin-help": "^5.2.20",
     "@oclif/prettier-config": "^0.2.1",
-    "@oclif/test": "^3.1.7",
+    "@oclif/test": "^3.1.8",
     "@types/chai": "^4.3.11",
     "@types/fast-levenshtein": "^0.0.4",
     "@types/mocha": "^10.0.6",
