@@ -1,7 +1,7 @@
 {
   "name": "@oclif/plugin-not-found",
   "description": "\"did you mean\" for oclif",
-  "version": "3.0.8",
+  "version": "3.0.9",
   "author": "Salesforce",
   "bugs": "https://github.com/oclif/plugin-not-found/issues",
   "dependencies": {
