@@ -1,3 +1,9 @@
+## [3.0.11](https://github.com/oclif/plugin-not-found/compare/3.0.10...3.0.11) (2024-02-19)
+
+### Bug Fixes
+
+- update oclif/core ([#552](https://github.com/oclif/plugin-not-found/issues/552)) ([2c0a89c](https://github.com/oclif/plugin-not-found/commit/2c0a89ceda6682817d2450f9612a643684d669a8))
+
 ## [3.0.10](https://github.com/oclif/plugin-not-found/compare/3.0.9...3.0.10) (2024-02-04)
 
 ### Bug Fixes
