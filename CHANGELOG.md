@@ -1,3 +1,9 @@
+## [3.0.12](https://github.com/oclif/plugin-not-found/compare/3.0.11...3.0.12) (2024-02-22)
+
+### Bug Fixes
+
+- **deps:** bump ip from 1.1.5 to 1.1.9 ([#554](https://github.com/oclif/plugin-not-found/issues/554)) ([56a73d3](https://github.com/oclif/plugin-not-found/commit/56a73d378489f27df6a57893f50eb47e52d4138c))
+
 ## [3.0.11](https://github.com/oclif/plugin-not-found/compare/3.0.10...3.0.11) (2024-02-19)
 
 ### Bug Fixes
