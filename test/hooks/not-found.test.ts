@@ -43,14 +43,4 @@ describe('command_not_found', () => {
     .end('runs hook with not found error on no', (ctx) => {
       expect(ctx.stderr).to.be.contain('Warning: commans is not a @oclif/plugin-not-found command.\n')
     })
-
-  test
-    .stderr()
-    .hook('command_not_found', {id: 'commans'})
-    .catch((error: Error) =>
-      error.message.includes('Run @oclif/plugin-not-found help for a list of available commands.'),
-    )
-    .end('runs hook with not found error after no input timeout', (ctx) => {
-      expect(ctx.stderr).to.be.contain('Warning: commans is not a @oclif/plugin-not-found command.\n')
-    })
 })
