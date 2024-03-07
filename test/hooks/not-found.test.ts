@@ -1,9 +1,10 @@
-import {ux} from '@oclif/core'
 import {expect, test} from '@oclif/test'
+
+import utils from '../../src/utils.js'
 
 describe('command_not_found', () => {
   test
-    .stub(ux, 'prompt', (stub) => stub.returns('y'))
+    .stub(utils, 'getConfirmation', (stub) => stub.resolves(true))
     .stub(process, 'argv', (stub) => stub.returns([]))
     .stdout()
     .stderr()
@@ -14,7 +15,7 @@ describe('command_not_found', () => {
     })
 
   test
-    .stub(ux, 'prompt', (stub) => stub.returns('y'))
+    .stub(utils, 'getConfirmation', (stub) => stub.resolves(true))
     .stub(process, 'argv', (stub) => stub.returns(['username']))
     .stdout()
     .stderr()
@@ -26,7 +27,7 @@ describe('command_not_found', () => {
 
   test
     .stderr()
-    .stub(ux, 'prompt', (stub) => stub.returns('y'))
+    .stub(utils, 'getConfirmation', (stub) => stub.resolves(true))
     .hook('command_not_found', {argv: ['foo', '--bar', 'baz'], id: 'commans'})
     .catch((error: Error) => error.message.includes('Unexpected arguments: foo, --bar, baz\nSee more help with --help'))
     .end('runs hook with suggested command and provided args on yes', (ctx) => {
@@ -35,7 +36,7 @@ describe('command_not_found', () => {
 
   test
     .stderr()
-    .stub(ux, 'prompt', (stub) => stub.returns('n'))
+    .stub(utils, 'getConfirmation', (stub) => stub.resolves(false))
     .hook('command_not_found', {id: 'commans'})
     .catch((error: Error) =>
       error.message.includes('Run @oclif/plugin-not-found help for a list of available commands.'),
