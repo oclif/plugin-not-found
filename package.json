@@ -15,7 +15,7 @@
     "@oclif/plugin-commands": "^3",
     "@oclif/plugin-help": "^6",
     "@oclif/prettier-config": "^0.2.1",
-    "@oclif/test": "^3.2.1",
+    "@oclif/test": "^3.2.6",
     "@types/chai": "^4.3.11",
     "@types/fast-levenshtein": "^0.0.4",
     "@types/mocha": "^10.0.6",
@@ -23,17 +23,17 @@
     "chai": "^4.4.1",
     "commitlint": "^18",
     "eslint": "^8.57.0",
-    "eslint-config-oclif": "^5.0.3",
-    "eslint-config-oclif-typescript": "^3.0.48",
+    "eslint-config-oclif": "^5.1.0",
+    "eslint-config-oclif-typescript": "^3.1.0",
     "eslint-config-prettier": "^9.1.0",
     "husky": "^9",
     "lint-staged": "^15",
     "mocha": "^10.3.0",
-    "oclif": "^4.4.19",
+    "oclif": "^4.5.5",
     "prettier": "^3.2.5",
     "shx": "^0.3.4",
     "ts-node": "^10.9.2",
-    "typescript": "^5.3.3"
+    "typescript": "^5.4.2"
   },
   "engines": {
     "node": ">=18.0.0"
