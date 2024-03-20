@@ -17,7 +17,7 @@ const getConfirmation = async (suggestion: string): Promise<boolean> => {
     },
   })
 
-  setTimeout(10_000, 'foobar', {signal})
+  setTimeout(10_000, {signal})
     .catch(() => false)
     .then(() => confirmation.cancel())
 
