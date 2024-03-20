@@ -4,6 +4,8 @@ import {default as levenshtein} from 'fast-levenshtein'
 import {setTimeout} from 'node:timers/promises'
 
 const getConfirmation = async (suggestion: string): Promise<boolean> => {
+  const ac = new AbortController()
+  const {signal} = ac
   const confirmation = confirm({
     default: true,
     message: `Did you mean ${chalk.blueBright(suggestion)}?`,
@@ -15,12 +17,14 @@ const getConfirmation = async (suggestion: string): Promise<boolean> => {
     },
   })
 
-  const defaultValue = setTimeout(10_000).then(() => {
-    confirmation.cancel()
-    return false
-  })
+  setTimeout(10_000, 'foobar', {signal})
+    .catch(() => false)
+    .then(() => confirmation.cancel())
 
-  return Promise.race([defaultValue, confirmation])
+  return confirmation.then((value) => {
+    ac.abort()
+    return value
+  })
 }
 
 const closest = (target: string, possibilities: string[]): string =>
