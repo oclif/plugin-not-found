@@ -1,3 +1,13 @@
+# [3.1.0](https://github.com/oclif/plugin-not-found/compare/3.0.14...3.1.0) (2024-03-21)
+
+### Bug Fixes
+
+- abort timeout when prompt answered ([9d91c6a](https://github.com/oclif/plugin-not-found/commit/9d91c6adc49daf8de311dd11771fa7cb446f4ad7))
+
+### Features
+
+- use inquirer ([c025388](https://github.com/oclif/plugin-not-found/commit/c025388f971df847a6a1e1c0e054ad2e7d6abad0))
+
 ## [3.0.14](https://github.com/oclif/plugin-not-found/compare/3.0.13...3.0.14) (2024-03-06)
 
 ### Bug Fixes
