@@ -1,11 +1,7 @@
-import {Hook, toConfiguredId, ux} from '@oclif/core'
+import {Hook, toConfiguredId} from '@oclif/core'
 import chalk from 'chalk'
-import {default as levenshtein} from 'fast-levenshtein'
 
-export const closest = (target: string, possibilities: string[]): string =>
-  possibilities
-    .map((id) => ({distance: levenshtein.get(target, id, {useCollator: true}), id}))
-    .sort((a, b) => a.distance - b.distance)[0]?.id ?? ''
+import utils from './utils.js'
 
 const hook: Hook.CommandNotFound = async function (opts) {
   const hiddenCommandIds = new Set(opts.config.commands.filter((c) => c.hidden).map((c) => c.id))
@@ -26,21 +22,15 @@ const hook: Hook.CommandNotFound = async function (opts) {
   // otherwise the user will be presented 'did you mean 'help'?' instead of 'did you mean "help <command>"?'
   let suggestion = /:?help:?/.test(opts.id)
     ? ['help', ...opts.id.split(':').filter((cmd) => cmd !== 'help')].join(':')
-    : closest(opts.id, commandIDs)
+    : utils.closest(opts.id, commandIDs)
 
   const readableSuggestion = toConfiguredId(suggestion, this.config)
   const originalCmd = toConfiguredId(opts.id, this.config)
   this.warn(`${chalk.yellow(originalCmd)} is not a ${opts.config.bin} command.`)
 
-  let response = ''
-  try {
-    response = await ux.prompt(`Did you mean ${chalk.blueBright(readableSuggestion)}? [y/n]`, {timeout: 10_000})
-  } catch (error) {
-    this.log('')
-    this.debug(error)
-  }
+  const response = await utils.getConfirmation(readableSuggestion).catch(() => false)
 
-  if (response === 'y') {
+  if (response) {
     // this will split the original command from the suggested replacement, and gather the remaining args as varargs to help with situations like:
     // confit set foo-bar -> confit:set:foo-bar -> config:set:foo-bar -> config:set foo-bar
     let argv = opts.argv?.length ? opts.argv : opts.id.split(':').slice(suggestion.split(':').length)
