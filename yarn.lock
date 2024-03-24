@@ -1034,7 +1034,7 @@
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
 
-"@oclif/core@^3.19.2", "@oclif/core@^3.20.0", "@oclif/core@^3.21.0", "@oclif/core@^3.23.0", "@oclif/core@^3.25.2", "@oclif/core@^3.26.0":
+"@oclif/core@^3.19.2", "@oclif/core@^3.21.0", "@oclif/core@^3.23.0", "@oclif/core@^3.25.2", "@oclif/core@^3.26.0":
   version "3.26.0"
   resolved "https://registry.yarnpkg.com/@oclif/core/-/core-3.26.0.tgz#959d5e9f13f4ad6a4e98235ad125189df9ee4279"
   integrity sha512-TpMdfD4tfA2tVVbd4l0PrP02o5KoUXYmudBbTC7CeguDo/GLoprw4uL8cMsaVA26+cbcy7WYtOEydQiHVtJixA==
@@ -1069,11 +1069,11 @@
     wrap-ansi "^7.0.0"
 
 "@oclif/plugin-commands@^3":
-  version "3.2.0"
-  resolved "https://registry.yarnpkg.com/@oclif/plugin-commands/-/plugin-commands-3.2.0.tgz#ac95ae50045635b8129af5c7e07e35ef10305b47"
-  integrity sha512-Pc2k/BDCDz9Arbw/DePOajgi5WAAla+UchwujudVBhgRqbey+t7Q0LWHe1zFGS17ewr/jLyuqmu9lKDgpUGuVw==
+  version "3.2.1"
+  resolved "https://registry.yarnpkg.com/@oclif/plugin-commands/-/plugin-commands-3.2.1.tgz#1185065846d992a6593103268ca22923726e1be0"
+  integrity sha512-U17sPJPZx563vODY9rxcLq93mAMuBd7pRUpYDkmsTNtoooytOF/1p1HKLXB2Ep7rBRxuyU5osUjulwc//p78LA==
   dependencies:
-    "@oclif/core" "^3.20.0"
+    "@oclif/core" "^3.26.0"
     lodash.pickby "^4.6.0"
     lodash.sortby "^4.7.0"
     lodash.template "^4.5.0"
