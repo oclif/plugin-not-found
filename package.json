@@ -42,7 +42,6 @@
   "files": [
     "oclif.manifest.json",
     "npm-shrinkwrap.json",
-    "oclif.lock",
     "/lib"
   ],
   "homepage": "https://github.com/oclif/plugin-not-found",
@@ -62,12 +61,12 @@
   "repository": "oclif/plugin-not-found",
   "scripts": {
     "build": "shx rm -rf lib && tsc",
-    "clean": "shx rm -f oclif.manifest.json npm-shrinkwrap.json oclif.lock",
+    "clean": "shx rm -f oclif.manifest.json npm-shrinkwrap.json",
     "compile": "tsc",
     "lint": "eslint . --ext .ts",
     "postpack": "yarn run clean",
     "posttest": "yarn lint",
-    "prepack": "yarn build && oclif manifest && oclif readme && npm shrinkwrap && oclif lock",
+    "prepack": "yarn build && oclif manifest && oclif readme && npm shrinkwrap",
     "prepare": "husky && yarn build",
     "pretest": "yarn build --noEmit && tsc -p test --noEmit",
     "test": "mocha --forbid-only \"test/**/*.test.ts\"",
