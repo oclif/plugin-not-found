@@ -1008,10 +1008,10 @@
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
 
-"@oclif/core@^3.21.0", "@oclif/core@^3.26.0", "@oclif/core@^3.26.2":
-  version "3.26.2"
-  resolved "https://registry.yarnpkg.com/@oclif/core/-/core-3.26.2.tgz#92a92516e1309e5b1241c1b4932ab1d2546e294a"
-  integrity sha512-Gpn21jKjcOx0TecI1wLJrY/65jtgJx5f1GzTc81oKvEpKes1b3Li2SMZygRaWRpcQ3wjN0d7lTPi8WwLsmTBjA==
+"@oclif/core@^3.21.0", "@oclif/core@^3.26.0", "@oclif/core@^3.26.2", "@oclif/core@^3.26.3":
+  version "3.26.3"
+  resolved "https://registry.yarnpkg.com/@oclif/core/-/core-3.26.3.tgz#2416f4f5e3e5b9434999edb2f94983c5ac07e8a2"
+  integrity sha512-e6Vwu+cb2Sn4qFFpmY1fQLRWIY5ugruMuN94xb7+kyUzxrirYjJATPhuCT1G5xj9Dk+hTMH+Sp6XcHcVTS1lHg==
   dependencies:
     "@types/cli-progress" "^3.11.5"
     ansi-escapes "^4.3.2"
@@ -1022,7 +1022,7 @@
     cli-progress "^3.12.0"
     color "^4.2.3"
     debug "^4.3.4"
-    ejs "^3.1.9"
+    ejs "^3.1.10"
     get-package-type "^0.1.0"
     globby "^11.1.0"
     hyperlinker "^1.0.0"
@@ -2664,10 +2664,10 @@ dot-prop@^5.1.0:
   dependencies:
     is-obj "^2.0.0"
 
-ejs@^3.1.9:
-  version "3.1.9"
-  resolved "https://registry.yarnpkg.com/ejs/-/ejs-3.1.9.tgz#03c9e8777fe12686a9effcef22303ca3d8eeb361"
-  integrity sha512-rC+QVNMJWv+MtPgkt0y+0rVEIdbtxVADApW9JXrUVlzHetgcyczP/E7DJmWJ4fJCZF2cPcBk0laWO9ZHMG3DmQ==
+ejs@^3.1.10, ejs@^3.1.9:
+  version "3.1.10"
+  resolved "https://registry.yarnpkg.com/ejs/-/ejs-3.1.10.tgz#69ab8358b14e896f80cc39e62087b88500c3ac3b"
+  integrity sha512-UeJmFfOrAQS8OJWPZ4qtgHyWExa088/MtK5UEyoJGFH67cDEXkZSviOiKRCZ4Xij0zxI3JECgYs3oKx+AizQBA==
   dependencies:
     jake "^10.8.5"
 
@@ -4416,7 +4416,7 @@ minimatch@5.0.1:
   dependencies:
     brace-expansion "^2.0.1"
 
-minimatch@9.0.3, minimatch@^9.0.3:
+minimatch@9.0.3:
   version "9.0.3"
   resolved "https://registry.yarnpkg.com/minimatch/-/minimatch-9.0.3.tgz#a6e00c3de44c3a542bfaae70abfc22420a6da825"
   integrity sha512-RHiac9mvaRw0x3AYRgDC1CxAP7HTcNrrECeA8YYJeWnpo+2Q5CegtZjaotWTWxDG3UeGA1coE05iH1mPjT/2mg==
@@ -4437,7 +4437,7 @@ minimatch@^5.0.1:
   dependencies:
     brace-expansion "^2.0.1"
 
-minimatch@^9.0.4:
+minimatch@^9.0.3, minimatch@^9.0.4:
   version "9.0.4"
   resolved "https://registry.yarnpkg.com/minimatch/-/minimatch-9.0.4.tgz#8e49c731d1749cbec05050ee5145147b32496a51"
   integrity sha512-KqWh+VchfxcMNRAJjj2tnsSJdNbHsVgnkBhTNrW7AjVo6OvLtxw8zfT9oLw1JSohlFzJ8jCoTgaoXvJ+kHt6fw==
