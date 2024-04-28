@@ -5,7 +5,7 @@
   "author": "Salesforce",
   "bugs": "https://github.com/oclif/plugin-not-found/issues",
   "dependencies": {
-    "@inquirer/confirm": "^3.1.5",
+    "@inquirer/confirm": "^3.1.6",
     "@oclif/core": "^3.26.4",
     "chalk": "^5.3.0",
     "fast-levenshtein": "^3.0.0"
