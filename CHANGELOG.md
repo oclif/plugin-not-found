@@ -1,3 +1,9 @@
+## [3.1.9](https://github.com/oclif/plugin-not-found/compare/3.1.8...3.1.9) (2024-05-13)
+
+### Bug Fixes
+
+- bump version of the dependencies that fixed lodash vulnerability ([#627](https://github.com/oclif/plugin-not-found/issues/627)) ([15723ed](https://github.com/oclif/plugin-not-found/commit/15723ed365624cc3f9d573e342f613fa41ddb978))
+
 ## [3.1.8](https://github.com/oclif/plugin-not-found/compare/3.1.7...3.1.8) (2024-05-05)
 
 ### Bug Fixes
