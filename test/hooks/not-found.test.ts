@@ -1,47 +1,52 @@
-import {expect, test} from '@oclif/test'
+import {runHook} from '@oclif/test'
+import {expect} from 'chai'
+import {SinonSandbox, createSandbox} from 'sinon'
 
 import utils from '../../src/utils.js'
 
 describe('command_not_found', () => {
-  test
-    .stub(utils, 'getConfirmation', (stub) => stub.resolves(true))
-    .stub(process, 'argv', (stub) => stub.returns([]))
-    .stdout()
-    .stderr()
-    .hook('command_not_found', {id: 'commans'})
-    .end('runs hook with suggested command on yes', (ctx) => {
-      expect(ctx.stderr).to.be.contain('Warning: commans is not a @oclif/plugin-not-found command.\n')
-      expect(ctx.stdout).to.match(/commands.+?\n.*?help/)
-    })
+  let sandbox: SinonSandbox
 
-  test
-    .stub(utils, 'getConfirmation', (stub) => stub.resolves(true))
-    .stub(process, 'argv', (stub) => stub.returns(['username']))
-    .stdout()
-    .stderr()
-    .hook('command_not_found', {id: 'commans get'})
-    .end('runs hook with suggested command on yes with varargs passed', (ctx) => {
-      expect(ctx.stderr).to.be.contain('Warning: commans get is not a @oclif/plugin-not-found command.\n')
-      expect(ctx.stdout).to.match(/commands.+?\n.*?help/)
-    })
+  beforeEach(() => {
+    sandbox = createSandbox()
+  })
 
-  test
-    .stderr()
-    .stub(utils, 'getConfirmation', (stub) => stub.resolves(true))
-    .hook('command_not_found', {argv: ['foo', '--bar', 'baz'], id: 'commans'})
-    .catch((error: Error) => error.message.includes('Unexpected arguments: foo, --bar, baz\nSee more help with --help'))
-    .end('runs hook with suggested command and provided args on yes', (ctx) => {
-      expect(ctx.stderr).to.contain('Warning: commans is not a @oclif/plugin-not-found command.\n')
-    })
+  afterEach(() => {
+    sandbox.restore()
+  })
 
-  test
-    .stderr()
-    .stub(utils, 'getConfirmation', (stub) => stub.resolves(false))
-    .hook('command_not_found', {id: 'commans'})
-    .catch((error: Error) =>
-      error.message.includes('Run @oclif/plugin-not-found help for a list of available commands.'),
-    )
-    .end('runs hook with not found error on no', (ctx) => {
-      expect(ctx.stderr).to.be.contain('Warning: commans is not a @oclif/plugin-not-found command.\n')
-    })
+  it('should run hook with suggested command on yes', async () => {
+    sandbox.stub(utils, 'getConfirmation').resolves(true)
+    sandbox.stub(process, 'argv').returns([])
+
+    const {stderr, stdout} = await runHook('command_not_found', {id: 'commans'})
+    expect(stderr).to.contain('Warning: commans is not a @oclif/plugin-not-found command.\n')
+    expect(stdout).to.match(/commands.+?\n.*?help/)
+  })
+
+  it('should run hook with suggested command on yes with varargs passed', async () => {
+    sandbox.stub(utils, 'getConfirmation').resolves(true)
+    sandbox.stub(process, 'argv').returns(['username'])
+
+    const {stderr, stdout} = await runHook('command_not_found', {id: 'commans get'})
+    expect(stderr).to.contain('Warning: commans get is not a @oclif/plugin-not-found command.\n')
+    expect(stdout).to.match(/commands.+?\n.*?help/)
+  })
+
+  it('should run hook with suggested command and provided args on yes', async () => {
+    sandbox.stub(utils, 'getConfirmation').resolves(true)
+
+    const {error, stderr} = await runHook('command_not_found', {argv: ['foo', '--bar', 'baz'], id: 'commans'})
+
+    expect(stderr).to.contain('Warning: commans is not a @oclif/plugin-not-found command.\n')
+    expect(error?.message).to.include('Nonexistent flag: --bar')
+  })
+
+  it('should run hook with not found error on no', async () => {
+    sandbox.stub(utils, 'getConfirmation').resolves(false)
+
+    const {error, stderr} = await runHook('command_not_found', {id: 'commans'})
+    expect(stderr).to.contain('Warning: commans is not a @oclif/plugin-not-found command.\n')
+    expect(error?.message).to.contain('Run @oclif/plugin-not-found help for a list of available commands.')
+  })
 })
