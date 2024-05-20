@@ -1,3 +1,9 @@
+## [3.1.10](https://github.com/oclif/plugin-not-found/compare/3.1.9...3.1.10) (2024-05-19)
+
+### Bug Fixes
+
+- **deps:** bump @inquirer/confirm from 3.1.6 to 3.1.8 ([#628](https://github.com/oclif/plugin-not-found/issues/628)) ([777d85c](https://github.com/oclif/plugin-not-found/commit/777d85c09792307c69c68dcaa1c9d756fba18587))
+
 ## [3.1.9](https://github.com/oclif/plugin-not-found/compare/3.1.8...3.1.9) (2024-05-13)
 
 ### Bug Fixes
