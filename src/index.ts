@@ -1,5 +1,5 @@
 import {Hook, toConfiguredId} from '@oclif/core'
-import chalk from 'chalk'
+import {cyan, yellow} from 'ansis'
 
 import utils from './utils.js'
 
@@ -26,7 +26,7 @@ const hook: Hook.CommandNotFound = async function (opts) {
 
   const readableSuggestion = toConfiguredId(suggestion, this.config)
   const originalCmd = toConfiguredId(opts.id, this.config)
-  this.warn(`${chalk.yellow(originalCmd)} is not a ${opts.config.bin} command.`)
+  this.warn(`${yellow(originalCmd)} is not a ${opts.config.bin} command.`)
 
   const response = await utils.getConfirmation(readableSuggestion).catch(() => false)
 
@@ -46,7 +46,7 @@ const hook: Hook.CommandNotFound = async function (opts) {
     return this.config.runCommand(suggestion, argv)
   }
 
-  this.error(`Run ${chalk.bold.cyan(binHelp)} for a list of available commands.`, {exit: 127})
+  this.error(`Run ${cyan.bold(binHelp)} for a list of available commands.`, {exit: 127})
 }
 
 export default hook
