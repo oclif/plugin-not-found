@@ -1,3 +1,9 @@
+## [3.2.2](https://github.com/oclif/plugin-not-found/compare/3.2.1...3.2.2) (2024-06-04)
+
+### Bug Fixes
+
+- core v4 ([8b6685b](https://github.com/oclif/plugin-not-found/commit/8b6685b288b17b5a063c0db850b0871a5d0ab25d))
+
 ## [3.2.1](https://github.com/oclif/plugin-not-found/compare/3.2.0...3.2.1) (2024-06-01)
 
 ### Bug Fixes
