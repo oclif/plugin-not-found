@@ -1,3 +1,9 @@
+## [3.2.18](https://github.com/oclif/plugin-not-found/compare/3.2.17...3.2.18) (2024-08-25)
+
+### Bug Fixes
+
+- **deps:** bump micromatch from 4.0.7 to 4.0.8 ([#706](https://github.com/oclif/plugin-not-found/issues/706)) ([3c13560](https://github.com/oclif/plugin-not-found/commit/3c135602c0785418c572fe37db2061935920cae8))
+
 ## [3.2.17](https://github.com/oclif/plugin-not-found/compare/3.2.16...3.2.17) (2024-08-25)
 
 ### Bug Fixes
