@@ -1,3 +1,9 @@
+## [3.2.21](https://github.com/oclif/plugin-not-found/compare/3.2.20...3.2.21) (2024-09-13)
+
+### Bug Fixes
+
+- **deps:** bump path-to-regexp from 6.2.2 to 6.3.0 ([#721](https://github.com/oclif/plugin-not-found/issues/721)) ([b9788a5](https://github.com/oclif/plugin-not-found/commit/b9788a5253c7edbcc1776f0a58946a78649922da))
+
 ## [3.2.20](https://github.com/oclif/plugin-not-found/compare/3.2.19...3.2.20) (2024-09-08)
 
 ### Bug Fixes
