@@ -1,4 +1,4 @@
-import confirm from '@inquirer/confirm'
+import {confirm} from '@inquirer/prompts'
 import {blueBright, reset} from 'ansis'
 import {default as levenshtein} from 'fast-levenshtein'
 import {setTimeout} from 'node:timers/promises'
