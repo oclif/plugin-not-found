@@ -5,7 +5,7 @@
   "author": "Salesforce",
   "bugs": "https://github.com/oclif/plugin-not-found/issues",
   "dependencies": {
-    "@inquirer/confirm": "^3.2.0",
+    "@inquirer/prompts": "^7.0.0",
     "@oclif/core": "^4",
     "ansis": "^3.3.1",
     "fast-levenshtein": "^3.0.0"
@@ -35,7 +35,7 @@
     "shx": "^0.3.4",
     "sinon": "^18.0.1",
     "ts-node": "^10.9.2",
-    "typescript": "^5.5.4"
+    "typescript": "^5.6.3"
   },
   "engines": {
     "node": ">=18.0.0"
