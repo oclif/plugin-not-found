@@ -1,3 +1,9 @@
+## [3.2.27](https://github.com/oclif/plugin-not-found/compare/3.2.26...3.2.27) (2024-11-17)
+
+### Bug Fixes
+
+- **deps:** bump cross-spawn from 7.0.3 to 7.0.5 ([#766](https://github.com/oclif/plugin-not-found/issues/766)) ([2d71cf9](https://github.com/oclif/plugin-not-found/commit/2d71cf9d8ed11b1cadf7674452deac82a8928139))
+
 ## [3.2.26](https://github.com/oclif/plugin-not-found/compare/3.2.25...3.2.26) (2024-11-16)
 
 ### Bug Fixes
