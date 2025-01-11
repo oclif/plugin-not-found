@@ -1181,12 +1181,12 @@
     wrap-ansi "^7.0.0"
 
 "@oclif/core@^4", "@oclif/core@^4.2.0":
-  version "4.2.0"
-  resolved "https://registry.yarnpkg.com/@oclif/core/-/core-4.2.0.tgz#ab78b247dfd66322d9c9376ebaf3764e3c82fefe"
-  integrity sha512-ETM2N/GL7W37Kv1Afv1j1Gh77CynS2ubEPP+p+MnjUXEjghNe7+bKAWhPkHnBuFAVFAqdv0qMpUAjxKLbsmbJw==
+  version "4.2.2"
+  resolved "https://registry.yarnpkg.com/@oclif/core/-/core-4.2.2.tgz#1f46f4a613f16dda636d27e0192d50f4b885e8d4"
+  integrity sha512-5jGzLDu96jG67G2sF21A3u67FJwSRnOnjaJwobiI7sgSg5uuVAHn4j1DahhfC4K7UEcXqXBBH064JyZ9yS4xHg==
   dependencies:
     ansi-escapes "^4.3.2"
-    ansis "^3.3.2"
+    ansis "^3.6.0"
     clean-stack "^3.0.1"
     cli-spinners "^2.9.2"
     debug "^4.4.0"
@@ -2181,7 +2181,7 @@ ansicolors@~0.3.2:
   resolved "https://registry.yarnpkg.com/ansicolors/-/ansicolors-0.3.2.tgz#665597de86a9ffe3aa9bfbe6cae5c6ea426b4979"
   integrity sha1-ZlWX3oap/+Oqm/vmyuXG6kJrSXk=
 
-ansis@^3.3.2, ansis@^3.4.0, ansis@^3.5.2, ansis@^3.6.0:
+ansis@^3.4.0, ansis@^3.5.2, ansis@^3.6.0:
   version "3.6.0"
   resolved "https://registry.yarnpkg.com/ansis/-/ansis-3.6.0.tgz#f4d8437fb27659bf5a6adca90135801919dee764"
   integrity sha512-8KluYVZM+vx19f5rInhdEBdIAjvBp7ASzyF/DoStcDpMJ3JOM55ybvUcs9nMRVP8XN2K3ABBdO7zCXezvrT0pg==
