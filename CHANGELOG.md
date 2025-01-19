@@ -1,3 +1,9 @@
+## [3.2.37](https://github.com/oclif/plugin-not-found/compare/3.2.36...3.2.37) (2025-01-19)
+
+### Bug Fixes
+
+- **deps:** bump @inquirer/prompts from 7.2.1 to 7.2.3 ([#812](https://github.com/oclif/plugin-not-found/issues/812)) ([0cc8d66](https://github.com/oclif/plugin-not-found/commit/0cc8d668c275349455e1de6693db4ae15b5eb072))
+
 ## [3.2.36](https://github.com/oclif/plugin-not-found/compare/3.2.35...3.2.36) (2025-01-18)
 
 ### Bug Fixes
