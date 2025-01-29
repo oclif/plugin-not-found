@@ -4,6 +4,7 @@ import utils from '../src/utils.js'
 
 describe('closest', () => {
   const possibilities = ['abc', 'def', 'ghi', 'jkl', 'jlk']
+
   it('exact match', () => {
     expect(utils.closest('abc', possibilities)).to.equal('abc')
   })
