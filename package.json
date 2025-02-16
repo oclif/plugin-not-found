@@ -5,7 +5,7 @@
   "author": "Salesforce",
   "bugs": "https://github.com/oclif/plugin-not-found/issues",
   "dependencies": {
-    "@inquirer/prompts": "^7.2.3",
+    "@inquirer/prompts": "^7.3.2",
     "@oclif/core": "^4",
     "ansis": "^3.10.0",
     "fast-levenshtein": "^3.0.0"
