@@ -7,7 +7,7 @@
   "dependencies": {
     "@inquirer/prompts": "^7.3.2",
     "@oclif/core": "^4",
-    "ansis": "^3.14.0",
+    "ansis": "^3.16.0",
     "fast-levenshtein": "^3.0.0"
   },
   "devDependencies": {
