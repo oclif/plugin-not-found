@@ -1,3 +1,9 @@
+## [3.2.45](https://github.com/oclif/plugin-not-found/compare/3.2.44...3.2.45) (2025-03-09)
+
+### Bug Fixes
+
+- **deps:** bump ansis from 3.16.0 to 3.17.0 ([#850](https://github.com/oclif/plugin-not-found/issues/850)) ([21ccf9b](https://github.com/oclif/plugin-not-found/commit/21ccf9b26cd12db01407d038a8d7fdb01dadf451))
+
 ## [3.2.44](https://github.com/oclif/plugin-not-found/compare/3.2.43...3.2.44) (2025-02-23)
 
 ### Bug Fixes
