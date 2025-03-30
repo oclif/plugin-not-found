@@ -1193,7 +1193,7 @@
     wordwrap "^1.0.0"
     wrap-ansi "^7.0.0"
 
-"@oclif/core@^4", "@oclif/core@^4.2.8":
+"@oclif/core@^4", "@oclif/core@^4.2.10":
   version "4.2.10"
   resolved "https://registry.yarnpkg.com/@oclif/core/-/core-4.2.10.tgz#31dfb7481c79887c3e672e10c981fcc01fcbaeb3"
   integrity sha512-fAqcXgqkUm4v5FYy7qWP4w1HaOlVSVJveah+yVTo5Nm5kTiXhmD5mQQ7+knGeBaStyrtQy6WardoC2xSic9rlQ==
@@ -1232,7 +1232,7 @@
   dependencies:
     "@oclif/core" "^4"
 
-"@oclif/plugin-not-found@^3.2.46":
+"@oclif/plugin-not-found@^3.2.48":
   version "3.2.48"
   resolved "https://registry.yarnpkg.com/@oclif/plugin-not-found/-/plugin-not-found-3.2.48.tgz#691ded2d1064af7d9109564548e7112338ca3156"
   integrity sha512-H2y3PtiU/MYZXvvWUR0vr4PCoSSsN8inGDlLgLxQ4q+osAlJ256RxKCVMsSJG9fWt+Pg/+wrLzpx0OsbyVOi9g==
@@ -5175,19 +5175,19 @@ object.values@^1.2.0:
     define-properties "^1.2.1"
     es-object-atoms "^1.0.0"
 
-oclif@^4.17.39:
-  version "4.17.39"
-  resolved "https://registry.yarnpkg.com/oclif/-/oclif-4.17.39.tgz#a304473724c1ed3f8ad8a3adfce3bd29a5c549fc"
-  integrity sha512-J5RwVQ85Qdw0GDTN3o3QpThHAh3fnsywHJsFsBLWDZqw6Z7Sqh0Z2HWis+a68HhzWF927PfvHovzIXXnaJCXIQ==
+oclif@^4.17.42:
+  version "4.17.42"
+  resolved "https://registry.yarnpkg.com/oclif/-/oclif-4.17.42.tgz#46c85172ada1b45c42ce7e3825bd8c31085e130a"
+  integrity sha512-a20QxwQ9zqejl4Qgo8l7oTa0Z3oi04gpAohRySblzu7J6J+Wi3FY03yY9rAyY1GEIw8j0fQ4PC9K8CKsZoOt4Q==
   dependencies:
     "@aws-sdk/client-cloudfront" "^3.764.0"
     "@aws-sdk/client-s3" "^3.772.0"
     "@inquirer/confirm" "^3.1.22"
     "@inquirer/input" "^2.2.4"
     "@inquirer/select" "^2.5.0"
-    "@oclif/core" "^4.2.8"
+    "@oclif/core" "^4.2.10"
     "@oclif/plugin-help" "^6.2.27"
-    "@oclif/plugin-not-found" "^3.2.46"
+    "@oclif/plugin-not-found" "^3.2.48"
     "@oclif/plugin-warn-if-update-available" "^3.1.31"
     async-retry "^1.3.3"
     chalk "^4"
@@ -5202,7 +5202,7 @@ oclif@^4.17.39:
     normalize-package-data "^6"
     semver "^7.7.1"
     sort-package-json "^2.15.1"
-    tiny-jsonc "^1.0.1"
+    tiny-jsonc "^1.0.2"
     validate-npm-package-name "^5.0.1"
 
 once@^1.3.0, once@^1.3.1, once@^1.4.0:
@@ -6146,10 +6146,10 @@ text-extensions@^2.0.0:
   resolved "https://registry.yarnpkg.com/through/-/through-2.3.8.tgz#0dd4c9ffaabc357960b1b724115d7e0e86a2e1f5"
   integrity sha512-w89qg7PI8wAdvX60bMDP+bFoD5Dvhm9oLheFp5O4a2QF0cSBGsBX4qZmadPMvVqlLJBBci+WqGGOAPvcDeNSVg==
 
-tiny-jsonc@^1.0.1:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/tiny-jsonc/-/tiny-jsonc-1.0.1.tgz#71de47c9d812b411e87a9f3ab4a5fe42cd8d8f9c"
-  integrity sha512-ik6BCxzva9DoiEfDX/li0L2cWKPPENYvixUprFdl3YPi4bZZUhDnNI9YUkacrv+uIG90dnxR5mNqaoD6UhD6Bw==
+tiny-jsonc@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/tiny-jsonc/-/tiny-jsonc-1.0.2.tgz#208df4c437684199cc724f31c2b91ee39c349678"
+  integrity sha512-f5QDAfLq6zIVSyCZQZhhyl0QS6MvAyTxgz4X4x3+EoCktNWEYJ6PeoEA97fyb98njpBNNi88ybpD7m+BDFXaCw==
 
 tinyexec@^0.3.0:
   version "0.3.0"
