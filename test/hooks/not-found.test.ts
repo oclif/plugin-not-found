@@ -5,13 +5,31 @@ import sinon from 'sinon'
 import utils from '../../src/utils.js'
 
 describe('command_not_found', () => {
+  const isTTYval = process.stdin.isTTY
+
+  beforeEach(() => {
+    // stub if isTTY isn't undefined, otherwise set it to true (process.stdiin.isTTY is `undefined` in CI so mocha fails to stub it)
+    if (process.stdin.isTTY) {
+      sinon.stub(process.stdin, 'isTTY').value(true)
+    } else {
+      process.stdin.isTTY = true
+    }
+  })
+
   afterEach(() => {
     sinon.restore()
   })
 
+  after(() => {
+    // restore original isTTY value after all tests are done
+    process.stdin.isTTY = isTTYval
+  })
+
   it('should not prompt if not attached to a TTY', async () => {
     sinon.stub(process, 'argv').returns([])
-    sinon.stub(process.stdin, 'isTTY').set(() => false)
+    if (process.stdin.isTTY) {
+      sinon.stub(process.stdin, 'isTTY').value(false)
+    }
 
     const startTime = Date.now()
     const {error, stderr} = await runHook('command_not_found', {id: 'commans'})
