@@ -28,7 +28,9 @@ const hook: Hook.CommandNotFound = async function (opts) {
   const originalCmd = toConfiguredId(opts.id, this.config)
   this.warn(`${yellow(originalCmd)} is not a ${opts.config.bin} command.`)
 
-  const response = await utils.getConfirmation(readableSuggestion).catch(() => false)
+  // Skip prompt if not in interactive terminal.
+  const response =
+    process.stdin.isTTY === true ? await utils.getConfirmation(readableSuggestion).catch(() => false) : false
 
   if (response) {
     // this will split the original command from the suggested replacement, and gather the remaining args as varargs to help with situations like:
