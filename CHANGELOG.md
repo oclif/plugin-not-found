@@ -1,3 +1,9 @@
+## [3.2.54](https://github.com/oclif/plugin-not-found/compare/3.2.53...3.2.54) (2025-05-29)
+
+### Bug Fixes
+
+- skip prompt if not attached to a TTY ([6445579](https://github.com/oclif/plugin-not-found/commit/64455790cfc938ad85890a5fcb5fd33d4d96db56))
+
 ## [3.2.53](https://github.com/oclif/plugin-not-found/compare/3.2.52...3.2.53) (2025-05-24)
 
 ### Bug Fixes
