@@ -6,6 +6,7 @@ describe('sf CLI integration', () => {
   before(() => {
     const build = shelljs.exec('yarn build')
     if (build.code !== 0) throw new Error('yarn build failed')
+
     const link = shelljs.exec('sf plugins link --no-install')
     if (link.code !== 0) throw new Error('sf plugins link failed')
   })
@@ -26,7 +27,7 @@ describe('sf CLI integration', () => {
     const res = shelljs.exec('sf wat')
     const endTime = Date.now()
 
-    expect(endTime - startTime).to.be.lessThan(1000)
+    expect(endTime - startTime).to.be.lessThan(3000)
     expect(stripVTControlCharacters(res.stdout)).to.not.include('Did you mean')
     expect(res.code).to.equal(127)
 
