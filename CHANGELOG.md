@@ -1,3 +1,9 @@
+## [3.2.68](https://github.com/oclif/plugin-not-found/compare/3.2.67...3.2.68) (2025-09-13)
+
+### Bug Fixes
+
+- **deps:** bump @oclif/core from 4.5.2 to 4.5.3 ([#975](https://github.com/oclif/plugin-not-found/issues/975)) ([7072af0](https://github.com/oclif/plugin-not-found/commit/7072af02677205175d079cc76058a66bfd6ae770))
+
 ## [3.2.67](https://github.com/oclif/plugin-not-found/compare/3.2.66...3.2.67) (2025-08-31)
 
 ### Bug Fixes
