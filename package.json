@@ -6,7 +6,7 @@
   "bugs": "https://github.com/oclif/plugin-not-found/issues",
   "dependencies": {
     "@inquirer/prompts": "^7.9.0",
-    "@oclif/core": "^4.7.2",
+    "@oclif/core": "^4.8.0",
     "ansis": "^3.17.0",
     "fast-levenshtein": "^3.0.0"
   },
