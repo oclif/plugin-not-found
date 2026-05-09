@@ -1,3 +1,9 @@
+## [3.2.84](https://github.com/oclif/plugin-not-found/compare/3.2.83...3.2.84) (2026-05-09)
+
+### Bug Fixes
+
+- **deps:** bump fast-xml-builder from 1.1.3 to 1.2.0 ([#1080](https://github.com/oclif/plugin-not-found/issues/1080)) ([b3dc1b6](https://github.com/oclif/plugin-not-found/commit/b3dc1b657caa795f62863dc702f2c22154984dad))
+
 ## [3.2.83](https://github.com/oclif/plugin-not-found/compare/3.2.82...3.2.83) (2026-05-09)
 
 ### Bug Fixes
