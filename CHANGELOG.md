@@ -1,3 +1,9 @@
+## [3.2.83](https://github.com/oclif/plugin-not-found/compare/3.2.82...3.2.83) (2026-05-09)
+
+### Bug Fixes
+
+- **deps:** bump fast-uri from 3.0.6 to 3.1.2 ([#1081](https://github.com/oclif/plugin-not-found/issues/1081)) ([9a3db07](https://github.com/oclif/plugin-not-found/commit/9a3db072e9455c55da67a6b9594e6a3c5c4c8de1))
+
 ## [3.2.82](https://github.com/oclif/plugin-not-found/compare/3.2.81...3.2.82) (2026-05-03)
 
 ### Bug Fixes
