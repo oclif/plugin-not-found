@@ -1,6 +1,6 @@
 import {confirm} from '@inquirer/prompts'
 import {blueBright, reset} from 'ansis'
-import {default as levenshtein} from 'fast-levenshtein'
+import levenshtein from 'fast-levenshtein'
 import {setTimeout} from 'node:timers/promises'
 
 const getConfirmation = async (suggestion: string): Promise<boolean> => {
@@ -17,9 +17,11 @@ const getConfirmation = async (suggestion: string): Promise<boolean> => {
     },
   })
 
-  setTimeout(10_000, 'timeout', {signal})
+  void setTimeout(10_000, 'timeout', {signal})
     .catch(() => false)
-    .then(() => confirmation.cancel())
+    .then(() => {
+      confirmation.cancel()
+    })
 
   return confirmation.then((value) => {
     ac.abort()
@@ -30,9 +32,11 @@ const getConfirmation = async (suggestion: string): Promise<boolean> => {
 const closest = (target: string, possibilities: string[]): string =>
   possibilities
     .map((id) => ({distance: levenshtein.get(target, id, {useCollator: true}), id}))
-    .sort((a, b) => a.distance - b.distance)[0]?.id ?? ''
+    .toSorted((a, b) => a.distance - b.distance)[0]?.id ?? ''
 
-export default {
+const exports = {
   closest,
   getConfirmation,
 }
+
+export default exports
