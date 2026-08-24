@@ -1,4 +1,4 @@
-import {Hook, toConfiguredId} from '@oclif/core'
+import {type Hook, toConfiguredId} from '@oclif/core'
 import {cyan, yellow} from 'ansis'
 
 import utils from './utils.js'
@@ -15,12 +15,12 @@ const hook: Hook.CommandNotFound = async function (opts) {
   const idSplit = opts.id.split(':')
   if (opts.config.findTopic(idSplit[0])) {
     // if valid topic, update binHelp with topic
-    binHelp = `${binHelp} ${idSplit[0]}`
+    binHelp += ` ${idSplit[0]}`
   }
 
   // alter the suggestion in the help scenario so that help is the first command
   // otherwise the user will be presented 'did you mean 'help'?' instead of 'did you mean "help <command>"?'
-  let suggestion = /:?help:?/.test(opts.id)
+  let suggestion = /:?help:?/v.test(opts.id)
     ? ['help', ...opts.id.split(':').filter((cmd) => cmd !== 'help')].join(':')
     : utils.closest(opts.id, commandIDs)
 
@@ -29,10 +29,9 @@ const hook: Hook.CommandNotFound = async function (opts) {
   this.warn(`${yellow(originalCmd)} is not a ${opts.config.bin} command.`)
 
   // Skip prompt if not in interactive terminal.
-  const response =
-    process.stdin.isTTY === true ? await utils.getConfirmation(readableSuggestion).catch(() => false) : false
+  const isConfirmed = process.stdin.isTTY ? await utils.getConfirmation(readableSuggestion).catch(() => false) : false
 
-  if (response) {
+  if (isConfirmed) {
     // this will split the original command from the suggested replacement, and gather the remaining args as varargs to help with situations like:
     // confit set foo-bar -> confit:set:foo-bar -> config:set:foo-bar -> config:set foo-bar
     let argv = opts.argv?.length ? opts.argv : opts.id.split(':').slice(suggestion.split(':').length)

@@ -19,7 +19,7 @@ describe('sf CLI integration', () => {
   it('should skip the prompt when not attached to a TTY and return 127', async () => {
     const isTTYval: boolean | undefined = process.stdin.isTTY
 
-    if (isTTYval === true) {
+    if (isTTYval) {
       process.stdin.isTTY = false
     }
 

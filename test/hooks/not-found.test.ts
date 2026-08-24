@@ -31,7 +31,7 @@ describe('command_not_found', () => {
 
     const {stderr, stdout} = await runHook('command_not_found', {id: 'commans'})
     expect(stderr).to.contain('Warning: commans is not a @oclif/plugin-not-found command.\n')
-    expect(stdout).to.match(/commands.+?\n.*?help/)
+    expect(stdout).to.match(/commands.+?\n.*?help/v)
   })
 
   it('should run hook with suggested command on yes with varargs passed', async () => {
@@ -40,7 +40,7 @@ describe('command_not_found', () => {
 
     const {stderr, stdout} = await runHook('command_not_found', {id: 'commans get'})
     expect(stderr).to.contain('Warning: commans get is not a @oclif/plugin-not-found command.\n')
-    expect(stdout).to.match(/commands.+?\n.*?help/)
+    expect(stdout).to.match(/commands.+?\n.*?help/v)
   })
 
   it('should run hook with suggested command and provided args on yes', async () => {

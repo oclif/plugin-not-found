@@ -9,7 +9,7 @@
     "pretty": true,
     "rootDirs": ["./src"],
     "strict": true,
-    "target": "ES2022",
+    "target": "ES2024",
     "moduleResolution": "Node16"
   },
   "include": ["./src/**/*"],
