@@ -1,3 +1,9 @@
+## [4.0.1](https://github.com/oclif/plugin-not-found/compare/4.0.0...4.0.1) (2026-09-25)
+
+### Bug Fixes
+
+- **deps:** bump fast-uri from 3.1.5 to 3.1.8 ([9aa1b10](https://github.com/oclif/plugin-not-found/commit/9aa1b105de30373276fb58b457b5377d07e6c9da))
+
 # [4.0.0](https://github.com/oclif/plugin-not-found/compare/3.3.0...4.0.0) (2026-08-31)
 
 - feat!: upgrade oclif/core to v5 @W-23512455@ ([24cda6b](https://github.com/oclif/plugin-not-found/commit/24cda6b9432f5f907234a57d45aa4e56c93cc5de))
